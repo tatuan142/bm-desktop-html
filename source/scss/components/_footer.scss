@@ -1,0 +1,102 @@
+// ====================================
+// Footer's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* footer style
+*/
+
+// > footer style
+.footer {
+    @include clearfix;
+    &__bar {
+        background-color: $first-color;
+        height: 50px;
+        margin-bottom: 20px;
+        .container {
+            position: relative;
+            @include clearfix();
+        }
+        .logo-solid {
+            position: absolute;
+            top: 5px;
+            left: 0;
+            &:hover{
+                opacity: .8;
+            }
+        }
+        .global-search {
+            position: absolute;
+            top: 10px;
+            right: 0;
+            border: 1px solid $first-color;
+            &:hover{
+                border: 1px solid darken($first-color,10%);
+                input::-webkit-input-placeholder{
+                    color: #777;
+                }
+            }
+        }
+    }
+    &__tagcloud {
+        @include clearfix();
+        border-radius: 3px;
+        margin-bottom: 15px;
+        border-bottom: $border;
+        padding-bottom: 15px;
+        font-weight: bold;
+        font-size: 0;
+        a {
+            font-size: 14px;
+            font-size: 1.4rem;
+            display: inline-block;
+            text-transform: capitalize;
+            &:hover {
+                color: $first-color;
+            }
+        }
+        span{
+            font-size: 10px;
+            font-size: 1.0rem;
+            line-height: 20px;
+            display: inline-block;
+            padding: 0 12px;
+            color: #ccc;
+        }
+    }
+    &__siteIndex {
+        @include clearfix();
+        font-weight: bold;
+        float: left;
+        .column {
+            margin-right: 35px;
+            float: left;
+        }
+        h4 {
+            font-size: 18px;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        ul {
+            font-size: 14px;
+            font-size: 1.4rem;
+        }
+        a {
+            padding: 2px 0;
+            display: inline-block;
+        }
+    }
+    &__copyRight{
+        float: right;
+        p{
+            margin-bottom: 5px;
+            color: #757575;
+            font-size: 12px;
+            font-size: 1.2rem;
+            text-align: right;
+        }
+    }
+}

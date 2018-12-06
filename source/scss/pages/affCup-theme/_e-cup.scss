@@ -1,0 +1,1213 @@
+// ====================================
+// soccer's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* fix style for worldcup
+* animation
+* CODER REQUEST CODE
+*/
+
+
+// > global style
+.e-bookmark{
+    .cate-title .event--calendar{
+        display: none;
+    }
+}
+.affcup {
+    background-color: #f1ebe3;
+    .soccer-miniBox__content .title{
+        background-color: $affCup-color;
+    }
+    .nav {
+        background-color: $affCup-color;
+        .is-active,
+        a:hover {
+            background-color: darken($affCup-color, 10%);
+            color: #fff;
+        }
+        .nav__child {
+            background-color: $affCup-color;
+        }
+    }
+    .footer__bar {
+        background-color: $affCup-color;
+    }
+    .s-breadcrumb {
+        background: url(../img/soccer/affCup/affCup-main-filter-1.0.0.png) -70px top no-repeat;
+        background-color: $affCup-color;
+        background-size: 970px 60px;
+        .filter {
+            a{
+                width: 100px;
+            }
+            a:hover,
+            .is-active {
+                background-color: darken($affCup-color, 10%);
+                border: none;
+            }
+            .event--calendar {
+                background-position: -74px -50px !important;
+            }
+            .event--group {
+                background-position: -74px -100px !important;
+            }
+            .event--news {
+                background-position: -74px -150px !important;
+            }
+
+        }
+        .title {
+            a{padding: 0;}
+            i{
+                margin-right: 0;
+            }
+            a:hover{
+                opacity: .7;
+            }
+        }
+    }
+    .s-league {
+        .heading {
+            border-radius: 15px;
+            background-color: darken($affCup-color, 10%);
+            height: 30px;
+            display: inline-block;
+            color: #000;
+            text-transform: uppercase;
+            padding: 0 25px 0 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            @include font(16,30);
+            color: #fff;
+            &:before{
+                content: '';
+                width: 24px;
+                height: 24px;
+                background-image: url('../img/soccer/affCup/affCup-sprite-'+$affCup-version+'.png');
+                display: inline-block;
+                vertical-align: top;
+                background-size: ($affCup-w + px) ($affCup-h + px);
+                background-position: -50px 0;
+                margin-top: 3px;
+                margin-right: 5px;
+            }
+        }
+    }
+}
+
+.rightBox-1,
+{
+    &__content {
+        .story {
+            margin-bottom: 15px;
+            &__thumb {
+                width: 230px;
+                height: 125px;
+                margin-bottom: 10px;
+            }
+            &__heading{
+                @include font(15,18);
+            }
+        }
+    }
+}
+
+// ====================================
+// soccere's navigation style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* event theme
+* spectify page
+* cate-title
+*/
+
+a:hover {
+    color: #000;
+}
+
+
+// > event theme
+.e-bookmark{
+    .cate-title .event--calendar{
+        display: none;
+    }
+}
+
+// ==========
+.e-footer {
+    a {
+        margin-top: 30px;
+        display: block;
+        width: 100%;
+        height: 200px;
+        background: url('../img/soccer/affCup/bg-affCup-03.png');
+        background-size: 268px 173px;
+        background-repeat: no-repeat;
+        @include breakpoint($iphone-5) {
+            background-position: center 0;
+        }
+        @include breakpoint($iphone-6) {
+            background-position: center 0;
+        }
+        @include breakpoint($iphone-6-plus) {
+            background-position: center 0;
+        }
+        @include breakpoint(sm) {
+            background-position: 50% 0;
+        }
+    }
+}
+
+// ==========
+.e-btn {
+    border: none;
+    background-color: transparent;
+    display: inline-block;
+    &--full-list {
+        @include font(14,32,$normal);
+        width: 100%;
+        border-radius: 3px;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0);
+        }
+    }
+}
+
+// ==========
+.home-title {
+    z-index: 10;
+    display: inline-block;
+    border-radius: 100px;
+    height: 30px;
+    padding: 0 15px;
+    padding-left: 36px;
+    background: $affCup-color url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat-x;
+    color: #fff;
+    position: relative;
+    i{
+        display: none;
+    }
+    span {
+        @include font(16,30);
+        display: inline-block;
+        position: relative;
+        text-transform: uppercase;
+    }
+    &:before{
+        background-image: url(../img/soccer/affCup/affCup-sprite-1.0.0.png);
+        background-size: 100px 1000px;
+        background-position: -50px 0;
+        content: '';
+        width: 24px;
+        height: 24px;
+        display: inline-block;
+        vertical-align: top;
+        position: absolute;
+        top: 3px;
+        left: 7px;
+    }
+}
+
+// ==========
+.time-title {
+    z-index: 10; 
+    margin-top: 10px;
+    background: rgba($affCup-color, .7) url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat-x;
+    span {
+        height: 26px;
+        display: inline-block;
+        @include font(14,
+        26);
+        color: #fff;
+        text-transform: uppercase;
+    }
+    @include breakpoint(xs){
+        margin-left: -10px;
+        margin-right: -10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    @include breakpoint(sm) {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+// ==========
+.e-news {
+    position: relative;
+    .content {
+        height: 300px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+    .home-title {}
+    .content {}
+    .wrap {}
+    .story__link {
+        color: #fff;
+    }
+    .item {
+        width: 260px;
+        height: 295px;
+        display: block;
+        overflow: hidden;
+        position: relative;
+        &:after {
+            content: '';
+            height: 5px;
+            // background-size: 628px 5px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    }
+    .story__thumb {
+        width: 260px;
+        height: 300px;
+        overflow: hidden;
+        img {
+            min-width: 280px;
+            min-height: 300px;
+            margin-left: -20px;
+        }
+    }
+    .story__heading {
+        @include font(18,
+        24,
+        $normal);
+        padding: 15px 10px 10px;
+        min-height: 158px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: url(../img/soccer/wc-news-bg.png) left bottom repeat-x;
+        padding-top: 90px;
+        -webkit-background-size: 3px 158px;
+        background-size: 3px 158px;
+    }
+    .story__meta {
+        display: none;
+        @include font(13,
+        20,
+        $normal);
+        padding: 0px 15px 0;
+        color: #B6D4E7;
+        .source {
+            margin-right: 10px;
+        }
+    }
+    .bx-prev,
+    .bx-next,
+    {
+        width: 40px;
+        height: 50px;
+        position: absolute;
+        top: 150px;
+        background-image: url('../img/soccer/affCup/affCup-sprite-'+$affCup-version+'.png');
+        display: inline-block;
+        vertical-align: middle;
+        background-size: ($affCup-w + px) ($affCup-h + px);
+        font-size: 0;
+    }
+    .bx-prev,
+    {
+        background-position: 0 -350px;
+        left: -5px;
+    }
+    .bx-next,
+    {
+        background-position: -50px -350px;
+        right: -5px;
+    }
+}
+
+// ==========
+.e-list {
+    font-size: 0;
+    &__content {
+        background: url('../img/soccer/affCup/bg-affCup-01.png') 50% 0 / 540px 653px repeat-y;
+        @include clearfix();
+        position: relative;
+        padding-bottom: 10px;
+        @include breakpoint(xs){
+            margin-left: -10px;
+            margin-right: -10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include breakpoint(sm){
+            padding: 10px;
+            padding-top: 0;
+            border: 1px solid #ddd;
+        }
+    }
+    .home-title {
+        @include clearfix();
+    }
+    .time-title {}
+    .content {
+        padding-top: 10px;
+        &.static-html {
+            .team {
+                span {
+                    font-size: 14px !important;
+                }
+            }
+        }
+    }
+    .item {
+        font-size: 0;
+        margin-bottom: 10px;
+        position: relative;
+        background: rgba(white,.8) url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat;
+        border: 1px solid rgba(0,79,159,0.50);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.10);
+        border-radius: 3px;        
+        >a {
+            @include clearfix();
+            display: block;
+            padding: 10px 0 16px;
+        }
+        >a:hover {
+            background: rgba($affCup-color, 0.05);
+        }
+        >a:hover {}
+        .info {
+            @include font(13,
+            16,$normal);
+            
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .team {
+            display: inline-block;
+            width: calc(50% - 25px);
+            display: inline-block;
+            vertical-align: top;
+            height: 24px;
+            span {
+                overflow: hidden;
+                height: 24px;
+                display: inline-block;
+                @include breakpoint(0,$iphone-5) {
+                    @include font(13,24);
+                    max-width: 85px;
+                }
+                @include breakpoint(321px) {
+                    max-width: 100px;
+                    @include font(16,24);
+                }
+                @include breakpoint($iphone-6-plus) {
+                    max-width: 110px;
+                }
+            }
+        }
+        .info,
+        .team,
+        {}
+        i.flag {
+            vertical-align: top;
+            @include breakpoint($iphone-5) {
+                transform: scale(.8333333333);
+            }
+        }
+        .team.home {
+            text-align: right;
+            padding-right: 1px;
+            @include breakpoint($iphone-6-plus) {
+                i {
+                    margin-left: 3px;
+                }
+            }
+        }
+        .team.away {
+            padding-left: 1px;
+            @include breakpoint($iphone-6-plus) {
+                i {
+                    margin-right: 3px;
+                }
+            }
+        }
+        .sco {
+            @include font(16,
+            24);
+            width: 50px;
+            text-align: center;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .number {
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 3px 10px;
+            border-radius: 3px 0 3px;
+            border: 1px solid rgba(0, 79, 159, 0.5);
+            border-top: none;
+            border-left: none;
+        }
+        .round,
+        .daytime,
+        {}
+        .time {
+            font-size: 16px;
+        }
+    }
+    .btn-wrap {
+        text-align: center;
+        background: rgba(255,255,255,0.70);
+        border: 1px solid rgba(0,79,159,0.30);
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.10);
+        border-radius: 3px;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+    .match-live {
+        .number {
+            background-color: red;
+            -webkit-animation: livebg-blink 1s infinite;
+            -moz-animation: livebg-blink 1s infinite;
+            -o-animation: livebg-blink 1s infinite;
+            animation: livebg-blink 1s infinite;
+            color: #fff;
+        }
+    }
+    .has-pen {
+        position: relative;
+        >a {
+            padding-bottom: 25px;
+        }
+        .pen {
+            font-size: 14px;
+            color: #fff;
+            width: 60px;
+            display: inline-block;
+            text-align: center;
+            margin: 0 auto;
+            position: absolute;
+            top: 60px;
+            left: calc(50% - 30px);
+        }
+    }
+    .bookmark {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        background-color: transparent;
+        border: none;
+        background-color: rgba(255, 255, 255, 0);
+        border-radius: 0 3px 0 3px;
+        border: 1px solid rgba(0, 79, 159, 0.5);
+        border-top: none;
+        border-right: none;
+    }
+    .no-bookmark {
+        .bookmark {
+            display: none;
+        }
+    }
+}
+
+// ==========
+.e-group {
+    .home-title {
+        span {}
+    }
+    .content {
+        // background: #fff url('../img/soccer/affCup/bg-affCup-02.png') center center no-repeat;
+        background-size: 540px 873px;
+        @include clearfix();
+        font-size: 0;
+        background: url('../img/soccer/affCup/bg-affCup-01.png') 50% 0 / 540px 653px repeat-y;
+        padding-top: 5px;
+        border-top: 1px solid #ddd;
+        @include breakpoint(xs){
+            margin-top: 10px;
+            margin-left: -10px;
+            margin-right: -10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        @include breakpoint(sm){
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 10px;
+        }
+    }
+    .item {
+        margin-bottom: 20px;
+        overflow: hidden;
+        width: calc(50% - 5px);
+        margin-bottom: 50px;
+        position: relative;
+        position: relative;
+        @include breakpoint(sm) {
+            width: calc(50% - 10px);
+        }
+        float: left;
+        &:nth-child(2n) {
+            float: right;
+        }
+        &:nth-child(2n+1) {
+            float: left;
+            clear: left;
+        }
+    }
+    .name {
+        height: 25px;
+        line-height: 25px;
+        text-transform: uppercase;
+        font-weight: bold;
+        margin-bottom: 5px;
+        span {
+            font-size: 16px;
+            margin-right: 5px;
+        }
+    }
+    .nations {
+        i {
+            vertical-align: top;
+            display: inline-block;
+            margin-right: 10px;
+            margin-top: 2px;
+            margin-left: 2px;
+            border-radius: 50%;
+            border: 1px solid #2B93D1;
+        }
+        a {
+            text-transform: uppercase;
+            background: rgba($affCup-color, .7  ) url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat;
+            display: block;
+            margin-bottom: 10px;
+            @include font(16,30);
+            color: #fff;
+            border-radius: 3px;
+            @include breakpoint(0, $iphone-5){
+                @include font(14,30);
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &:hover {
+                background-color: rgba($affCup-color, 1);
+                border-radius: 3px;
+            }
+        }
+    }
+    .show-more {
+        position: absolute;
+        top: 3px;
+        right: 2px;
+        display: none;
+    }
+}
+
+// ==========
+.e-table {
+    padding-bottom: 30px;
+    font-size: 0;
+    a {}
+    .content {}
+    .cate-title {}
+    .row {
+        overflow: hidden;
+        @include clearfix();
+        height: 46px;
+        line-height: 46px;
+        display: block;
+        border-top: 1px solid rgba(#2B93D1, 0.30);
+        text-align: right;
+        >* {
+            display: inline-block;
+            vertical-align: top;
+        }
+        &.title {}
+        &:first-child {
+            border-top: none;
+            >div {
+                color: #777;
+            }
+        }
+    }
+    .image {
+        width: 30px;
+        float: left;
+        text-align: left;
+        i {
+            vertical-align: top;
+            margin-top: 12px; // transform: scale(1.25);
+        }
+    }
+    .team {
+        float: left;
+        padding-left: 5px;
+        overflow: hidden;
+        text-align: left;
+        width: 95px;
+        font-size: 14px;
+        a {
+            display: block;
+        }
+    }
+    .pts {
+        font-size: 16px;
+        text-align: center;
+        width: 19px;
+        @include breakpoint($iphone-6) {
+            width: 25px;
+        }
+        @include breakpoint($iphone-6-plus) {
+            width: 30px;
+        }
+    }
+    .show-more {
+        text-align: center;
+        padding-right: 5px;
+        display: inline-block;
+        width: 100%;
+        font-size: 16px;
+        background: rgba(#00608E , .8) url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat-x;
+        border: 1px solid #2B93D1;
+        border-radius: 3px;
+        i {
+            vertical-align: top;
+            margin-top: 4px;
+            display: none;
+        }
+        span {
+            display: inline-block;
+            height: 30px;
+            line-height: 28px;
+            font-size: 16px;
+            color: #fff;
+        }
+        &:hover {
+            span {
+                text-decoration: underline;
+            }
+            i {
+            }
+        }
+    }
+    .current-team {
+        background-color: rgba($affCup-color, .1);
+    }
+    .live-team {
+        .team a {
+            color: red;
+            -webkit-animation: live-colorBlink 1s infinite;
+            -moz-animation: live-colorBlink 1s infinite;
+            -o-animation: live-colorBlink 1s infinite;
+            animation: live-colorBlink 1s infinite;
+        }
+    }
+}
+
+// ==========
+.e-team {
+    font-size: 16px;
+    padding-bottom: 30px;
+    .content {
+        background: url('../img/soccer/affCup/bg-affCup-01.png') right 0 repeat-y;
+        background-size: cover;
+        @include clearfix();
+        @include breakpoint(xs){
+            padding: 10px;
+            margin-left: -10px;
+            margin-right: -10px;
+        }
+        @include breakpoint(sm){
+            padding: 10px;
+        }
+    }
+    .item {
+        border-radius: 3px;
+        margin-bottom: 5px;
+        height: 40px;
+        line-height: 40px;
+        display: block;
+        padding: 0 10px;
+        position: relative;
+        background-color: rgba(255, 255, 255, .7);
+        border: 1px solid #ccc;
+        &:after {
+            content: '';
+            width: 16px;
+            height: 30px;
+            float: right;
+            display: inline-block;
+            margin-top: 5px;
+            background-image: url('../img/soccer/affCup/affCup-sprite-'+$affCup-version+'.png');
+            background-size: ($affCup-w + px) ($affCup-h + px);
+            background-position: -45px -297px;
+        }
+        &:hover {
+            background-color: rgba(255, 255, 255, .5);
+        }
+    }
+    i {
+        vertical-align: top;
+        margin-top: 8px;
+        margin-right: 5px;
+    }
+    .name {
+        text-transform: uppercase;
+    }
+}
+
+// ==========
+@-webkit-keyframes livebg-blink {
+    0%,
+    49% {
+        background-color: rgba(255, 0, 0, .7)
+    }
+    100%,
+    50% {
+        background-color: rgba(255, 0, 0, .4)
+    }
+}
+
+// ==========
+
+
+// > spectify page
+
+.bg-holder {
+    @include breakpoint(sm) {
+        margin-top: 10px;
+    }
+}
+
+.e-home {
+    .e-news,
+    {
+        @include clearfix();
+        margin-bottom: 40px;
+    }
+    .e-list {
+        padding-bottom: 20px !important;
+        margin-bottom: 40px;
+    }
+}
+
+.e-home,
+.e-groupDetail,
+.e-bookmark,
+.e-schedule {
+    .match-highlight {
+        .time-title {}
+        &.item .team,
+        &.item .sco,
+        &.item .round,
+        &.item .number,
+        {}
+        &.item {
+            background-image: linear-gradient(90deg, rgba(#004EA0, .3) 0%, rgba(#00D5FF, .3) 100%);            border: 1px solid rgba(0,79,159,0.50);
+            .number{
+                // border-right: 1px solid #ffc107;
+                // border-bottom: 1px solid #ffc107;
+            }
+        }
+        .bookmark{
+            // border-left: 1px solid #ffc107;
+            // border-bottom: 1px solid #ffc107;
+        }
+        .content {
+            border-top: none;
+        }
+    }
+}
+
+.e-schedule {
+    .is-today {
+        position: relative;
+    }
+    #is-today {
+        position: absolute;
+        left: 0;
+        @include breakpoint(xs) {
+            top: -60px;
+        }
+        @include breakpoint(sm) {
+            top: -10px;
+        }
+    }
+    .e-list__content {
+    }
+    .item {
+        // border: 1px solid #998B31;
+        .number {
+            // border: 1px solid #998B31;
+            border-top: none;
+            border-left: none;
+        }
+    }
+    .bookmark {
+        // border: 1px solid #998B31;
+        border-top: none;
+        border-right: none;
+    }
+}
+
+.e-teamDetail {
+    .is-today {
+        padding-top: 0px;
+        .time-title {}
+        .item .team,
+        .item .sco,
+        .item .round,
+        .item .number,
+        {}
+        .item {
+            >a {
+                background-color: rgba($affCup-color, .2) !important;
+            }
+        }
+        .content {}
+    }
+    .time-title {
+        color: #333;
+        background-color: #528bae;
+        margin-bottom: 5px;
+    }
+    .e-list {
+        padding: 0;
+        background-color: transparent;
+        .item {
+            .number {
+                background-color: $affCup-color;
+                color: #fff;
+            }
+            >a {
+                border-radius: 3px;
+                border: 1px solid #eee;
+                background-color: #f7f7f7;
+            }
+            span {
+                color: $affCup-color;
+            }
+        }
+        .content {
+            padding-bottom: 10px;
+        }
+        .bookmark {
+            background-color: $affCup-color;
+            i {
+                background-position: -50px -470px;
+            }
+            &.is-active {
+                i {
+                    background-position: -70px -470px;
+                }
+            }
+        }
+    }
+    .cate-title{
+        i{
+            display: none;
+        }
+    }
+}
+
+.e-groupDetail {
+    .e-table-wrap {
+        // background: url('../img/soccer/affCup/bg-affCup-02.png') center top repeat-y;
+        background-size: 540px 873px;
+        margin-bottom: 30px;
+        @include clearfix();
+        border-radius: 3px 3px 0 0;
+        @include breakpoint(sm) {
+            background-color: #fff;
+        }
+        @include breakpoint(sm) {}
+    }
+    .e-list,
+    .e-team {
+        position: relative;
+        padding-bottom: 30px;
+        .cate-title {
+            text-transform: uppercase;
+            z-index: 10;
+            display: inline-block;
+            height: 30px;
+            margin-bottom: 5px;
+            span {
+                @include font(16,
+                30);
+                display: inline-block;
+                position: relative;
+            }
+            i {
+                vertical-align: top;
+                margin-top: 1px;
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+
+.e-matchDetail,
+.e-teamDetail {
+    .e-table {
+        padding: 0px;
+        background-color: transparent;
+        .content {
+            margin-top: -15px;
+        }
+        .team {
+            a {
+                color: $affCup-color;
+            }
+        }
+        .pts {
+            color: $affCup-color;
+        }
+        .show-more {
+            background-color: #f7f7f7;
+            border: 1px solid #eee;
+            i {}
+            span {
+                color: $affCup-color;
+            }
+            &:hover {
+                background-color: $affCup-color;
+                span {
+                    color: #fff;
+                }
+            }
+        }
+    }
+    .e-list,
+    .e-table,
+    {
+        margin-bottom: 40px;
+        .item{
+            border: 1px solid $affCup-color;
+            > a{
+                background-color: #fff !important;
+            }
+        }
+        .bookmark{
+            border-left: 1px solid $affCup-color;
+            border-bottom: 1px solid $affCup-color;
+        }
+        .number{
+            border: none !important;
+        }
+    }
+    .e-table,
+    .s-detail__formattion{
+        position: relative;
+    }
+}
+
+
+// > cate-title
+.e-bookmark ,
+.e-schedule {
+    .cate-title{
+        text-align: center;
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        span {
+            &:before {
+                background-image: url('../img/soccer/affCup/affCup-sprite-'+$affCup-version+'.png');
+                background-size: ($affCup-w + px) ($affCup-h + px);
+                background-position: -50px 0;
+                content: '';
+                width: 24px;
+                height: 24px;
+                display: inline-block;
+                vertical-align: top;
+                margin-top: 8px;
+                margin-right: 5px;
+            }
+            @include breakpoint(xs) {
+                padding-left: 10px;
+                padding-right: 20px;
+            }
+            @include breakpoint(sm) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            border-radius: 20px;
+            background-color: $affCup-color;
+            height: 40px;
+            display: inline-block;
+            color: #fff;
+            @include font(16,40);
+        }
+    }
+}
+
+.e-matchDetail,
+.e-teamDetail {
+    .cate-title {
+        padding-left: 10px;
+        position: relative;
+        span {
+            text-transform: uppercase;
+            z-index: 10;
+            display: inline-block;
+            border: 1px solid $affCup-color;
+            border-radius: 100px;
+            height: 30px;
+            padding: 0 15px;
+            padding-left: 36px;
+            background: $affCup-color url('../img/soccer/affCup/affCup-sprite-'+$affCup-version+'.png');
+            background-size: ($affCup-w + px) ($affCup-h + px);
+            background-repeat: no-repeat;
+            background-position: -44px 2px;
+            @include font(16,
+            30);
+            display: inline-block;
+            position: relative;
+            color: #fff;
+        }
+        &:before{
+            position: absolute;
+            height: 1px;
+            background-color: $affCup-color;
+            content: '';
+            left: 0;
+            right: 0;
+            top: 14px;
+        }
+    }
+    .e-list,
+    .e-table,
+    {
+        margin-bottom: 40px;
+        .cate-title{
+            margin-bottom: 10px;
+        }
+    }
+    .e-table{
+        .cate-title{
+            position: absolute;
+            top: 8px;
+            padding-left: 0;
+        }
+    }
+}
+
+.e-groupDetail{
+    .cate-title{
+        z-index: 10;
+        display: inline-block;
+        border-radius: 100px;
+        height: 30px;
+        padding: 0 15px;
+        padding-left: 36px;
+        background: $affCup-color url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat-x;
+        color: #fff;
+        position: relative;
+        i{
+            display: none;
+        }
+        span {
+            @include font(16,30);
+            display: inline-block;
+            position: relative;
+            text-transform: uppercase;
+        }
+        &:before{
+            background-image: url(../img/soccer/affCup/affCup-sprite-1.0.0.png);
+            background-size: 100px 1000px;
+            background-position: -50px 0;
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            top: 3px;
+            left: 7px;
+        }
+    }
+}
+
+.e-table {
+    position: relative;
+    .cate-title {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        z-index: 10;
+        display: inline-block;
+        border-radius: 100px;
+        padding-left: 36px;
+        background: $affCup-color url(../img/soccer/affCup/pattern_nav.png) 0 0 repeat-x;
+        color: #fff;
+        i{
+            display: none;
+        }
+        span {
+            @include font(16,30);
+            display: inline-block;
+            position: relative;
+            text-transform: uppercase;
+        }
+        &:before{
+            background-image: url(../img/soccer/affCup/affCup-sprite-1.0.0.png);
+            background-size: 100px 1000px;
+            background-position: -50px 0;
+            content: '';
+            width: 24px;
+            height: 24px;
+            display: inline-block;
+            vertical-align: top;
+            position: absolute;
+            top: 3px;
+            left: 7px;
+        }
+    }
+}
+
+
+// >  animation
+@-webkit-keyframes live-colorBlink {
+    0%,
+    49% {
+        color: rgba(255, 0, 0, 1)
+    }
+    100%,
+    50% {
+        color: rgba(255, 0, 0, .6)
+    }
+}
+
+// ==========
+@-webkit-keyframes livebg-blink {
+    0%,
+    49% {
+        background-color: rgba(255, 0, 0, .7)
+    }
+    100%,
+    50% {
+        background-color: rgba(255, 0, 0, .4)
+    }
+}
+
+// >  CODER REQUEST CODE
+.lazy {
+    width: 0;
+    height: 0;
+    float: left;
+}
+
+.hidden {
+    display: none !important;
+}

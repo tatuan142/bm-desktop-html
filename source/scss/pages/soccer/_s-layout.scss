@@ -1,0 +1,46 @@
+// ====================================
+// soccer's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* layout
+*/
+
+// > layout 
+.main-content {
+    padding-bottom: 20px;
+}
+.soccer_page {
+    .l-grid {
+        margin: 0 auto;
+        @include clearfix;
+        width: 970px;
+        position: relative;
+    }
+    background-color: #E7E7E7;
+    .header,
+    .footer {
+        background-color: #fff;
+    }
+    .s-grid__200 {
+        width: 200px;
+        float: left;
+        margin-right: 10px;
+    }
+    .s-grid__500 {
+        background-color: #fff;
+        width: 500px;
+        float: left;
+        padding: 10px;
+    }
+    .s-grid__250 {
+        width: 250px;
+        float: right;
+    }
+    #soccer-widget-holder {
+        width: 970px;
+        height: 100px;
+    }
+}

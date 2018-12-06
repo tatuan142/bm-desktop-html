@@ -1,0 +1,121 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* version 4
+*/
+
+// >  version 4
+.breadcrumbs {
+    height: 30px;
+    background-color: #f9f9f9;
+    width: 100%;
+    margin-bottom: 15px;
+    padding-left: 10px;
+    font-size: 0;
+    text-align: right;
+    border-left: 5px solid $first-color;
+    @include clearfix;
+    .cate {
+        @include font(20, 30);
+        display: inline-block;
+        color: $first-color;
+        text-transform: uppercase;
+        float: left;
+        &:hover {
+            color: darken($first-color, 0%);
+        }
+    }
+    .split {
+        background-position: -0px -1802px;
+        padding: 0 10px;
+        margin: 0 5px;
+        background-image: url('../img/arrow-'+$arrow-version+'.png');
+        background-size: $arrow-w + px $arrow-h + px;
+        background-position: 5px -1067px;
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 20px;
+        height: 30px;
+        text-indent: -999em;
+        vertical-align: top;
+        float: left;
+    }
+    .hot-latest {
+        margin: 0;
+        height: 24px;
+        line-height: 24px;
+        display: inline-block;
+        vertical-align: top;
+        position: relative;
+        font-size: 0;
+        a {
+            background-color: #eee;
+            padding: 0 10px;
+            @include font(14,30);
+            height: 30px;
+            display: inline-block;
+            color: #777;
+            margin-left: 1px;
+            color: #db562b;
+            text-transform: uppercase;
+            width: 60px;
+            text-align: center;
+            &:hover,
+            &.is-active{
+                color: #fff !important;
+                background-color: $first-color !important;
+                z-index: 10;
+                
+            }
+        }
+    }
+    .page {
+        height: 24px;
+        line-height: 24px;
+        margin-top: 3px;
+        padding: 0 10px;
+        font-size: 14px;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        text-align: center;
+        display: inline-block;
+        color: #555;
+        font-weight: bold;
+    }
+    .follow{
+        display: inline-block;
+        height: 30px;
+        float: left;
+        margin-left: 5px;
+        position: relative;
+        display: inline-block;
+        margin-left: 7px;
+        i{
+            vertical-align: top;
+            margin-top: 5px;
+        }
+    }
+    .location{
+        height: 24px;
+        float: right;
+        border: 1px solid #ddd;
+        width: 100px;
+        border-radius: 3px;
+        background-color: #fff;
+        margin-top: 3px;
+        margin-right: 3px;
+        select{
+            border: none;
+            width: 100%;
+            background-color: #fff;
+            height: 22px;
+            line-height: 22px;
+            float: left;
+            font-size: 14px;
+        }
+    }
+}

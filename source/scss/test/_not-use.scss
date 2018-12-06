@@ -1,0 +1,502 @@
+// >  NOT USE STYLE ANYMORE
+// >> media filter
+// note : used at "07-video.html"
+// !! NOT USE
+.media-filter {
+    width: 970px;
+    background: #fff url(../img/block__header.png) left -205px repeat-x;
+    height: 36px;
+    z-index: 1;
+    margin-bottom: 12px;
+    a {
+        @include font(16, 36);
+        display: inline-block;
+        margin: 0;
+        margin-right: 20px;
+        padding: 0 3px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        height: 36px;
+    }
+    a:hover,
+    .is-active {
+        color: $second-color;
+        border-bottom: 3px solid $second-color;
+    }
+}
+
+// >> search filter
+// note : used at "04-search.html"
+// !! NOT USE
+.search-filter {
+    background: #fff url(../img/block__header.png) left -205px repeat-x;
+    height: 36px;
+    margin-bottom: 15px;
+    position: relative;
+    a {
+        @include font(16, 36);
+        display: inline-block;
+        margin: 0 30px 0 0;
+        padding: 0 3px;
+        text-transform: uppercase;
+        box-sizing: border-box;
+        height: 36px;
+    }
+    a:hover,
+    .is-active {
+        color: $second-color;
+        border-bottom: 3px solid $second-color;
+    }
+    .result {
+        position: absolute;
+        top: 0;
+        right: 0px;
+        @include font(12, 36, $normal);
+        color: #555;
+    }
+}
+
+// >> media box
+// note : slider image in sidebar 
+// !! NOT USE !!
+.media-box {
+    .story__heading {
+        max-height: 44px;
+        overflow: hidden;
+    }
+    .media__content {
+        height: 274px;
+        overflow: hidden;
+    }
+    .bx-wrapper {
+        position: relative;
+    }
+    .bx-controls-direction {
+        position: absolute;
+        width: 330px;
+        a {
+            width: 50px;
+            height: 50px;
+            background-image: url(../img/sprites.png);
+            display: block;
+            position: absolute;
+            top: -190px;
+            z-index: 60;
+            background-size: 400px 800px;
+            display: block;
+            text-indent: -999em;
+            opacity: .7;
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+    .bx-prev {
+        background-position: -50px -400px;
+        left: 0px;
+    }
+    .bx-next {
+        background-position: -50px -450px;
+        right: 0px;
+    }
+}
+
+// >> player story 
+// note : 07 - media
+.player {
+    &-story {
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        @include clearfix();
+        position: relative;
+        .story__thumb {
+            width: 610px;
+            height: 370px;
+            @include runaround(left, 0, 30, 0, 0);
+        }
+        .story__heading {
+            @include font(28, 32);
+            margin-bottom: 10px;
+        }
+        .story__meta {
+            @include font(15, 20, $normal);
+            margin-left: 640px;
+            margin-bottom: 15px;
+        }
+        .story__social {
+            font-size: 0;
+            height: 50px;
+            a {
+                margin-right: 10px;
+            }
+            i {
+                background-size: 320px 640px;
+                width: 40px;
+                height: 40px;
+            }
+            .spr--s-circlelike {
+                background-position: 0 -480px;
+                &:hover {
+                    background-position: 0 -520px;
+                }
+            }
+            .spr--s-circlefacebook {
+                background-position: -40px -480px;
+                &:hover {
+                    background-position: -40px -520px;
+                }
+            }
+            .spr--s-circlezalo {
+                background-position: -80px -480px;
+                &:hover {
+                    background-position: -80px -520px;
+                }
+            }
+        }
+        .story__more {
+            background-color: transparent;
+            border: none;
+            padding: 0 7px 2px 10px;
+            height: 32px;
+            border: 1px solid #fff;
+            border-radius: 3px;
+            position: absolute;
+            bottom: 10px;
+            right: 0;
+            @include font(13, 13);
+            span {
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                color: #DB562B;
+                text-transform: uppercase;
+                margin-right: 3px;
+            }
+            i {
+                vertical-align: top;
+                margin-top: 6px;
+            }
+            &:hover {
+                border: 1px solid #eee;
+            }
+        }
+    }
+}
+
+.wide-screen {
+    .story__thumb {
+        width: 970px;
+        height: 590px;
+        @include runaround(none, 3, 0, 20, 0);
+        @include clearfix();
+    }
+    .story__heading {
+        @include font(30, 34);
+        margin-bottom: 10px;
+    }
+    .story__meta {
+        margin-left: 0px;
+        margin-bottom: 15px;
+    }
+    .story__more {
+        bottom: 30px;
+    }
+}
+
+
+/* >> utilities Info  */
+
+.modal,
+.info-full .tools__panel {
+    &-title {
+        font-size: 20px;
+        font-size: 2rem;
+        margin-bottom: 15px;
+        border-bottom: 2px solid #E6E6E6;
+        text-transform: uppercase;
+    }
+    &-content {
+        max-height: 500px;
+        overflow: auto;
+    }
+    &-content::-webkit-scrollbar-button {
+        width: 0px;
+        height: 0px;
+    }
+    &-content::-webkit-scrollbar {
+        width: 5px;
+        height: 5px;
+    }
+    &-content::-webkit-scrollbar-thumb {
+        background: rgba(0, 0, 0, 0.3);
+        border: 0px none #000;
+        border-radius: 50px;
+    }
+    table {
+        width: 100%;
+        border-color: #ccc !important;
+        border: none;
+        background-color: #F7F7F7;
+        td,
+        tr,
+        th {
+            border-color: #ccc;
+            padding: 5px 10px;
+        }
+        th {
+            background-color: #15a1b1;
+            color: white;
+        }
+    }
+    .tr-date {
+        td {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+        > strong {
+            color: $first-color;
+        }
+    }
+    #modal-content-location {
+        label {
+            &:before {
+                margin-right: 10px;
+            }
+        }
+    }
+}
+
+#stock-modal {
+    .modal-title {
+        &:before {
+            content: 'Chứng khoán';
+        }
+    }
+    #modal-content-location {
+        label {
+            &:before {
+                content: 'Sàn chứng khoán:';
+            }
+        }
+    }
+}
+
+#lottery-modal {
+    .modal-title {
+        &:before {
+            content: 'Kết quả xổ số';
+        }
+    }
+    #modal-content-location {
+        label {
+            &:before {
+                content: 'Tỉnh/Thành phố:';
+            }
+        }
+    }
+}
+
+#cinema-modal {
+    .modal-title {
+        &:before {
+            content: 'Lịch chiếu phim';
+        }
+    }
+    #modal-content-location {
+        &>label {
+            &:before {
+                content: 'Tỉnh / Thành phố:';
+            }
+        }
+    }
+}
+
+#channel-modal {
+    .modal-title {
+        &:before {
+            content: 'Lịch truyền hình';
+        }
+    }
+    #modal-content-location {
+        &>label {
+            &:before {
+                content: 'Kênh truyền hình:';
+            }
+        }
+    }
+}
+
+#horoscope-modal {
+    .modal-title {
+        &:before {
+            content: 'Tử vi cung hoàng đạo';
+        }
+    }
+}
+
+#energy-modal {
+    .modal-title {
+        &:before {
+            content: 'Giá dầu thô';
+        }
+    }
+}
+
+#exchange-modal {
+    .modal-title {
+        &:before {
+            content: 'Tỷ giá ngoại tệ';
+        }
+    }
+}
+
+#gold-modal {
+    .modal-title {
+        &:before {
+            content: 'Giá vàng';
+        }
+    }
+}
+
+
+// >> js 
+
+/* > show Login */
+// location        : all site 
+
+// function showLogin() {
+//     var $modal = $('#login-wrap');
+//     var modalHtml =
+//         '<div id="login-modal" class="modal">' +
+//             '<h4>Đăng nhập</h4>' +
+//             '<p class="content-modal">' +
+//                 '<button class="login-fb" onclick="javascript:helloLogin(\'facebook\')">' +
+//                     '<i class="spr spr--s-circlefacebook"></i>' +
+//                     '<span>Đăng nhập tài khoản Facebook</span>' +
+//                 '</button>' +
+//                 '<button class="login-zalo" onclick="javascript:helloLogin(\'google\')">' +
+//                     '<i class="spr spr--s-circlezalo"></i>' +
+//                     '<span>Đăng nhập tài khoản Zalo</span>' +
+//                 '</button>' +
+//             '</p>' +
+//             '<a href="javascript:void(0)" class="close-modal">Close</a>' +
+//         '</div>';
+//     if ($modal.length == 0) {
+//         $('body').append($('<div>', { id: 'login-wrap', class: 'blocker' }));
+//         $modal = $('#login-wrap');
+//         $modal.html(modalHtml);
+//     } else {
+//         $modal.html(modalHtml);
+//     }
+    
+//     $('.close-modal').unbind('click');
+//     $('.close-modal').on('click', function() {
+//         $modal.remove();
+//     });
+//     $('.blocker').unbind('click');
+//     $('.blocker').on('click', function() {
+//         $modal.remove();
+//     });
+// }
+
+// /*  popup  */
+// $('.header__action .login').click(function() {
+//     showLogin();
+// });
+
+
+
+
+
+
+
+// >  ELEMENTS PAGE
+.hidden {
+    display: none;
+}
+
+.skin-title {
+    font-weight: bold;
+    padding: 5px 10px
+}
+
+.elements-page {
+    .demo-title {
+        margin-top: 70px;
+        padding-left: 70px;
+        position: relative;
+        &:before {
+            content: "";
+            width: 50px;
+            height: 30px;
+            background-color: #E64C3C;
+            position: absolute;
+            left: 0;
+        }
+    }
+    h3.demo-title {
+        background-color: #eee;
+    }
+    h4.demo-title {
+        text-decoration: line-through;
+        border: 1px solid #eee;
+        display: inline-block;
+        background-color: #ddd;
+    }
+}
+
+.fill-up {
+    display: block;
+    background-color: #999;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    @include clearfix;
+}
+
+.demo-zone {
+    .content-visible {
+        position: relative;
+        background-color: #eee;
+        &:before {
+            content: 'header';
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+    .main-nav {
+        position: relative;
+        &:before {
+            content: 'navigation';
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+    .hamburger-nav {
+        position: relative;
+        background-color: #ddd;
+        &:before {
+            content: 'hamburger navigation';
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+    #footer {
+        position: relative;
+        background-color: #eee;
+        &:before {
+            content: 'footer' !important;
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: 1;
+        }
+    }
+}

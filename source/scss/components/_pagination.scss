@@ -1,0 +1,119 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* next ~ previous BUTTON
+* pagination
+*/
+
+
+/* > next ~ previous BUTTON */
+
+.control {
+    text-align: center;
+    font-size: 0;
+    @at-root .timeline + &{
+        margin-top: 20px;
+    }
+    a {
+        width: 90px;
+        height: 30px;
+        font-size: 0;
+        padding: 0;
+        display: inline-block;
+        margin: 0 5px;
+    }
+    i {
+        display: inline-block;
+        vertical-align: top;
+        margin-top: 6px;
+    }
+    span {
+        display: inline-block;
+        @include font(12, 28, $normal);
+        text-transform: uppercase;
+    }
+    &__prev {
+        border-top-left-radius: 15px;
+        border-top-right-radius: 3px;
+        border-bottom-right-radius: 3px;
+        border-bottom-left-radius: 15px;
+        border: 1px solid #ccc;
+        background-color: transparent;
+        i {
+            margin-right: 3px;
+        }
+        &:hover {
+            border: 1px solid #999;
+            color: $text-color;
+        }
+        span {
+            padding-right: 5px;
+        }
+    }
+    &__next {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 15px;
+        border-bottom-right-radius: 15px;
+        border-bottom-left-radius: 3px;
+        background-color: $first-color;
+        border: 1px solid $first-color;
+        color: #fff;
+        i {
+            margin-left: 3px;
+        }
+        &:hover {
+            background-color: darken($first-color,5%);
+            border: 1px solid darken($first-color,5%);
+            color: #fff;
+        }
+        span {
+            padding-left: 5px;
+        }
+    }
+    .is-first{
+        > a{
+            width: 110px;
+            border-radius: 15px;
+        }
+    }
+}
+
+/* > pagination */
+.pagination {
+    margin: 20px 0;
+    padding-left: 4px;
+    text-align: center;
+    span {
+        display: inline-block;
+    }
+    a {
+        float: left;
+        padding: 0;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        border-radius: 20px;
+        text-decoration: none;
+        display: inline-block;
+        text-align: center;
+        margin: 0px 7px;
+        font-size: 1.8rem;
+        font-weight: bold;
+        display: inline;
+    }
+    a:hover,
+    a:focus,
+    a.active {
+        background-color: #ed6841;
+        color: #fff;
+    }
+    .active {
+        color: #fff;
+        cursor: default;
+    }
+}
+

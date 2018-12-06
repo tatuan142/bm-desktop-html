@@ -1,0 +1,223 @@
+// ====================================
+// sprite style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* --- soccer
+* --- flag
+* icon from mobile sprite
+*/
+
+// > --- soccer
+.logo-color{
+    background-image: url(../img/soccer/d-logo-soccer-1.0.0.png);
+    background-size: 160px 36px;
+}
+.socc {
+    background-image: url('../img/soccer/soccer-sprite-'+$soccer-version+'.png');
+    display: inline-block;
+    vertical-align: middle;
+    background-size: ($soccer-w + px) ($soccer-h + px);
+    &--back-page{
+        background-position: -50px -1800px;
+        width: 30px;
+        height: 50px;
+    }
+    &--match {
+        background-position: -26px -250px;
+        width: 24px;
+        height: 24px;
+    }
+    &--league {
+        background-position: -26px -300px;
+        width: 24px;
+        height: 24px;
+    }
+    &--search {
+        background-position: -26px -350px;
+        width: 24px;
+        height: 24px;
+    }
+    &--cate {
+        background-position: -26px -400px;
+        width: 24px;
+        height: 24px;
+    }
+    &--live {
+        background-position: -26px -450px;
+        width: 24px;
+        height: 24px;
+    } 
+    &--normal-cup {
+        background-position: -50px -1500px;
+        width: 24px;
+        height: 24px;
+    } 
+    &--matchBookmark {
+        background-position: -24px -2250px;
+        width: 24px;
+        height: 24px;
+    } 
+    .user-board &--matchBookmark {
+        background-position: -0px -2250px;
+        width: 24px;
+        height: 24px;
+    } 
+    &--wcBookmark {
+        background-position: -74px -2250px;
+        width: 24px;
+        height: 24px;
+    } 
+    .user-board &--wcBookmark {
+        background-position: -50px -2250px;
+        width: 24px;
+        height: 24px;
+    } 
+    // --------------
+    &--pGoalMiss {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -500px;
+        .nmode & {
+            background-position: -50px -500px;
+        }
+    }
+    &--pGoal {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -550px;
+        .nmode & {
+            background-position: -50px -550px;
+        }
+    }
+    &--goal {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -550px;
+        .nmode & {
+            background-position: -50px -550px;
+        }
+    }
+    &--substitute {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -600px;
+        .nmode & {
+            background-position: -50px -600px;
+        }
+    }
+    &--ogGoal {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -650px;
+        .nmode & {
+            background-position: -50px -650px;
+        }
+    }
+    &--penGoal {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -700px;
+        .nmode & {
+            background-position: -50px -700px;
+        }
+    }
+    &--penMissGoal {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -750px;
+        .nmode & {
+            background-position: -50px -750px;
+        }
+    }
+    &--yellowCard {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -800px;
+    }
+    &--redCard {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -850px;
+    }
+    &--doubleCard {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -900px;
+    }
+    &--out{
+        width: 20px;
+        height: 20px;
+        background-position: -50px -550px;
+    }
+    &--in{
+        width: 20px;
+        height: 20px;
+        background-position: -50px -600px;
+    }
+    &--assists{
+        width: 20px;
+        height: 20px;
+        background-position: -50px -700px;
+    }
+    &--appearances{
+        width: 20px;
+        height: 20px;
+        background-position: -50px -750px;
+    }
+    &--position{
+        width: 20px;
+        height: 20px;
+        background-position: -50px -800px;
+    }
+    // --------------
+    &--clock {
+        width: 50px;
+        height: 50px;
+        background-position: -0px -2000px;
+    }
+    &--team {
+        width: 50px;
+        height: 50px;
+        background-position: -0px -2050px;
+    }
+    &--presentation {
+        width: 50px;
+        height: 50px;
+        background-position: -0px -2100px;
+    }
+    &--teamInfo {
+        width: 50px;
+        height: 50px;
+        background-position: -0px -2150px;
+    }
+    // --------------
+    &--soccerPlayer {
+        width: 36px;
+        height: 36px;
+        background-position: -50px -2000px;
+    }
+
+
+    // --------------
+    &--back {
+        background-position: -0px -1650px;
+        width: 16px;
+        height: 24px;
+        .nmode & {
+            background-position: -50px -1650px;
+        }
+    } 
+    &--bookmark{
+        background-position: -50px -850px;
+        width: 20px;
+        height: 20px;
+    }
+    .is-active &--bookmark{
+        background-position: -50px -900px;
+    }
+}
+
+

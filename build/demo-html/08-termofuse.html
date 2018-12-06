@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>08-termofuse.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop-styles.css">
+    <!--[if lt IE 9]>
+        <script src="../Jscripts/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="l-grid">
+                <a href="01-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__user">
+                    <div class="login hidden">
+                        <button href="#" class="uName">
+                            <i class="spr spr--user"></i>
+                        </button>
+                        <div class="login-board">
+                            <span class="desc">Đăng nhập để trải nghiệm thêm những tính năng hữu ích</span>
+                            <button class="login-zalo"><span>Zalo</span><i class="spr spr--zalo"></i></button>
+                            <button class="login-fb"><span>Facebook</span><i class="spr spr--fb"></i></button>
+                            <button class="login-gplus"><span>Google</span><i class="spr spr--gplus"></i></button>
+                        </div>
+                    </div>
+                    <div class="logged ">
+                        <a href="#" class="uName">
+                            <div class="uName__thumb">
+                                <img src="fig-images/site/1x1.png" alt="avatar" width="24" height="24">
+                            </div>
+                            <span class="text">Trần Anh Tuấn</span>
+                        </a>
+                        <div class="user-board">
+                            <ul>
+                                <li class="is-first"><a href="#"><i class="spr spr--recommend"></i><span>Tin đề xuất</span></a></li>
+                                <li><a href="#"><i class="spr spr--history"></i><span>Tin mới đọc</span></a></li>
+                                <li><a href="#"><i class="spr spr--bookmark"></i><span>Tin đã lưu</span></a></li>
+                                <li class="notice"><a href="#"><i class="spr spr--notice"></i><span>Thông báo</span></a><button class="switch"></button></li>
+                                <li class="log-out"><button><i class="spr spr--logout"></i><span>Đăng xuất</span></button></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <a href="#" class="switch-mobile">
+                    <i class="spr spr--mobile-ver"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>KH - CN </span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Khoa học - Tự nhiên</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Games</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="fyi fyi--970">
+                <div class="fyi__box"><img src="fig-images/ads/ads-728x90.jpg" alt="ads"></div>
+            </div>
+            <div class="l-grid">
+                <div class="wrap-filter">
+                    <div class="main-filter">
+                        <a href="#">
+                            <i class="spr spr--pin-hot"></i>
+                            <span>Nóng</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-latest"></i>
+                            <span>Mới</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-video"></i>
+                            <span>Video</span>
+                        </a>
+                        <a href="#" class="is-last">
+                            <i class="spr spr--pin-event"></i>
+                            <span>Sự kiện</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="breadcrumbs">
+                    <a itemprop="title" href="01-homepage.html">Trang chủ</a>
+                    <span class="split">/</span>
+                    <a itemprop="title" href="02-category.html">Điều khoản sử dụng</a>
+                </div>
+                <div class="help-box">
+                    <div class="help__inner">
+                        <h3 class="help__title"><i class="spr spr-info"></i><span>Điều khoản sử dụng</span></h3>
+                        <div class="help__body">
+                            <p>
+                                Thỏa thuận sử dụng và bảo mật này (sau đây gọi là “Thỏa thuận”) được lập ra bởi và giữa bạn (“bạn”) và Công ty Cổ phần công nghệ ePi (“ePi” hoặc “chúng tôi”) về việc sử dụng bất kỳ hay tất cả các loại dịch vụ (“Dịch vụ”) của Baomoi.com (“Baomoi”) của bạn. Bằng việc sử dụng Dịch vụ, bạn đồng ý chịu ràng buộc bởi những điều khoản và điều kiện này.
+                            </p>
+                            <p>
+                                Dịch vụ được thiết kế để giúp bạn tiếp cận thông tin tin tức được liên kết từ các trang không do ePi sở hữu hoặc quản lý. Cụ thể, Dịch vụ cung cấp những mô tả ngắn gọn về các bài báo để giúp bạn xác định nội dung chính của bài báo mà bạn quan tâm. Khi bạn lựa chọn một bài báo, bạn sẽ được kết nối tới website chứa bài báo đó (sau đây gọi là “website được kết nối”).</p>
+                            <p>
+                                Thuật ngữ “bạn” để chỉ tất cả các cá nhân và/hoặc các tổ chức truy cập vào Baomoi vì bất kỳ lý do nào.</p>
+                            <h4 class="help__feature">I. Thỏa thuận sử dụng</h4>
+                            <div class="help__indent"><strong>I.1. Quyền gắn với Dịch vụ.</strong>
+                                <p>
+                                    ePi sở hữu và duy trì mọi quyền lợi sở hữu trí tuệ đối với Dịch vụ của mình nhưng ePi không tuyên bố là mình có quyền sở hữu trí tuệ đối với các bài báo tại các website được kết nối. Các quyền sở hữu trí tuệ này thuộc về các website được kết nối.</p>
+                                <p>
+                                    ePi cũng không chịu trách nhiệm về các thông tin, dịch vụ và nội dung của những website được kết nối. Bạn là người chịu hoàn toàn trách nhiệm trong việc sử dụng, khai thác, cung cấp thông tin cá nhân, v.v... cho các website này.</p>
+                                <h4>I.2. Sử dụng và chấm dứt sử dụng Dịch vụ.</h4>
+                                <p>
+                                    Bạn chỉ có thể sử dụng nội dung của Dịch vụ cho mục đích cá nhân của riêng bạn (cụ thể là không dùng cho mục đích thương mại) và không được sao chép, thay đổi, sửa đổi, tạo ra các tác phẩm phái sinh hoặc thể hiện một cách công khai bất kỳ nội dung nào của Dịch vụ. Chẳng hạn, bạn không được sử dụng Dịch vụ để bán một sản phẩm hay dịch vụ; hay sử dụng Dịch vụ để tăng số lượt truy cập tới trang web của bạn vì mục đích thương mại; hay sử dụng các kết quả từ Dịch vụ rồi định dạng lại và thể hiện công khai chúng, hay sử dụng các công cụ hoặc tài liệu khác để theo dõi hay sao chép bất kỳ nội dung nào từ Dịch vụ. Nếu bạn không chắc liệu dự định sử dụng Dịch vụ của bạn có được phép hay không, xin vui lòng liên hệ với chúng tôi.
+                                </p>
+                                <p>
+                                    ePi sẽ không chịu trách nhiệm đối với việc gián đoạn, ngừng hoạt động, mất hoặc sai lệch dữ liệu từ những hành động tấn công của cá nhân hay tổ chức nào khác, cũng như về các sự cố kỹ thuật trong khi cung cấp Dịch vụ. ePi cũng không chịu trách nhiệm về các tổn thất phát sinh từ việc sử dụng Dịch vụ hoặc từ sự tương tác giữa bạn với những người dùng khác.
+                                </p>
+                                <p>
+                                    ePi có quyền đơn phương đình chỉ hoặc chấm dứt Dịch vụ hoặc sự truy cập của bạn tới Dịch vụ.</p>
+                            </div>
+                            <h3 class="help__feature">II. Thỏa thuận bảo mật</h3>
+                            <div class="help__indent">
+                                <strong>II.1. Những thông tin mà chúng tôi thu thập</strong>
+                                <p>
+                                    Khi bạn đăng ký làm thành viên, bạn cần cung cấp cho chúng tôi một số thông tin cá nhân, ví dụ như họ tên, địa chỉ email và các thông tin khác do bạn cung cấp. Chúng tôi có thể kết hợp thông tin cá nhân do bạn cung cấp với các thông tin khác ngoài Dịch vụ hoặc từ các bên thứ ba để phân tích các nội dung mà bạn quan tâm.
+                                </p>
+                                <p>
+                                    Mỗi khi bạn truy cập Dịch vụ, hệ thống của Baomoi sẽ sử dụng cookies và các kỹ thuật khác để lưu lại những hoạt động của bạn trên Baomoi. Server của Baomoi cũng sẽ tự động ghi lại thông tin khi bạn truy cập trang này và sử dụng các Dịch vụ bao gồm nhưng không giới hạn URL, địa chỉ IP, loại trình duyệt, ngôn ngữ, ngày giờ truy cập hoặc sử dụng Dịch vụ.</p>
+                                <h4>II.2. Sử dụng thông tin</h4>
+                                <p>
+                                    Chúng tôi sử dụng thông tin cá nhân của bạn để nâng cao chất lượng của Dịch vụ, để gửi tới bạn các thông báo về dịch vụ mới của Baomoi hoặc dịch vụ của bên thứ ba mà chúng tôi tin rằng sẽ hữu ích với bạn.</p>
+                                <p>
+                                    Chúng tôi có thể sử dụng thông tin cá nhân của bạn trong việc điều tra, nghiên cứu hoặc phân tích để vận hành và nâng cấp các kỹ thuật của Baomoi và Dịch vụ.
+                                </p>
+                                <p>
+                                    Chúng tôi có thể sử dụng thông tin cá nhân của bạn để xác định xem liệu bạn có thể quan tâm đến các sản phẩm hay dịch vụ của bên thứ ba nào không.
+                                </p>
+                                <p>
+                                    Về nguyên tắc, chúng tôi không cung cấp cho bên thứ ba thông tin cá nhân của bạn trừ các trường hợp sau:</p>
+                                <ol style="list-style-type: lower-alpha;">
+                                    <li>Bạn đồng ý để chúng tôi cung cấp thông tin cá nhân của bạn cho bên thứ ba; và/hoặc</li>
+                                    <li>Chúng tôi cho rằng việc cung cấp thông tin cá nhân của bạn cho bên thứ ba là cần thiết, ví dụ nhằm tuân theo các yêu cầu pháp lý, ngăn chặn tội phạm hoặc bảo vệ an ninh quốc gia, hay bảo vệ an toàn cá nhân của những người sử dụng hoặc công chúng, v.v...; và/hoặc</li>
+                                    <li>Bên thứ ba là đối tượng mua lại toàn bộ hay phần lớn pháp nhân sở hữu Baomoi và Dịch vụ; và/hoặc</li>
+                                    <li>Thông tin cá nhân là thông tin vô danh về khách ghé thăm Baomoi. Chúng tôi có thể chia sẻ loại thông tin này cho bên thứ ba để họ có thể tìm hiểu về các loại khách tới thăm Baomoi và cách họ sử dụng Dịch vụ.</li>
+                                </ol>
+                                <h4>II.3. Sửa đổi hoặc xoá thông tin</h4>
+                                <p>
+                                    Bạn có thể truy cập thông tin cá nhân của mình và sử đổi thông tin này nếu chúng chưa đúng hoặc xoá bỏ các thông tin đó. Việc thay đổi và/hoặc xoá bỏ như trên có thể không thực hiện được vào một số thời điểm nhất định khi có sự bất ổn định của hệ thống Baomoi. Trong trường hợp này, chúng tôi sẽ nỗ lực để bạn có thể tiếp tục sửa chữa hoặc xoá bỏ thông tin cá nhân sớm nhất có thể nhưng chúng tôi không chịu trách nhiệm về bất cứ vấn đề hoặc thiệt hại nào có thể có do việc chậm trễ này gây ra.
+                                </p>
+                                <h4>II.4. Bảo mật</h4>
+                                <p>
+                                    Mật khẩu truy cập tài khoản của tất cả các thành viên của Baomoi đều được ePi bảo vệ. Tuy nhiên, an ninh mạng không an toàn tuyệt đối, vì thế ePi không chịu trách nhiệm về những thiệt hại có thể xảy ra.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/vendor/jquery-migrate-3.0.0.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.bxslider.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.fixer.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe.min.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe-ui-default.min.js" defer></script>
+    <script src="../Jscripts/desktop-ui-local.js" defer></script>
+</body>
+
+</html>

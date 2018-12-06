@@ -1,0 +1,41 @@
+// ====================================
+// Mixins
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* Font
+*/
+
+
+/* > Font */
+
+// Example : @include font ($roboto, 15, 22, $font-weight: $bold, italic)
+// 
+// variables-font-legacy
+// The exist to provide backwards compatibility for 
+// current things that use font variables. You should 
+// NOT be using these for new SCSS code.
+// legacy font weight vars
+// mixins-typography
+@mixin font-size ($font-size, $line-height) {
+    /*!*/
+    $new-size: ($font-size / 10);
+    $new-line-height: ($line-height / 10);
+    font-size: ($font-size + px);
+    font-size: ($new-size + rem);
+    line-height: ($line-height + px);
+    line-height: ($new-line-height + rem);
+
+}
+@mixin font-family ($font-name : inherit, $font-weight: $normal, $font-style: normal) {
+    font-weight: $font-weight;
+    font-style: $font-style;
+    font-family: $font-name;
+}
+// shorthand for font-size / line-height / font-family / font-weight
+@mixin font ($font-size, $line-height, $font-weight: $bold, $font-family : inherit) {
+    @include font-size($font-size, $line-height);
+    @include font-family($font-family, $font-weight);
+}

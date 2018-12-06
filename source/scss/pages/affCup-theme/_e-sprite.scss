@@ -1,0 +1,76 @@
+// ====================================
+// sprite style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* --- soccer
+* --- flag
+* icon from mobile sprite
+*/
+
+// > --- soccer
+
+.logo-cup{
+    background-image: url("../img/soccer/affCup/desktop-logo-affCup-2018-1.0.0.png");
+    background-size: 163px 50px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 163px;
+    height: 50px;
+}
+.event {
+    background-image: url('../img/soccer/affCup/affCup-sprite-'+$affCup-version+'.png');
+    display: inline-block;
+    vertical-align: middle;
+    background-size: ($affCup-w + px) ($affCup-h + px);
+    &--worldcup {
+        background-position: -0px -0px;
+        width: 24px;
+        height: 24px;
+    }
+    &--calendar {
+        background-position: -0px -50px;
+        width: 24px;
+        height: 24px;
+    }
+    &--group {
+        background-position: -0px -100px;
+        width: 24px;
+        height: 24px;
+    }
+    &--news {
+        background-position: -0px -150px;
+        width: 24px;
+        height: 24px;
+    }
+    &--cate {
+        background-position: -0px -200px;
+        width: 24px;
+        height: 24px;
+    }    // --------------
+    &--wc-right-1 {
+        width: 20px;
+        height: 20px;
+        background-position: -0px -300px;
+    }
+    &--wc-right-2 {
+        width: 16px;
+        height: 30px;
+        background-position: -50px -300px;
+    }
+    &--wc-right-6 {
+        width: 40px;
+        height: 80px;
+        background-position: -0px -450px;
+    }
+    &--bookmark{
+        width: 20px;
+        height: 20px;
+        background-position: -50px -450px;
+    }
+    .is-active &--bookmark{
+        background-position: -70px -450px;
+    }
+}

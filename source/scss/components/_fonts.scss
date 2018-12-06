@@ -1,0 +1,44 @@
+// ====================================
+// Global fonts
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* Baomoi
+*/
+
+
+/* > Baomoi */
+
+@font-face {
+    font-family: Baomoi;
+    src:
+        url('../fonts/baomoi/'+$font-version+'/baomoi-light-'+$font-version+'.woff2') format('woff2'),
+        url('../fonts/baomoi/'+$font-version+'/baomoi-light-'+$font-version+'.woff') format('woff');
+}
+
+@font-face {
+    font-family: Baomoi;
+    src:
+        url('../fonts/baomoi/'+$font-version+'/baomoi-light-italic-'+$font-version+'.woff2') format('woff2'),
+        url('../fonts/baomoi/'+$font-version+'/baomoi-light-italic-'+$font-version+'.woff') format('woff');
+    font-style: italic
+}
+
+@font-face {
+    font-family: Baomoi;
+    src:
+        url('../fonts/baomoi/'+$font-version+'/baomoi-regular-'+$font-version+'.woff2') format('woff2'),
+        url('../fonts/baomoi/'+$font-version+'/baomoi-regular-'+$font-version+'.woff') format('woff');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Baomoi;
+    src:
+        url('../fonts/baomoi/'+$font-version+'/baomoi-regular-'+$font-version+'.woff2') format('woff2'),
+        url('../fonts/baomoi/'+$font-version+'/baomoi-regular-'+$font-version+'.woff') format('woff'); 
+    font-weight: bold;
+    font-style: italic
+}

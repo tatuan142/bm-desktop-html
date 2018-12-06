@@ -1,0 +1,64 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* ads style
+*/
+
+// > ads style
+.fyi {
+    &--300 {
+        width: 330px;
+        min-height: 250px;
+        padding: 15px;
+        padding-bottom: 0;
+        text-align: center;
+        background-color: #f7f7f7;
+    }
+    &--970 {
+        text-align: center;
+        min-height: 90px;
+        width: 970px;
+        margin: 0 auto;
+    }
+    &--300x250{
+        padding: 15px;
+        width: 330px;
+        height: 280px;
+        background-color: #f7f7f7;
+    }
+    &--610x235{
+        width: 610px;
+        height: 235px;
+        background-color: #f7f7f7;
+        margin-top: 16px;
+        img{
+            width: 610px;
+            height: 235px;
+        }
+    }
+}
+
+.fyi--group{
+    background-color: #f7f7f7;
+    padding-bottom: 15px;
+    min-height: 630px;
+    .fyi--300 ~ .fyi--300{
+        min-height: 250px;
+    }
+}
+.fyi--300.affix{
+    min-height: 515px;
+}
+
+.fyi--970{
+    min-height: 90px;
+}
+
+.scroll-to-fixed-fixed{
+    background-color: #f7f7f7;
+    padding: 15px;
+}

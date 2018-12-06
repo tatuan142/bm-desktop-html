@@ -1,0 +1,2628 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>11-soccer-homepage.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Page -->
+    <link rel="stylesheet" type="text/css" href="../../styles/css/d-soccer-styles.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/css/d-widget.css">
+</head>
+
+<body>
+    <div class="wrapper soccer_page">
+        <div class="header">
+            <div class="l-grid">
+                <a href="11-soccer-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__user">
+                    <div class="login hidden">
+                        <button href="#" class="uName">
+                            <i class="spr spr--user"></i>
+                        </button>
+                        <div class="login-board">
+                            <span class="desc">Đăng nhập để trải nghiệm thêm những tính năng hữu ích</span>
+                            <button class="login-zalo"><span>Zalo</span><i class="spr spr--zalo"></i></button>
+                            <button class="login-fb"><span>Facebook</span><i class="spr spr--fb"></i></button>
+                            <button class="login-gplus"><span>Google</span><i class="spr spr--gplus"></i></button>
+                        </div>
+                    </div>
+                    <div class="logged ">
+                        <a href="#" class="uName has-touched">
+                            <div class="uName__thumb">
+                                <img src="fig-images/site/1x1.png" alt="avatar" width="24" height="24">
+                            </div>
+                            <span class="text">Trần Anh Tuấn</span>
+                        </a>
+                        <div class="user-board is-active">
+                            <ul>
+                                <li class="is-first"><a href="#"><i class="spr spr--recommend"></i><span>Tin đề xuất</span></a></li>
+                                <li><a href="#"><i class="spr spr--history"></i><span>Tin mới đọc</span></a></li>
+                                <li><a href="#"><i class="spr spr--bookmark"></i><span>Tin đã lưu</span></a></li>
+                                <li class="notice"><a href="#"><i class="spr spr--notice"></i><span>Thông báo</span></a>
+                                    <button class="switch"></button>
+                                </li>
+                                <li class="log-out">
+                                    <button><i class="spr spr--logout"></i><span>Đăng xuất</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="switch-mobile">
+                    <i class="spr spr--mobile-ver"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/moi-truong-khi-hau.epi" data-id="3">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/nghe-thuat.epi" data-id="15">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/am-thuc.epi" data-id="84">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/du-lich.epi" data-id="137">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/kinh-doanh.epi" data-id="7">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/lao-dong-viec-lam.epi" data-id="47">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tai-chinh.epi" data-id="126">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chung-khoan.epi" data-id="127">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hoc-bong-du-hoc.epi" data-id="107">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dao-tao-thi-cu.epi" data-id="108">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/bong-da.epi" data-id="87">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/quan-vot.epi" data-id="88">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/am-nhac.epi" data-id="71">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thoi-trang.epi" data-id="72">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dien-anh-truyen-hinh.epi" data-id="132">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hinh-su-dan-su.epi" data-id="104">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/an-ninh-trat-tu.epi" data-id="141">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Khoa học</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Công nghệ</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/cntt-vien-thong.epi" data-id="76">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thiet-bi-phan-cung.epi" data-id="136">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/dinh-duong-lam-dep.epi" data-id="138">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tinh-yeu-hon-nhan.epi" data-id="139">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/suc-khoe-y-te.epi" data-id="82">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="/nha-dat.epi" data-id="147"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/quan-ly-quy-hoach.epi" data-id="148">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/khong-gian-kien-truc.epi" data-id="150">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="l-grid">
+                <div class="s-breadcrumb">
+                    <div class="title">
+                        <!-- <span class="">LỊCH THI ĐẤU</span> -->
+                        <a class="" href="11-soccer-homepage.html"><i class="socc socc--back-page"></i><span>QUAY VỀ</span></a>
+                    </div>
+                    <div class="filter">
+                        <a href="11-asiad-homepage.html" class="">
+                            <i class="socc socc--matchBookmark"></i>
+                            <span>Theo dõi</span>
+                        </a>
+                        <a href="11-asiad-homepage.html" class=""><i class="socc socc--normal-cup"></i><span>World Cup</span></a>
+                        <a href="11-soccer-homepage.html" class="is-active"><i class="socc socc--match"></i><span>Lịch đấu</span></a>
+                        <a href="11-soccer-mini.html" class=""><i class="socc socc--live"></i><span>Trực tiếp</span></a>
+                    </div>
+                </div>
+                <div class="s-grid__200">
+                    <div class="s-league">
+                        <ul>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/home/season/260">
+                                        <i class="flag league-199"></i>Asiad
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/season/192">
+                                        <i class="flag league-28"></i>AFF Cup
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/season/193">
+                                        <i class="flag league-133"></i>AFC Asian Cup
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/season/69">
+                                        <i class="flag league-1"></i>World Cup
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/season/261">
+                                        <i class="flag league-8"></i>Champions League
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/season/257">
+                                        <i class="flag league-10"></i>Europa League
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/season/112">
+                                        <i class="flag league-58"></i>International Champions Cup
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/205">
+                                        <i class="flag nation-205"></i>UEFA
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/143">
+                                        <i class="flag nation-143"></i>Anh
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/139">
+                                        <i class="flag nation-139"></i>Tây Ban Nha
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/115">
+                                        <i class="flag nation-115"></i>Đức
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/120">
+                                        <i class="flag nation-120"></i>Italia
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/113">
+                                        <i class="flag nation-113"></i>Pháp
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/133">
+                                        <i class="flag nation-133"></i>Bồ Đào Nha
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/130">
+                                        <i class="flag nation-130"></i>Hà Lan
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/96">
+                                        <i class="flag nation-96"></i>Việt Nam
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/68">
+                                        <i class="flag nation-68"></i>Nhật Bản
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/72">
+                                        <i class="flag nation-72"></i>Hàn Quốc
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/168">
+                                        <i class="flag nation-168"></i>Australia
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/167">
+                                        <i class="flag nation-167"></i>Mỹ
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/160">
+                                        <i class="flag nation-160"></i>Mexico
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/184">
+                                        <i class="flag nation-184"></i>Brazil
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/182">
+                                        <i class="flag nation-182"></i>Argentina
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/104">
+                                        <i class="flag nation-104"></i>Bỉ
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/101">
+                                        <i class="flag nation-101"></i>Áo
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/110">
+                                        <i class="flag nation-110"></i>Đan Mạch
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/65">
+                                        <i class="flag nation-65"></i>Iran
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/64">
+                                        <i class="flag nation-64"></i>Indonesia
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/185">
+                                        <i class="flag nation-185"></i>Chile
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/70">
+                                        <i class="flag nation-70"></i>Kazakhstan
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/189">
+                                        <i class="flag nation-189"></i>Paraguay
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/190">
+                                        <i class="flag nation-190"></i>Peru
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/132">
+                                        <i class="flag nation-132"></i>Poland
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/108">
+                                        <i class="flag nation-108"></i>Cyprus
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/112">
+                                        <i class="flag nation-112"></i>Phần Lan
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/116">
+                                        <i class="flag nation-116"></i>Hy Lạp
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/141">
+                                        <i class="flag nation-141"></i>Thụy Sỹ
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/140">
+                                        <i class="flag nation-140"></i>Thụy Điển
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/204">
+                                        <i class="flag nation-204"></i>Xứ Wales
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/203">
+                                        <i class="flag nation-203"></i>Nga
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/136">
+                                        <i class="flag nation-136"></i>Serbia
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/94">
+                                        <i class="flag nation-94"></i>UAE
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/61">
+                                        <i class="flag nation-61"></i>Trung Quốc
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/86">
+                                        <i class="flag nation-86"></i>Saudi Arabia
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/192">
+                                        <i class="flag nation-192"></i>Uruguay
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/142">
+                                        <i class="flag nation-142"></i>Ukraine
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/106">
+                                        <i class="flag nation-106"></i>Bulgaria
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/150">
+                                        <i class="flag nation-150"></i>Costa Rica
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/107">
+                                        <i class="flag nation-107"></i>Croatia
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/109">
+                                        <i class="flag nation-109"></i>CH Czech
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/67">
+                                        <i class="flag nation-67"></i>Israel
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/202">
+                                        <i class="flag nation-202"></i>Thổ Nhĩ Kỳ
+                                    </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/country/196">
+                                        <i class="flag nation-196"></i>Scotland
+                                    </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s-grid__500">
+                    <div class="s-weekday">
+                        <div class="list">
+                            <a class=" " href="/soccer/d/date/09-09-2018">09/09</a>
+                            <a class=" " href="/soccer/d/date/10-09-2018">10/09</a>
+                            <a class=" " href="/soccer/d/date/11-09-2018">11/09</a>
+                            <a class="today " href="/soccer/d/date/12-09-2018">H.nay</a>
+                            <a class=" " href="/soccer/d/date/13-09-2018">13/09</a>
+                            <a class=" " href="/soccer/d/date/14-09-2018">14/09</a>
+                            <a class=" " href="/soccer/d/date/15-09-2018">15/09</a>
+                        </div>
+                    </div>
+                    <div class="s-list">
+                        <div class="row row--title">
+                            <i class="flag nation-205"></i>
+                            <a href="/soccer/d/country/205" style="">UEFA</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/267">UEFA Nations League - League A</a>
+                            <time>Bảng 2 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24877">
+                            <a href="/soccer/d/match/24877">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Iceland</span>
+                                    <i class="flag flag-is"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">3</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-be"></i>
+                                    <span>Bỉ</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 3 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24883">
+                            <a href="/soccer/d/match/24883">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Bồ Đào Nha</span>
+                                    <i class="flag flag-pt"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-it"></i>
+                                    <span>Italy</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 4 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24889">
+                            <a href="/soccer/d/match/24889">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Tây Ban Nha</span>
+                                    <i class="flag flag-es"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">6</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-hr"></i>
+                                    <span>Croatia</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-205"></i>
+                            <a href="/soccer/d/country/205" style="">UEFA</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/268">UEFA Nations League - League B</a>
+                            <time>Bảng 2 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24901">
+                            <a href="/soccer/d/match/24901">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Thụy Điển</span>
+                                    <i class="flag flag-se"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">3</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-tr"></i>
+                                    <span>Turkey</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 3 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24907">
+                            <a href="/soccer/d/match/24907">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Bosnia-Herzegovina</span>
+                                    <i class="flag flag-ba"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-at"></i>
+                                    <span>Austria</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-205"></i>
+                            <a href="/soccer/d/country/205" style="">UEFA</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/269">UEFA Nations League - League C</a>
+                            <time>Bảng 1 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24919">
+                            <a href="/soccer/d/match/24919">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Scotland</span>
+                                    <i class="flag flag-scotland"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-al"></i>
+                                    <span>Albania</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 2 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24926">
+                            <a href="/soccer/d/match/24926">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Hungary</span>
+                                    <i class="flag flag-hu"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-gr"></i>
+                                    <span>Greece</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24927">
+                            <a href="/soccer/d/match/24927">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Finland</span>
+                                    <i class="flag flag-fi"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-ee"></i>
+                                    <span>Estonia</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 4 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24951">
+                            <a href="/soccer/d/match/24951">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Montenegro</span>
+                                    <i class="flag flag-me"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-lt"></i>
+                                    <span>Lithuania</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24950">
+                            <a href="/soccer/d/match/24950">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Serbia</span>
+                                    <i class="flag flag-rs"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">2</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-ro"></i>
+                                    <span>Romania</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-205"></i>
+                            <a href="/soccer/d/country/205" style="">UEFA</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/270">UEFA Nations League - League D</a>
+                            <time>Bảng 1 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24963">
+                            <a href="/soccer/d/match/24963">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Andorra</span>
+                                    <i class="flag flag-ad"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-kz"></i>
+                                    <span>Kazakhstan</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 2 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24974">
+                            <a href="/soccer/d/match/24974">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>San Marino</span>
+                                    <i class="flag flag-sm"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">3</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-lu"></i>
+                                    <span>Luxembourg</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24975">
+                            <a href="/soccer/d/match/24975">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Moldova</span>
+                                    <i class="flag flag-md"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-by"></i>
+                                    <span>Belarus</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time>Bảng 3 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24987">
+                            <a href="/soccer/d/match/24987">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Malta</span>
+                                    <i class="flag flag-mt"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-az"></i>
+                                    <span>Azerbaijan</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="24986">
+                            <a href="/soccer/d/match/24986">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Kosovo</span>
+                                    <i class="flag flag-xk"></i>
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <i class="flag flag-fo"></i>
+                                    <span>Faroe Islands</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-143"></i>
+                            <a href="/soccer/d/country/143" style="">Anh</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/237">National League N/S</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="21637">
+                            <a href="/soccer/d/match/21637">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Chester</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1366-Chester.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/606-United-of-Manchester-EERX.png">
+                                    <span>United of Manchester</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-139"></i>
+                            <a href="/soccer/d/country/139" style="">Tây Ban Nha</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/262">Segunda División</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23875">
+                            <a href="/soccer/d/match/23875">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Rayo Majadahonda</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/913-Rayo-Majadahonda-CMGU.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/921-Lugo-FYBN.png">
+                                    <span>Lugo</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-130"></i>
+                            <a href="/soccer/d/country/130" style="">Hà Lan</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/103">Eerste Divisie</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="23894">
+                            <a href="/soccer/d/match/23894">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>AZ II</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1166-AZ-II-APGU.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1151-Ajax-II-QDNP.png">
+                                    <span>Ajax II</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-96"></i>
+                            <a href="/soccer/d/country/96" style="">Việt Nam</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/68">V-League 2</a>
+                            <time>V-Leagua 2 2018 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-waiting" data-id="24018">
+                            <a href="/soccer/d/match/24018">
+                                <div class="min">
+                                    <span>15:30</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Công An Nhân Dân</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/396-Cong-An-Nhan-Dan-SZWD.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/391-Hue-ENMB.png">
+                                    <span>Hue</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-waiting" data-id="24019">
+                            <a href="/soccer/d/match/24019">
+                                <div class="min">
+                                    <span>16:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Dong Thap</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/385-Dong-Thap-IEDR.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/398-Dak-Lak-QFBI.png">
+                                    <span>Dak Lak</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-waiting" data-id="24020">
+                            <a href="/soccer/d/match/24020">
+                                <div class="min">
+                                    <span>16:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Binh Dinh</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1326-Binh-Dinh-FITF.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/676-Tay-Ninh-YAJB.png">
+                                    <span>Tay Ninh</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-waiting" data-id="24021">
+                            <a href="/soccer/d/match/24021">
+                                <div class="min">
+                                    <span>17:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Long An</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/384-Long-An-VDKR.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/677-Viettel-KUGZ.png">
+                                    <span>Viettel</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-waiting" data-id="24022">
+                            <a href="/soccer/d/match/24022">
+                                <div class="min">
+                                    <span>17:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Hà Nội II</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1327-Ha-Noi-II-PIWN.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/394-Binh-Phuoc-YAWP.png">
+                                    <span>Bình Phước</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-68"></i>
+                            <a href="/soccer/d/country/68" style="">Nhật Bản</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/71">J2 League</a>
+                            <time>Regular Season 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-waiting" data-id="15911">
+                            <a href="/soccer/d/match/15911">
+                                <div class="min">
+                                    <span>17:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Avispa Fukuoka</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/805-Avispa-Fukuoka-FWBI.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/807-Yokohama-KMFT.png">
+                                    <span>Yokohama</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-68"></i>
+                            <a href="/soccer/d/country/68" style="">Nhật Bản</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/72">J3 League</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-waiting" data-id="15867">
+                            <a href="/soccer/d/match/15867">
+                                <div class="min">
+                                    <span>17:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Sagamihara</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/833-Sagamihara-CXUQ.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/824-Azul-Claro-Numazu-TMRJ.png">
+                                    <span>Azul Claro Numazu</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-167"></i>
+                            <a href="/soccer/d/country/167" style="">Mỹ</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/91">USL</a>
+                            <time>Western Conference 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24797">
+                            <a href="/soccer/d/match/24797">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Louisville City</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1208-Louisville-City-UFFW.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1197-Cincinnati-IDFH.png">
+                                    <span>Cincinnati</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-184"></i>
+                            <a href="/soccer/d/country/184" style="">Brazil</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/108">Serie A</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23900">
+                            <a href="/soccer/d/match/23900">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Atlético Mineiro</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1249-Atletico-Mineiro-VCFG.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">3</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1254-Atletico-PR-IHZX.png">
+                                    <span>Atlético PR</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-184"></i>
+                            <a href="/soccer/d/country/184" style="">Brazil</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/94">Serie B</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="24009">
+                            <a href="/soccer/d/match/24009">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>CSA</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1268-CSA-AQUO.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">2</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1264-Vila-Nova-DWED.png">
+                                    <span>Vila Nova</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-110"></i>
+                            <a href="/soccer/d/country/110" style="">Đan Mạch</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/134">1st Division</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23895">
+                            <a href="/soccer/d/match/23895">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Hvidovre</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1600-Hvidovre.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">4</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1605-Silkeborg.png">
+                                    <span>Silkeborg</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-65"></i>
+                            <a href="/soccer/d/country/65" style="">Iran</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/136">Persian Gulf Pro League</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-waiting" data-id="24110">
+                            <a href="/soccer/d/match/24110">
+                                <div class="min">
+                                    <span>23:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Persepolis</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1629-Persepolis.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1625-Nassaji-Mazandaran.png">
+                                    <span>Nassaji Mazandaran</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-64"></i>
+                            <a href="/soccer/d/country/64" style="">Indonesia</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/138">Liga 1</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23903">
+                            <a href="/soccer/d/match/23903">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Persipura</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1659-Persipura.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1663-Sriwijaya.png">
+                                    <span>Sriwijaya</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="23904">
+                            <a href="/soccer/d/match/23904">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Bali United</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1662-Bali-United.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">3</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">2</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1660-Persela.png">
+                                    <span>Persela</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23905">
+                            <a href="/soccer/d/match/23905">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Persebaya Surabaya</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1664-Persebaya-Surabaya.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">2</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1668-PS-TIRA.png">
+                                    <span>PS TIRA</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-waiting" data-id="24006">
+                            <a href="/soccer/d/match/24006">
+                                <div class="min">
+                                    <span>15:30</span>
+                                </div>
+                                <div class="team home">
+                                    <span>PSMS</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1669-PSMS.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1667-PSIS-Semarang.png">
+                                    <span>PSIS Semarang</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-waiting" data-id="24008">
+                            <a href="/soccer/d/match/24008">
+                                <div class="min">
+                                    <span>18:30</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Bhayangkara</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1654-Bhayangkara.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1666-Perseru-Serui.png">
+                                    <span>Perseru Serui</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-waiting" data-id="24007">
+                            <a href="/soccer/d/match/24007">
+                                <div class="min">
+                                    <span>18:30</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Borneo</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1658-Borneo.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1657-Persija.png">
+                                    <span>Persija</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-185"></i>
+                            <a href="/soccer/d/country/185" style="">Chile</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/141">Primera B</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23770">
+                            <a href="/soccer/d/match/23770">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Cobreloa</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1704-Cobreloa.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">2</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1711-Puerto-Montt.png">
+                                    <span>Puerto Montt</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-189"></i>
+                            <a href="/soccer/d/country/189" style="">Paraguay</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/150">Division Professional Clausura</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="23784">
+                            <a href="/soccer/d/match/23784">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Nacional Asunción</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1786-Nacional-Asuncion.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">3</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1788-Deportivo-Capiata.png">
+                                    <span>Deportivo Capiatá</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-190"></i>
+                            <a href="/soccer/d/country/190" style="">Peru</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/157">Primera División</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="17249">
+                            <a href="/soccer/d/match/17249">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Deportivo Binacional</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1850-Deportivo-Binacional.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">4</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1853-Real-Garcilaso.png">
+                                    <span>Real Garcilaso</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="17252">
+                            <a href="/soccer/d/match/17252">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Ayacucho</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1848-Ayacucho.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1852-Melgar.png">
+                                    <span>Melgar</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="17251">
+                            <a href="/soccer/d/match/17251">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Sport Huancayo</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1855-Sport-Huancayo.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1849-Comerciantes-Unidos.png">
+                                    <span>Comerciantes Unidos</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data row--grey match-live" data-id="17250">
+                            <a href="/soccer/d/match/17250">
+                                <div class="min">
+                                    <span>53'</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Universitario</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1860-Universitario.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1858-UTC-Cajamarca.png">
+                                    <span>UTC Cajamarca</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-132"></i>
+                            <a href="/soccer/d/country/132" style="">Poland</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/161">II Liga</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="23567">
+                            <a href="/soccer/d/match/23567">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Ruch Chorzów</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1924-Ruch-Chorzow.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">0</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/1909-Znicz-Pruszkow.png">
+                                    <span>Znicz Pruszków</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-140"></i>
+                            <a href="/soccer/d/country/140" style="">Thụy Điển</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/186">Superettan</a>
+                            <time> 11-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="23901">
+                            <a href="/soccer/d/match/23901">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Falkenberg</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2252-Falkenberg.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">1</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">2</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2263-Landskrona.png">
+                                    <span>Landskrona</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title row--split-day">
+                            <time> 13-09-2018</time>
+                        </div>
+                        <div class="match row row--data  match-waiting" data-id="24011">
+                            <a href="/soccer/d/match/24011">
+                                <div class="min">
+                                    <span>00:00</span>
+                                </div>
+                                <div class="team home">
+                                    <span>GAIS</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2259-GAIS.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">?</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">?</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2267-Varnamo.png">
+                                    <span>Värnamo</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="row row--title">
+                            <i class="flag nation-204"></i>
+                            <a href="/soccer/d/country/204" style="">Xứ Wales</a>
+                            <span class="split" style="">-</span>
+                            <a href="/soccer/d/season/189">Premier League</a>
+                            <time> 12-09-2018</time>
+                        </div>
+                        <div class="match row row--data row--grey match-FT" data-id="18501">
+                            <a href="/soccer/d/match/18501">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>The New Saints</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2325-The-New-Saints.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">6</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2314-Aberystwyth-Town.png">
+                                    <span>Aberystwyth Town</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                        <div class="match row row--data  match-FT" data-id="18500">
+                            <a href="/soccer/d/match/18500">
+                                <div class="min">
+                                    <span>FT</span>
+                                </div>
+                                <div class="team home">
+                                    <span>Connah's Quay</span>
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2321-Connah-s-Quay.png">
+                                </div>
+                                <div class="sco">
+                                    <span class="home">0</span>
+                                    <span class="split"> - </span>
+                                    <span class="away">1</span>
+                                </div>
+                                <div class="team away">
+                                    <img src="//baomoi-static.zadn.vn/img/Teams/2317-Caernarfon-Town.png">
+                                    <span>Caernarfon Town</span>
+                                </div>
+                            </a>
+                            <button class="bookmark bookmarkClick">
+                                <i class="socc socc--bookmark"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-grid__250">
+                    <div class="small-list baomoi-news" data-track="|newest_box">
+                        <div class="baomoi-news__title">
+                            <span>TIN TỨC</span>
+                        </div>
+                        <div class="story story--photo " data-aid="27685726">
+                            <div class="story__thumb">
+                                <a href="//baomoi.com/lukaku-lap-cu-dup-giup-bi-nhe-nhang-ha-iceland-tai-uefa-nations-league/c/27685726.epi" target="_blank">
+                                    <img src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/12/509/27685726/190007.jpg" alt="Tiền đạo của M.U Romelu Lukaku đã tỏa sáng để giúp cho ĐT Bỉ giành chiến thắng tại UEFA Nations League.">
+                                </a>
+                            </div>
+                            <h4 class="story__heading">
+                                <a href="//baomoi.com/lukaku-lap-cu-dup-giup-bi-nhe-nhang-ha-iceland-tai-uefa-nations-league/c/27685726.epi" title="Lukaku lập cú đúp giúp Bỉ nhẹ nhàng hạ Iceland tại UEFA Nations League" target="_blank">Lukaku lập cú đúp giúp Bỉ nhẹ nhàng hạ Iceland tại UEFA Nations League</a>
+                            </h4>
+                            <div class="story__meta">
+                                <a class="source">NĐ&amp;ĐS</a>
+                                <time class="time friendly">13 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo " data-aid="27685617">
+                            <div class="story__thumb">
+                                <a href="//baomoi.com/modric-san-sang-tu-bo-cac-danh-hieu-ca-nhan/c/27685617.epi" target="_blank">
+                                    <img src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/12/93/27685617/19282.jpg" alt="Luka Modric nói về giải thưởng The Best. Tuyển thủ Croatia khẳng định không bị ám ảnh những danh hiệu cá nhân bao gồm Cầu thủ xuất sắc nhất năm của FIFA.">
+                                </a>
+                            </div>
+                            <h4 class="story__heading">
+                                <a href="//baomoi.com/modric-san-sang-tu-bo-cac-danh-hieu-ca-nhan/c/27685617.epi" title="Modric sẵn sàng từ bỏ các danh hiệu cá nhân" target="_blank">Modric sẵn sàng từ bỏ các danh hiệu cá nhân</a>
+                            </h4>
+                            <div class="story__meta">
+                                <a class="source">Bóng Đá 24H</a>
+                                <time class="time friendly">20 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo " data-aid="27685545">
+                            <div class="story__thumb">
+                                <a href="//baomoi.com/a-quan-the-gioi-croatia-thua-soc-6-ban-khong-go-truoc-tay-ban-nha/c/27685545.epi" target="_blank">
+                                    <img src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/12/509/27685545/248513.jpg" alt="Đội hình trẻ trung dưới bàn tay của tân HLV Luis Enrique đã đánh bại đội bóng Á quân World Cup 2018 Croatia với tỷ số gây sốc 6 bàn cách biệt tại UEFA Nations League.">
+                                </a>
+                            </div>
+                            <h4 class="story__heading">
+                                <a href="//baomoi.com/a-quan-the-gioi-croatia-thua-soc-6-ban-khong-go-truoc-tay-ban-nha/c/27685545.epi" title="Á quân Thế giới Croatia thua sốc 6 bàn không gỡ trước Tây Ban Nha" target="_blank">Á quân Thế giới Croatia thua sốc 6 bàn không gỡ trước Tây Ban Nha</a>
+                            </h4>
+                            <div class="story__meta">
+                                <a class="source">NĐ&amp;ĐS</a>
+                                <time class="time friendly">22 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo " data-aid="27685415">
+                            <div class="story__thumb">
+                                <a href="//baomoi.com/shb-da-nang-chia-tay-huyen-thoai-merlo-sau-10-nam-gan-bo/c/27685415.epi" target="_blank">
+                                    <img src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/09/12/93/27685415/60271.jpg" alt="Sau gần một thập kỷ gắn bó cùng SHB Đà Nẵng, tiền đạo nhập tịch Đỗ Merlo mới đây đã chính thức nói lời chia tay đội bóng sông Hàn vì lý do sức khỏe.">
+                                </a>
+                            </div>
+                            <h4 class="story__heading">
+                                <a href="//baomoi.com/shb-da-nang-chia-tay-huyen-thoai-merlo-sau-10-nam-gan-bo/c/27685415.epi" title="SHB Đà Nẵng chia tay huyền thoại Merlo sau 10 năm gắn bó" target="_blank">SHB Đà Nẵng chia tay huyền thoại Merlo sau 10 năm gắn bó</a>
+                            </h4>
+                            <div class="story__meta">
+                                <a class="source">Bóng Đá 24H</a>
+                                <time class="time friendly">32 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo " data-aid="27685083">
+                            <div class="story__thumb">
+                                <a href="//baomoi.com/clb-ha-noi-vo-dich-v-league-2018-vua-da-hay-vua-da-dep/c/27685083.epi" target="_blank">
+                                    <img src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/12/83/27685083/3740844.jpg" alt="Không chỉ vô địch V-League 2018 nhờ sức mạnh vượt trội, CLB Hà Nội còn là đội bóng chơi đẹp nhất mùa giải.">
+                                </a>
+                            </div>
+                            <h4 class="story__heading">
+                                <a href="//baomoi.com/clb-ha-noi-vo-dich-v-league-2018-vua-da-hay-vua-da-dep/c/27685083.epi" title="CLB Hà Nội vô địch V-League 2018: Vừa đá hay, vừa đá đẹp" target="_blank">CLB Hà Nội vô địch V-League 2018: Vừa đá hay, vừa đá đẹp</a>
+                            </h4>
+                            <div class="story__meta">
+                                <a class="source">VTC</a>
+                                <time class="time friendly">47 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo " data-aid="27685088">
+                            <div class="story__thumb">
+                                <a href="//baomoi.com/tiet-lo-m-u-suyt-chieu-mo-duoc-ngoi-sao-bi-dan-gam-vao-dau/c/27685088.epi" target="_blank">
+                                    <img src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/09/12/93/27685088/29063.jpg" alt="Mới đây, cựu tuyển thủ ĐT Paraguay – Salvador Cabanas tiết lộ vụ chuyển nhượng tới M.U vào thời điểm 8 năm trước, và rất nuối tiếc khi thương vụ vỡ lở vì nguyên nhân không tưởng.">
+                                </a>
+                            </div>
+                            <h4 class="story__heading">
+                                <a href="//baomoi.com/tiet-lo-m-u-suyt-chieu-mo-duoc-ngoi-sao-bi-dan-gam-vao-dau/c/27685088.epi" title="Tiết lộ: M.U 'suýt' chiêu mộ được ngôi sao bị đạn găm vào đầu" target="_blank">Tiết lộ: M.U 'suýt' chiêu mộ được ngôi sao bị đạn găm vào đầu</a>
+                            </h4>
+                            <div class="story__meta">
+                                <a class="source">Bóng Đá 24H</a>
+                                <time class="time friendly">48 phút</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightBox-1 baomoi-news" data-track="|newest_box">
+                        <div class="baomoi-news__title">
+                            <span>VIDEO</span>
+                        </div>
+                        <div class="rightBox-1__content">
+                            <div class="wrap">
+                                <div class="story story--video " data-aid="27193375" data-track="|index0">
+                                    <div class="story__thumb">
+                                        <a href="//baomoi.com/khoanh-khac-an-mung-chien-thang-cua-olympic-viet-nam/c/27193375.epi" target="_blank">
+                                            <img src="https://baomoi-photo-2-td.zadn.vn/w400_r4x3/2018/08/07/119/27193375/354393.jpg" alt="Sau bàn gỡ hòa của Văn Đức, đội tuyển Olympic Việt Nam giành chức vô địch giải Tứ hùng. Các cầu thủ có pha ăn mừng độc đáo kiểu Viking cùng người hâm mộ.">
+                                        </a>
+                                    </div>
+                                    <h4 class="story__heading">
+                                        <a href="//baomoi.com/khoanh-khac-an-mung-chien-thang-cua-olympic-viet-nam/c/27193375.epi" title="Khoảnh khắc ăn mừng chiến thắng của Olympic Việt Nam" target="_blank">Khoảnh khắc ăn mừng chiến thắng của Olympic Việt Nam</a>
+                                    </h4>
+                                    <div class="story__meta">
+                                        <a class="source">
+                                            Zing
+                                        </a>
+                                        <time class="time friendly">35 ngày</time>
+                                    </div>
+                                </div>
+                                <div class="story story--video " data-aid="27091881" data-track="|index0">
+                                    <div class="story__thumb">
+                                        <a href="//baomoi.com/u16-viet-nam-4-0-u16-dong-timor-kt-chien-thang-de-dang/c/27091881.epi" target="_blank">
+                                            <img src="https://baomoi-photo-1-td.zadn.vn/w400_r4x3/18/07/31/39/27091881/3_57589.jpg" alt="Sau trận mở màn giải vô địch U16 Đông Nam Á 2018 chỉ thắng nhẹ U16 Campuchia 1-0, thầy trò HLV Vũ Hồng Việt đã thi đấu tốt hơn ở trận thứ 2 gặp U16 Đông Timor để có thắng lợi tưng bừng 4-0.">
+                                        </a>
+                                    </div>
+                                    <h4 class="story__heading">
+                                        <a href="//baomoi.com/u16-viet-nam-4-0-u16-dong-timor-kt-chien-thang-de-dang/c/27091881.epi" title="U16 Việt Nam 4-0 U16 Đông Timor (KT): Chiến thắng dễ dàng" target="_blank">U16 Việt Nam 4-0 U16 Đông Timor (KT): Chiến thắng dễ dàng</a>
+                                    </h4>
+                                    <div class="story__meta">
+                                        <a class="source">
+                                            Bóng Đá 24H
+                                        </a>
+                                        <time class="time friendly">42 ngày</time>
+                                    </div>
+                                </div>
+                                <div class="story story--video " data-aid="27052459" data-track="|index0">
+                                    <div class="story__thumb">
+                                        <a href="//baomoi.com/10-ung-vien-cho-danh-hieu-cau-thu-xuat-sac-nhat-fifa-nam-2018/c/27052459.epi" target="_blank">
+                                            <img src="https://baomoi-photo-2-td.zadn.vn/w400_r4x3/18/07/27/297/27052459/1_93472.jpg" alt="FIFA vừa công bố 10 ứng viên danh cho hiệu cầu thủ xuất sắc nhất năm 2018, trong đó, nhà vô địch World Cup đóng góp 3 cầu thủ.">
+                                        </a>
+                                    </div>
+                                    <h4 class="story__heading">
+                                        <a href="//baomoi.com/10-ung-vien-cho-danh-hieu-cau-thu-xuat-sac-nhat-fifa-nam-2018/c/27052459.epi" title="10 ứng viên cho danh hiệu cầu thủ xuất sắc nhất FIFA năm 2018" target="_blank">10 ứng viên cho danh hiệu cầu thủ xuất sắc nhất FIFA năm 2018</a>
+                                    </h4>
+                                    <div class="story__meta">
+                                        <a class="source">
+                                            Thanh Niên
+                                        </a>
+                                        <time class="time friendly">46 ngày</time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="s-table" data-id="260">
+                        <div class="s-heading">
+                            <span>BXH</span>
+                            <select id="seasonSelect" onchange="selectSeasonChanged();">
+                                <option value="260" selected="selected">Asiad</option>
+                                <option value="192">AFF Cup</option>
+                                <option value="193">AFC Asian Cup</option>
+                                <option value="69">World Cup</option>
+                                <option value="267">UEFA Nations League - League A (UEFA)</option>
+                                <option value="268">UEFA Nations League - League B (UEFA)</option>
+                                <option value="269">UEFA Nations League - League C (UEFA)</option>
+                                <option value="270">UEFA Nations League - League D (UEFA)</option>
+                                <option value="261">Champions League</option>
+                                <option value="112">International Champions Cup</option>
+                                <option value="96">Premier League (Anh)</option>
+                                <option value="107">Championship (Anh)</option>
+                                <option value="234">League One (Anh)</option>
+                                <option value="235">League Two (Anh)</option>
+                                <option value="236">National League (Anh)</option>
+                                <option value="237">National League N/S (Anh)</option>
+                                <option value="232">La Liga (Tây Ban Nha)</option>
+                                <option value="262">Segunda División (Tây Ban Nha)</option>
+                                <option value="263">Segunda B Group 1 (Tây Ban Nha)</option>
+                                <option value="264">Segunda B Group 2 (Tây Ban Nha)</option>
+                                <option value="265">Segunda B Group 3 (Tây Ban Nha)</option>
+                                <option value="266">Segunda B Group 4 (Tây Ban Nha)</option>
+                                <option value="97">Bundesliga (Đức)</option>
+                                <option value="113">Bundesliga 2 (Đức)</option>
+                                <option value="114">Bundesliga 3 (Đức)</option>
+                                <option value="258">Serie A (Italia)</option>
+                                <option value="82">Serie B (Italia)</option>
+                                <option value="98">Ligue 1 (Pháp)</option>
+                                <option value="117">Ligue 2 (Pháp)</option>
+                                <option value="119">National 1 (Pháp)</option>
+                                <option value="101">Primeira Liga (Bồ Đào Nha)</option>
+                                <option value="102">Segunda Liga (Bồ Đào Nha)</option>
+                                <option value="109">First Division A (Bỉ)</option>
+                                <option value="99">Eredivisie (Hà Lan)</option>
+                                <option value="103">Eerste Divisie (Hà Lan)</option>
+                                <option value="127">First Amateur Division (Bỉ)</option>
+                                <option value="121">Tweede Divisie (Hà Lan)</option>
+                                <option value="128">Second Amateur Division (Bỉ)</option>
+                                <option value="125">Bundesliga (Áo)</option>
+                                <option value="126">2. Liga (Áo)</option>
+                                <option value="130">Regionalliga Mitte (Áo)</option>
+                                <option value="131">Regionalliga West (Áo)</option>
+                                <option value="132">Regionalliga Ost (Áo)</option>
+                                <option value="133">Superliga (Đan Mạch)</option>
+                                <option value="134">1st Division (Đan Mạch)</option>
+                                <option value="135">2nd Division (Đan Mạch)</option>
+                                <option value="136">Persian Gulf Pro League (Iran)</option>
+                                <option value="137">Azadegan League (Iran)</option>
+                                <option value="138">Liga 1 (Indonesia)</option>
+                                <option value="139">Liga 2 (Indonesia)</option>
+                                <option value="140">Primera División (Chile)</option>
+                                <option value="141">Primera B (Chile)</option>
+                                <option value="142">Segunda División (Chile)</option>
+                                <option value="148">Premier League (Kazakhstan)</option>
+                                <option value="149">1. Division (Kazakhstan)</option>
+                                <option value="151">Division Professional Apertura (Paraguay)</option>
+                                <option value="150">Division Professional Clausura (Paraguay)</option>
+                                <option value="152">Division Intermedia (Paraguay)</option>
+                                <option value="157">Primera División (Peru)</option>
+                                <option value="158">Segunda División (Peru)</option>
+                                <option value="159">Ekstraklasa (Poland)</option>
+                                <option value="167">1. Division (Cyprus)</option>
+                                <option value="160">I Liga (Poland)</option>
+                                <option value="168">2. Division (Cyprus)</option>
+                                <option value="161">II Liga (Poland)</option>
+                                <option value="169">3. Division (Cyprus)</option>
+                                <option value="162">III Liga (Poland)</option>
+                                <option value="171">Veikkausliiga (Phần Lan)</option>
+                                <option value="172">Ykkönen (Phần Lan)</option>
+                                <option value="173">Kakkonen Bảng A (Phần Lan)</option>
+                                <option value="174">Kakkonen Bảng B (Phần Lan)</option>
+                                <option value="175">Kakkonen Bảng C (Phần Lan)</option>
+                                <option value="176">Super League (Hy Lạp)</option>
+                                <option value="177">Football League (Hy Lạp)</option>
+                                <option value="178">Super League (Thụy Sỹ)</option>
+                                <option value="179">Challenge League (Thụy Sỹ)</option>
+                                <option value="180">1. Liga Promotion (Thụy Sỹ)</option>
+                                <option value="181">1. Liga Classic Group 1 (Thụy Sỹ)</option>
+                                <option value="182">1. Liga Classic Group 2 (Thụy Sỹ)</option>
+                                <option value="183">1. Liga Classic Group 3 (Thụy Sỹ)</option>
+                                <option value="185">Allsvenskan (Thụy Điển)</option>
+                                <option value="186">Superettan (Thụy Điển)</option>
+                                <option value="187">Division 1 Norra (Thụy Điển)</option>
+                                <option value="188">Division 1 Södra (Thụy Điển)</option>
+                                <option value="189">Premier League (Xứ Wales)</option>
+                                <option value="190">Feeder Leagues (Xứ Wales)</option>
+                                <option value="191">Welsh Premier Women's League (Xứ Wales)</option>
+                                <option value="194">Premier League (Nga)</option>
+                                <option value="195">FNL (Nga)</option>
+                                <option value="196">PFL Center (Nga)</option>
+                                <option value="197">PFL West (Nga)</option>
+                                <option value="198">PFL Ural-Povolzhye (Nga)</option>
+                                <option value="199">PFL South (Nga)</option>
+                                <option value="200">PFL East (Nga)</option>
+                                <option value="202">Super Liga (Serbia)</option>
+                                <option value="203">Prva Liga (Serbia)</option>
+                                <option value="204">Srpska Liga Vojvodina (Serbia)</option>
+                                <option value="205">Srpska Liga East (Serbia)</option>
+                                <option value="206">Srpska Liga West (Serbia)</option>
+                                <option value="207">Srpska Liga Belgrade (Serbia)</option>
+                                <option value="208">Arabian Gulf League (UAE)</option>
+                                <option value="209">Division 1 (UAE)</option>
+                                <option value="210">League Cup (UAE)</option>
+                                <option value="211">CSL (Trung Quốc)</option>
+                                <option value="212">China League One (Trung Quốc)</option>
+                                <option value="213">Pro League (Saudi Arabia)</option>
+                                <option value="214">Division 1 (Saudi Arabia)</option>
+                                <option value="216">Primera División Clausura (Uruguay)</option>
+                                <option value="218">Segunda División (Uruguay)</option>
+                                <option value="219">Segunda B Nacional (Uruguay)</option>
+                                <option value="220">Premier League (Ukraine)</option>
+                                <option value="221">Persha Liga (Ukraine)</option>
+                                <option value="238">First League (Bulgaria)</option>
+                                <option value="239">Second League (Bulgaria)</option>
+                                <option value="240">Primera División Apertura (Costa Rica)</option>
+                                <option value="241">Liga de Ascenso Apertura (Costa Rica)</option>
+                                <option value="242">1. HNL (Croatia)</option>
+                                <option value="243">2. HNL (Croatia)</option>
+                                <option value="244">Czech Liga (CH Czech)</option>
+                                <option value="245">FNL (CH Czech)</option>
+                                <option value="246">3. liga MSFL (CH Czech)</option>
+                                <option value="247">3. liga ČFL (CH Czech)</option>
+                                <option value="248">4. liga Division A (CH Czech)</option>
+                                <option value="249">4. liga Division B (CH Czech)</option>
+                                <option value="250">4. liga Division C (CH Czech)</option>
+                                <option value="251">4. liga Division D (CH Czech)</option>
+                                <option value="252">4. liga Division E (CH Czech)</option>
+                                <option value="254">Ligat ha'Al (Israel)</option>
+                                <option value="255">Liga Leumit (Israel)</option>
+                                <option value="67">V-League (Việt Nam)</option>
+                                <option value="68">V-League 2 (Việt Nam)</option>
+                                <option value="70">J1 League (Nhật Bản)</option>
+                                <option value="71">J2 League (Nhật Bản)</option>
+                                <option value="72">J3 League (Nhật Bản)</option>
+                                <option value="144">Japan Football League (Nhật Bản)</option>
+                                <option value="73">K League 1 (Hàn Quốc)</option>
+                                <option value="74">K League 2 (Hàn Quốc)</option>
+                                <option value="153">National League (Hàn Quốc)</option>
+                                <option value="154">K3 League Advanced (Hàn Quốc)</option>
+                                <option value="111">A-League (Australia)</option>
+                                <option value="223">Queensland (Australia)</option>
+                                <option value="224">South Australia (Australia)</option>
+                                <option value="225">Victoria (Australia)</option>
+                                <option value="226">Western Australia (Australia)</option>
+                                <option value="227">New South Wales (Australia)</option>
+                                <option value="228">T-League (Australia)</option>
+                                <option value="229">Northern NSW (Australia)</option>
+                                <option value="230">Capital Territory (Australia)</option>
+                                <option value="90">MLS (Mỹ)</option>
+                                <option value="91">USL (Mỹ)</option>
+                                <option value="145">Liga MX Apertura (Mexico)</option>
+                                <option value="146">Ascenso MX Apertura (Mexico)</option>
+                                <option value="147">Copa MX Apertura (Mexico)</option>
+                                <option value="108">Serie A (Brazil)</option>
+                                <option value="94">Serie B (Brazil)</option>
+                                <option value="100">Süper Lig (Thổ Nhĩ Kỳ)</option>
+                                <option value="123">Serie C (Brazil)</option>
+                                <option value="104">Premiership (Scotland)</option>
+                                <option value="163">1. Lig (Thổ Nhĩ Kỳ)</option>
+                                <option value="105">Championship (Scotland)</option>
+                                <option value="164">2. Lig (Thổ Nhĩ Kỳ)</option>
+                                <option value="165">3. Lig (Thổ Nhĩ Kỳ)</option>
+                                <option value="124">Superliga (Argentina)</option>
+                            </select>
+                        </div>
+                        <div id="standing-holder">
+                            <div class="row">
+                                <div class="tt color">#</div>
+                                <div class="team">Đội bóng</div>
+                                <div class="pts">ST</div>
+                                <div class="pts hidden-xxs">T</div>
+                                <div class="pts hidden-xxs">H</div>
+                                <div class="pts hidden-xxs">B</div>
+                                <div class="pts hidden-xxs">Tg</div>
+                                <div title="Goals Against" class="pts hidden-xxs">Th</div>
+                                <div title="Goals Difference" class="pts hidden-xxs">HS</div>
+                                <div title="Points" class="pts2 tot">Đ</div>
+                            </div>
+                            <div class="table-260">
+                                <div class="subTitle">
+                                    Bảng A
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>1</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/484/season/260">Indonesia</a></div>
+                                    <div class="pts">4</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">11</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">8</div>
+                                    <div class="pts2 tot">9</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>2</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3081/season/260">Palestine</a></div>
+                                    <div class="pts">4</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts2 tot">8</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>3</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3082/season/260">Hong Kong</a></div>
+                                    <div class="pts">4</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">9</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts2 tot">7</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>4</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/488/season/260">Laos</a></div>
+                                    <div class="pts">4</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts hidden-xxs">8</div>
+                                    <div class="pts hidden-xxs">-4</div>
+                                    <div class="pts2 tot">3</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>5</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3080/season/260">Chinese Taipei</a></div>
+                                    <div class="pts">4</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">10</div>
+                                    <div class="pts hidden-xxs">-10</div>
+                                    <div class="pts2 tot">1</div>
+                                </div>
+                                <div class="subTitle">
+                                    Bảng B
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>1</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/666/season/260">Uzbekistan</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">10</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">10</div>
+                                    <div class="pts2 tot">9</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>2</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3083/season/260">Bangladesh</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts hidden-xxs">-2</div>
+                                    <div class="pts2 tot">4</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>3</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/489/season/260">Thailand</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">-1</div>
+                                    <div class="pts2 tot">2</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>4</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/658/season/260">Qatar</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">8</div>
+                                    <div class="pts hidden-xxs">-7</div>
+                                    <div class="pts2 tot">1</div>
+                                </div>
+                                <div class="subTitle">
+                                    Bảng C
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>1</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/659/season/260">China PR</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">11</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">10</div>
+                                    <div class="pts2 tot">9</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>2</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/656/season/260">Syria</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">6</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts2 tot">6</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>3</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/669/season/260">UAE</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts2 tot">3</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>4</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/491/season/260">Timor-Leste</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">15</div>
+                                    <div class="pts hidden-xxs">-12</div>
+                                    <div class="pts2 tot">0</div>
+                                </div>
+                                <div class="subTitle">
+                                    Bảng D
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>1</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/487/season/260">Vietnam</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">6</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">6</div>
+                                    <div class="pts2 tot">9</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>2</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/660/season/260">Japan</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts2 tot">6</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>3</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3084/season/260">Pakistan</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">8</div>
+                                    <div class="pts hidden-xxs">-6</div>
+                                    <div class="pts2 tot">3</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>4</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3085/season/260">Nepal</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">-4</div>
+                                    <div class="pts2 tot">0</div>
+                                </div>
+                                <div class="subTitle">
+                                    Bảng E
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>1</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/490/season/260">Malaysia</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">7</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts2 tot">6</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>2</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/665/season/260">Korea Republic</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">8</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">6</div>
+                                    <div class="pts2 tot">6</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>3</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3087/season/260">Bahrain</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">5</div>
+                                    <div class="pts hidden-xxs">10</div>
+                                    <div class="pts hidden-xxs">-5</div>
+                                    <div class="pts2 tot">4</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>4</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/3086/season/260">Kyrgyzstan</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">6</div>
+                                    <div class="pts hidden-xxs">-3</div>
+                                    <div class="pts2 tot">1</div>
+                                </div>
+                                <div class="subTitle">
+                                    Bảng F
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>1</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/657/season/260">Iran</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">2</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts2 tot">4</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>2</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/661/season/260">Korea DPR</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts2 tot">4</div>
+                                </div>
+                                <div class="row ">
+                                    <div class="tt color item"> <span>3</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/662/season/260">Saudi Arabia</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">0</div>
+                                    <div class="pts2 tot">4</div>
+                                </div>
+                                <div class="row even">
+                                    <div class="tt color item"> <span>4</span></div>
+                                    <div class="team"><a href="/soccer/d/event/team/483/season/260">Myanmar</a></div>
+                                    <div class="pts">3</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">1</div>
+                                    <div class="pts hidden-xxs">3</div>
+                                    <div class="pts hidden-xxs">4</div>
+                                    <div class="pts hidden-xxs">-1</div>
+                                    <div class="pts2 tot">4</div>
+                                </div>
+                            </div>
+                            <div class="description">
+                                <div class="row champion">
+                                    <div class="tt color item"><i class="shape dark-blue"></i></div>
+                                    <div class="team">Champions League</div>
+                                </div>
+                                <div class="row champion-qualification">
+                                    <div class="tt color item"><i class="shape dark-blue"></i></div>
+                                    <div class="team">Vòng loại Champions League</div>
+                                </div>
+                                <div class="row europa">
+                                    <div class="tt color item"><i class="shape light-yellow"></i></div>
+                                    <div class="team">Europa League</div>
+                                </div>
+                                <div class="row europa-qualification">
+                                    <div class="tt color item"><i class="shape dark-yellow"></i></div>
+                                    <div class="team">Vòng loại Europa League</div>
+                                </div>
+                                <div class="row relegation-playoff">
+                                    <div class="tt color item"><i class="shape pink"></i></div>
+                                    <div class="team">Play-off</div>
+                                </div>
+                                <div class="row relegation">
+                                    <div class="tt color item"><i class="shape pink"></i></div>
+                                    <div class="team">Xuống hạng</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fyi--970" style="display:none">
+            <img src="fig-images/ads/ads-728x90.jpg" alt="ads">
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/datepicker/jquery-ui.min.js" defer></script>
+    <script src="../Jscripts/datepicker/datepicker-vi.js" defer></script>
+    <script src="../Jscripts/soccer-ui-local.js" defer></script>
+</body>
+
+</html>

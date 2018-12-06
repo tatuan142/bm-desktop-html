@@ -1,0 +1,359 @@
+// ====================================
+// Header's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* top search in header
+* header style
+*/
+
+// > top search in header
+.global-search {
+    background-color: #fff;
+    height: 30px;
+    border: 1px solid #ddd;
+    font-size: 0;
+    &:hover {
+        border-color: #bbb;
+        input::-webkit-input-placeholder {
+            color: #777;
+        }
+    }
+    input {
+        @include font(12, 12, $normal);
+        color: #000;
+        border: none;
+        height: 28px;
+        width: 315px;
+        margin-right: 5px;
+        padding: 0;
+        padding-left: 10px;
+        &:focus {
+            box-shadow: 0 0 3px rgba(219, 87, 44, .9);
+            color: rgba(219, 87, 44, .9);
+        }
+    }
+    button {
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        width: 28px;
+        height: 28px;
+        background-color: #fff;
+        vertical-align: top;
+        &:hover {
+            background-color: #f9f9f9;
+        }
+    }
+}
+
+// > header style
+.header {
+    height: 50px;
+    background-color: #fff;
+    // for Tet Event
+    /*background: url(../img/lantern.png) calc(50% - 302px) 0px no-repeat #fff;*/
+    background-size: 73px 41px;
+    .l-grid {
+        @include clearfix();
+        height: 50px;
+    }
+    .logo-color {
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 160px;
+        height: 36px;
+        &:hover {
+            opacity: .8;
+        }
+    }
+    .global-search {
+        position: absolute;
+        top: 10px;
+        left: 260px;
+    }
+    &__user{
+        position: absolute;
+        right: 32px;
+        top: 10px;
+        .login{
+            .uName{
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: 0px;
+                border-radius: 3px;
+                font-size: 0;
+                padding: 3px;
+                padding: 0;
+                &:hover,
+                &.has-touched{
+                    border: 1px solid #000;
+                }
+            }
+            button{
+                cursor: pointer;
+                border: none;
+                background-color: #fff;
+            }
+        }
+        .logged{
+            position: relative;
+            .uName{
+                position: relative;
+                &:after{
+                    content:'';
+                    width: 0; 
+                    height: 0; 
+                    border-left: 4px solid transparent;
+                    border-right: 4px solid transparent;
+                    border-top: 3px solid #555;
+                    position: absolute;
+                    top: 10px;
+                    right: 6px;
+                }
+                &.has-touched,
+                &:hover,
+                {
+                    &:after{
+                        border-top: 3px solid #000;
+                    }
+                    .text{
+                        color: #000;
+                    }
+                }
+                &__thumb{
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    left: -31px;
+                    top: 0px;
+                    overflow: hidden;
+                    background-color: #fff;
+                    img{
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+                        vertical-align: top;
+                    }
+                }
+            }
+            .text{
+                line-height: 30px;
+                height: 30px;
+                display: inline-block;
+                padding-right: 20px;
+                font-size: 14px;
+                color: #777;
+            }
+        }
+        .login-board,
+        .user-board{
+            z-index: 110;
+            border-radius: 5px;
+            width: 200px;
+            box-shadow: 0 3px 8px rgba(0, 0, 0, .3);
+            border: 1px solid rgba(0, 0, 0, .15);
+            padding: 0 15px;
+            background: #fff;
+            @include first-y();
+            position: absolute;
+            display: none;
+            &.is-active{
+                display: block;
+            }
+            &:after, &:before {
+                left: 152px;
+                bottom: 100%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                pointer-events: none;
+            }
+
+            &:after {
+                border-color: rgba(255, 255, 255, 0);
+                border-bottom-color: #fff;
+                border-width: 7px;
+                margin-left: -7px;
+            }
+            &:before {
+                border-color: rgba(228, 228, 228, 0);
+                border-bottom-color: #E4E4E4;
+                border-width: 8px;
+                margin-left: -8px;
+            }
+        }
+        .login-board{
+            top: 40px;
+            right: -32px;
+            padding-top: 15px;
+            padding-bottom: 10px;
+            .title{
+                @include font(18,22);
+                display: block;
+                color: #333;
+                margin-bottom: 5px;
+            }
+            .desc {
+                @include font(14,
+                19,
+                $normal);
+                display: block;
+                color: #777;
+                margin-bottom: 10px;
+            }
+            button[class^="login-"] {
+                width: calc(33.333333333% - 5px);
+                height: 40px;
+                text-align: left;
+                margin: 0;
+                margin-bottom: 5px;
+                padding: 0;
+                border: none;
+                border-radius: 3px;
+                display: inline-block;
+                margin-right: 7px;
+                width: 100%;
+                &:hover{
+                    cursor: pointer;
+                }
+                span {
+                    position: relative;
+                    height: 40px;
+                    display: inline-table;
+                    color: #fff;
+                    padding-left: 20px;
+                    @include font(14,40,$normal);
+                    &:before{
+                        width: 1px;
+                        height: 18px;
+                        background-color: rgba(white, .5);
+                        position: absolute;
+                        top: 11px;
+                        content: '';
+                        left: 5px;
+                    }
+                }
+                i {
+                    vertical-align: top;
+                    margin: 4px 0px 0 5px;
+                }
+            }
+            .login-zalo {
+                background-color: #03A5FA;
+                &:hover{
+                    background-color: darken(#03A5FA,10%);
+                }
+            }
+            .login-facebook {
+                background-color: #4D578F;
+                &:hover{
+                    background-color: darken(#4D578F,10%);
+                }
+            }
+            .login-gplus {
+                background-color: #E32E37;
+                margin-right: 0 !important;
+                &:hover{
+                    background-color: darken(#E32E37,10%);
+                }
+            }
+        }
+        .user-board{
+            right: -31px;
+            padding: 5px 0px;
+            font-size: 0px;
+            ul{
+                @include clearfix();
+            }
+            li{
+                font-size: 14px;
+                position: relative;
+                height: 40px;
+                border-top: 1px solid #eee;
+                &.is-first{
+                    border-top: none;
+                }
+                i {
+                    vertical-align: top;
+                    margin-top: 8px;
+                    margin-right: 10px;
+                }
+                span {
+                    height: 40px;
+                    line-height: 40px;
+                    color: #333;
+                }
+                a{
+                    height: 40px;
+                    line-height: 40px;
+                    display: block;
+                    color: #333;
+                    padding: 0;
+                    border: none;
+                    padding: 0px 15px 0;
+                    width: 100%;
+                    text-align: left;
+                    &:hover {
+                        background-color: #eee;
+                    }
+                }
+                &.log-out{
+                    :hover{
+                        background-color: #eee;
+                    }
+                    button{
+                        text-align: left;
+                        padding: 0px 15px 0;
+                        width: 100%;
+                        cursor: pointer;
+                        border: none;
+                        background-color: #fff;
+                    }
+                }
+            }
+            &:after, &:before {
+             left: 136px;
+            }
+            .notice{
+                cursor: pointer;
+            }
+            .switch{
+                cursor: pointer;
+                border: none;
+                background-color: transparent;
+                background-image: url('../img/desktop-sprite-'+$sprite-version+'.png');
+                background-size: ($sprite-w + px) ($sprite-h + px);
+                background-position: -0px -2700px;
+                width: 50px;
+                height: 21px;
+                position: absolute;
+                top: 9px;
+                right: 10px;
+                &.is-active {
+                    background-position: -0px -2721px;
+                }
+            }
+        }
+    }
+    .switch-mobile{
+        width: 30px;
+        height: 30px;
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 10px;
+        border-radius: 3px;
+        font-size: 0;
+        border: 1px solid #fff;
+        padding: 2px;
+        &:hover{
+            border: 1px solid #000;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+// ====================================
+// Mixins
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* Image runaround
+*/
+
+/* > Image runaround */
+
+// Usage: when text should run around a floated element
+@mixin runaround ($direction, $top, $right, $bottom, $left) {
+	/*!*/
+    float: $direction;
+    clear: $direction;
+    margin: ($top + px) ($right + px) ($bottom + px) ($left + px);
+    background-color: #d7d7d7;
+}
+@mixin no-runaround {
+    float: none;
+    clear: none;
+    margin: 0;
+}

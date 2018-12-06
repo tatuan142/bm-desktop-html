@@ -1,0 +1,2404 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>11-soccer-schedule.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Page -->
+    <link rel="stylesheet" type="text/css" href="../../styles/css/d-soccer-styles.css">
+    <link rel="stylesheet" type="text/css" href="../../styles/css/d-widget.css">
+</head>
+
+<body>
+    <div class="wrapper soccer_page asiad">
+        <div class="header">
+            <div class="l-grid">
+                <a href="01-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__user">
+                    <div class="login hidden">
+                        <button href="#" class="uName">
+                            <i class="spr spr--user"></i>
+                        </button>
+                        <div class="login-board">
+                            <span class="desc">Đăng nhập để trải nghiệm thêm những tính năng hữu ích</span>
+                            <button class="login-zalo"><span>Zalo</span><i class="spr spr--zalo"></i></button>
+                            <button class="login-fb"><span>Facebook</span><i class="spr spr--fb"></i></button>
+                            <button class="login-gplus"><span>Google</span><i class="spr spr--gplus"></i></button>
+                        </div>
+                    </div>
+                    <div class="logged ">
+                        <a href="#" class="uName">
+                            <div class="uName__thumb">
+                                <img src="fig-images/site/1x1.png" alt="avatar" width="24" height="24">
+                            </div>
+                            <span class="text">Trần Anh Tuấn</span>
+                        </a>
+                        <div class="user-board">
+                            <ul>
+                                <li class="is-first"><a href="#"><i class="spr spr--recommend"></i><span>Tin đề xuất</span></a></li>
+                                <li><a href="#"><i class="spr spr--history"></i><span>Tin mới đọc</span></a></li>
+                                <li><a href="#"><i class="spr spr--bookmark"></i><span>Tin đã lưu</span></a></li>
+                                <li class="notice"><a href="#"><i class="spr spr--notice"></i><span>Thông báo</span></a>
+                                    <button class="switch"></button>
+                                </li>
+                                <li class="log-out">
+                                    <button><i class="spr spr--logout"></i><span>Đăng xuất</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="switch-mobile">
+                    <i class="spr spr--mobile-ver"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/moi-truong-khi-hau.epi" data-id="3">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/nghe-thuat.epi" data-id="15">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/am-thuc.epi" data-id="84">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/du-lich.epi" data-id="137">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/kinh-doanh.epi" data-id="7">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/lao-dong-viec-lam.epi" data-id="47">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tai-chinh.epi" data-id="126">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chung-khoan.epi" data-id="127">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hoc-bong-du-hoc.epi" data-id="107">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dao-tao-thi-cu.epi" data-id="108">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/bong-da.epi" data-id="87">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/quan-vot.epi" data-id="88">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/am-nhac.epi" data-id="71">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thoi-trang.epi" data-id="72">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dien-anh-truyen-hinh.epi" data-id="132">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hinh-su-dan-su.epi" data-id="104">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/an-ninh-trat-tu.epi" data-id="141">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Khoa học</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Công nghệ</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/cntt-vien-thong.epi" data-id="76">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thiet-bi-phan-cung.epi" data-id="136">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/dinh-duong-lam-dep.epi" data-id="138">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tinh-yeu-hon-nhan.epi" data-id="139">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/suc-khoe-y-te.epi" data-id="82">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="/nha-dat.epi" data-id="147"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/quan-ly-quy-hoach.epi" data-id="148">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/khong-gian-kien-truc.epi" data-id="150">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content e-schedule">
+            <div class="l-grid">
+                <div class="s-breadcrumb">
+                    <div class="title">
+                        <!-- <span class="">LỊCH THI ĐẤU</span> -->
+                        <a class="" href="11-soccer-homepage.html"><i class="logo-asiad-2018"></i></a>
+                    </div>
+                    <div class="filter">
+                        <a href="11-asiad-homepage.html" class="">
+                            <i class="socc socc--matchBookmark"></i>
+                            <span>Theo dõi</span>
+                        </a>
+                        <a href="11-asiad-schedule.html" class="is-active">
+                            <i class="event event--calendar"></i>
+                            <span>Lịch đấu</span>
+                        </a>
+                        <a href="11-asiad-groups.html" class="">
+                            <i class="event event--group"></i>
+                            <span>Bảng đấu</span>
+                        </a>
+                        <a href="11-asiad-homepage.html" class="">
+                            <i class="event event--news"></i>
+                            <span>Tin tức</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="s-grid__200">
+                    <div class="s-league">
+                        <div class="heading">Đội bóng</div>
+                        <ul>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/21/season/69">
+                                    <i class="flag flag-ar"></i>Argentina
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/8/season/69">
+                                    <i class="flag flag-au"></i>Úc
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/29/season/69">
+                                    <i class="flag flag-be"></i>Bỉ
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/1/season/69">
+                                    <i class="flag flag-br"></i>Brazil
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/9/season/69">
+                                    <i class="flag flag-co"></i>Colombia
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/14/season/69">
+                                    <i class="flag flag-cr"></i>Costa Rica
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/2/season/69">
+                                    <i class="flag flag-hr"></i>Croatia
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/403/season/69">
+                                    <i class="flag flag-dk"></i>Đan Mạch
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/406/season/69">
+                                    <i class="flag flag-eg"></i>Ai Cập
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/15/season/69">
+                                    <i class="flag flag-gb"></i>Anh
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/19/season/69">
+                                    <i class="flag flag-fr"></i>Pháp
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/25/season/69">
+                                    <i class="flag flag-de"></i>Đức
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/454/season/69">
+                                    <i class="flag flag-is"></i>Iceland
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/23/season/69">
+                                    <i class="flag flag-ir"></i>Iran
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/12/season/69">
+                                    <i class="flag flag-jp"></i>Nhật Bản
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/32/season/69">
+                                    <i class="flag flag-kr"></i>Hàn Quốc
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/3/season/69">
+                                    <i class="flag flag-mx"></i>Mexico
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/417/season/69">
+                                    <i class="flag flag-ma"></i>Morocco
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/24/season/69">
+                                    <i class="flag flag-ng"></i>Nigeria
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/429/season/69">
+                                    <i class="flag flag-pa"></i>Panama
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/442/season/69">
+                                    <i class="flag flag-pe"></i>Peru
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/479/season/69">
+                                    <i class="flag flag-pl"></i>Ba Lan
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/26/season/69">
+                                    <i class="flag flag-pt"></i>Bồ Đào Nha
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/31/season/69">
+                                    <i class="flag flag-ru"></i>Nga
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/425/season/69">
+                                    <i class="flag flag-sa"></i>Ả Rập Xê Út
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/418/season/69">
+                                    <i class="flag flag-sn"></i>Senegal
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/450/season/69">
+                                    <i class="flag flag-rs"></i>Serbia
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/5/season/69">
+                                    <i class="flag flag-es"></i>Tây Ban Nha
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/432/season/69">
+                                    <i class="flag flag-se"></i>Thụy Điển
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/17/season/69">
+                                    <i class="flag flag-ch"></i>Thụy Sĩ
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/411/season/69">
+                                    <i class="flag flag-tn"></i>Tunisia
+                                </a>
+                            </li>
+                            <li class="parent ">
+                                <a href="/soccer/d/event/team/13/season/69">
+                                    <i class="flag flag-uy"></i>Uruguay
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s-grid__500 e-home">
+                    <div class="e-list">
+                        <div class="e-list__content">
+                            <div class="cate-title">
+                                <span>VÒNG BẢNG</span>
+                            </div>
+                            <div>
+                                <div class="time-title"><span>Thứ 5 NGÀY 14-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13116" style="position: relative">
+                                        <a href="/soccer/m/event/match/13116/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 1</span>
+                                                <span class="round">Bảng A</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nga</span>
+                                                <i class="flag flag-ru"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">5</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-sa"></i>
+                                                <span>Ả Rập Xê Út</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 6 NGÀY 15-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  match-highlight" data-id="13117" style="position: relative">
+                                        <a href="/soccer/m/event/match/13117/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 2</span>
+                                                <span class="round">Bảng A</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Ai Cập</span>
+                                                <i class="flag flag-eg"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-uy"></i>
+                                                <span>Uruguay</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT match-highlight " data-id="13122" style="position: relative">
+                                        <a href="/soccer/m/event/match/13122/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 3</span>
+                                                <span class="round">Bảng B</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Morocco</span>
+                                                <i class="flag flag-ma"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ir"></i>
+                                                <span>Iran</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 7 NGÀY 16-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13123" style="position: relative">
+                                        <a href="/soccer/m/event/match/13123/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 4</span>
+                                                <span class="round">Bảng B</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Bồ Đào Nha</span>
+                                                <i class="flag flag-pt"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">3</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">3</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-es"></i>
+                                                <span>Tây Ban Nha</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick is-active">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13128" style="position: relative">
+                                        <a href="/soccer/m/event/match/13128/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 5</span>
+                                                <span class="round">Bảng C</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Pháp</span>
+                                                <i class="flag flag-fr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-au"></i>
+                                                <span>Úc</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13134" style="position: relative">
+                                        <a href="/soccer/m/event/match/13134/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 6</span>
+                                                <span class="round">Bảng D</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Argentina</span>
+                                                <i class="flag flag-ar"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-is"></i>
+                                                <span>Iceland</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13129" style="position: relative">
+                                        <a href="/soccer/m/event/match/13129/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 7</span>
+                                                <span class="round">Bảng C</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Peru</span>
+                                                <i class="flag flag-pe"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-dk"></i>
+                                                <span>Đan Mạch</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Chủ nhật NGÀY 17-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13135" style="position: relative">
+                                        <a href="/soccer/m/event/match/13135/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 8</span>
+                                                <span class="round">Bảng D</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Croatia</span>
+                                                <i class="flag flag-hr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ng"></i>
+                                                <span>Nigeria</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13140" style="position: relative">
+                                        <a href="/soccer/m/event/match/13140/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 9</span>
+                                                <span class="round">Bảng E</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Costa Rica</span>
+                                                <i class="flag flag-cr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-rs"></i>
+                                                <span>Serbia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13146" style="position: relative">
+                                        <a href="/soccer/m/event/match/13146/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 10</span>
+                                                <span class="round">Bảng F</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Đức</span>
+                                                <i class="flag flag-de"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-mx"></i>
+                                                <span>Mexico</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 2 NGÀY 18-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13141" style="position: relative">
+                                        <a href="/soccer/m/event/match/13141/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 11</span>
+                                                <span class="round">Bảng E</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Brazil</span>
+                                                <i class="flag flag-br"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ch"></i>
+                                                <span>Thụy Sĩ</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13147" style="position: relative">
+                                        <a href="/soccer/m/event/match/13147/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 12</span>
+                                                <span class="round">Bảng F</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Thụy Điển</span>
+                                                <i class="flag flag-se"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-kr"></i>
+                                                <span>Hàn Quốc</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13152" style="position: relative">
+                                        <a href="/soccer/m/event/match/13152/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 13</span>
+                                                <span class="round">Bảng G</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Bỉ</span>
+                                                <i class="flag flag-be"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">3</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pa"></i>
+                                                <span>Panama</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 3 NGÀY 19-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13153" style="position: relative">
+                                        <a href="/soccer/m/event/match/13153/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 14</span>
+                                                <span class="round">Bảng G</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Tunisia</span>
+                                                <i class="flag flag-tn"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-gb"></i>
+                                                <span>Anh</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13158" style="position: relative">
+                                        <a href="/soccer/m/event/match/13158/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 15</span>
+                                                <span class="round">Bảng H</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Colombia</span>
+                                                <i class="flag flag-co"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-jp"></i>
+                                                <span>Nhật Bản</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13159" style="position: relative">
+                                        <a href="/soccer/m/event/match/13159/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 16</span>
+                                                <span class="round">Bảng H</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Ba Lan</span>
+                                                <i class="flag flag-pl"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-sn"></i>
+                                                <span>Senegal</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 4 NGÀY 20-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13118" style="position: relative">
+                                        <a href="/soccer/m/event/match/13118/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 17</span>
+                                                <span class="round">Bảng A</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nga</span>
+                                                <i class="flag flag-ru"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">3</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-eg"></i>
+                                                <span>Ai Cập</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13124" style="position: relative">
+                                        <a href="/soccer/m/event/match/13124/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 18</span>
+                                                <span class="round">Bảng B</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Bồ Đào Nha</span>
+                                                <i class="flag flag-pt"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ma"></i>
+                                                <span>Morocco</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13119" style="position: relative">
+                                        <a href="/soccer/m/event/match/13119/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 19</span>
+                                                <span class="round">Bảng A</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Uruguay</span>
+                                                <i class="flag flag-uy"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-sa"></i>
+                                                <span>Ả Rập Xê Út</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 5 NGÀY 21-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13125" style="position: relative">
+                                        <a href="/soccer/m/event/match/13125/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 20</span>
+                                                <span class="round">Bảng B</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Iran</span>
+                                                <i class="flag flag-ir"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-es"></i>
+                                                <span>Tây Ban Nha</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13130" style="position: relative">
+                                        <a href="/soccer/m/event/match/13130/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 21</span>
+                                                <span class="round">Bảng C</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Đan Mạch</span>
+                                                <i class="flag flag-dk"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-au"></i>
+                                                <span>Úc</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13131" style="position: relative">
+                                        <a href="/soccer/m/event/match/13131/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 22</span>
+                                                <span class="round">Bảng C</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Pháp</span>
+                                                <i class="flag flag-fr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pe"></i>
+                                                <span>Peru</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 6 NGÀY 22-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13136" style="position: relative">
+                                        <a href="/soccer/m/event/match/13136/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 23</span>
+                                                <span class="round">Bảng D</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Argentina</span>
+                                                <i class="flag flag-ar"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">3</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-hr"></i>
+                                                <span>Croatia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13142" style="position: relative">
+                                        <a href="/soccer/m/event/match/13142/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 24</span>
+                                                <span class="round">Bảng E</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Brazil</span>
+                                                <i class="flag flag-br"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-cr"></i>
+                                                <span>Costa Rica</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13137" style="position: relative">
+                                        <a href="/soccer/m/event/match/13137/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 25</span>
+                                                <span class="round">Bảng D</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nigeria</span>
+                                                <i class="flag flag-ng"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-is"></i>
+                                                <span>Iceland</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 7 NGÀY 23-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13143" style="position: relative">
+                                        <a href="/soccer/m/event/match/13143/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 26</span>
+                                                <span class="round">Bảng E</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Serbia</span>
+                                                <i class="flag flag-rs"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ch"></i>
+                                                <span>Thụy Sĩ</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13154" style="position: relative">
+                                        <a href="/soccer/m/event/match/13154/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 27</span>
+                                                <span class="round">Bảng G</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Bỉ</span>
+                                                <i class="flag flag-be"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">5</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-tn"></i>
+                                                <span>Tunisia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13148" style="position: relative">
+                                        <a href="/soccer/m/event/match/13148/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 28</span>
+                                                <span class="round">Bảng F</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Hàn Quốc</span>
+                                                <i class="flag flag-kr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-mx"></i>
+                                                <span>Mexico</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Chủ nhật NGÀY 24-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13149" style="position: relative">
+                                        <a href="/soccer/m/event/match/13149/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 29</span>
+                                                <span class="round">Bảng F</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Đức</span>
+                                                <i class="flag flag-de"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-se"></i>
+                                                <span>Thụy Điển</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13155" style="position: relative">
+                                        <a href="/soccer/m/event/match/13155/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 30</span>
+                                                <span class="round">Bảng G</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Anh</span>
+                                                <i class="flag flag-gb"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">6</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pa"></i>
+                                                <span>Panama</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13160" style="position: relative">
+                                        <a href="/soccer/m/event/match/13160/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 31</span>
+                                                <span class="round">Bảng H</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nhật Bản</span>
+                                                <i class="flag flag-jp"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-sn"></i>
+                                                <span>Senegal</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 2 NGÀY 25-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13161" style="position: relative">
+                                        <a href="/soccer/m/event/match/13161/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 32</span>
+                                                <span class="round">Bảng H</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Ba Lan</span>
+                                                <i class="flag flag-pl"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">3</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-co"></i>
+                                                <span>Colombia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13120" style="position: relative">
+                                        <a href="/soccer/m/event/match/13120/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 33</span>
+                                                <span class="round">Bảng A</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Uruguay</span>
+                                                <i class="flag flag-uy"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">3</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ru"></i>
+                                                <span>Nga</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13121" style="position: relative">
+                                        <a href="/soccer/m/event/match/13121/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 34</span>
+                                                <span class="round">Bảng A</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Ả Rập Xê Út</span>
+                                                <i class="flag flag-sa"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-eg"></i>
+                                                <span>Ai Cập</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 3 NGÀY 26-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13127" style="position: relative">
+                                        <a href="/soccer/m/event/match/13127/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 35</span>
+                                                <span class="round">Bảng B</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Tây Ban Nha</span>
+                                                <i class="flag flag-es"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ma"></i>
+                                                <span>Morocco</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13126" style="position: relative">
+                                        <a href="/soccer/m/event/match/13126/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 36</span>
+                                                <span class="round">Bảng B</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Iran</span>
+                                                <i class="flag flag-ir"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pt"></i>
+                                                <span>Bồ Đào Nha</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13133" style="position: relative">
+                                        <a href="/soccer/m/event/match/13133/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 37</span>
+                                                <span class="round">Bảng C</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Úc</span>
+                                                <i class="flag flag-au"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pe"></i>
+                                                <span>Peru</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13132" style="position: relative">
+                                        <a href="/soccer/m/event/match/13132/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 38</span>
+                                                <span class="round">Bảng C</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Đan Mạch</span>
+                                                <i class="flag flag-dk"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-fr"></i>
+                                                <span>Pháp</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 4 NGÀY 27-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13138" style="position: relative">
+                                        <a href="/soccer/m/event/match/13138/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 39</span>
+                                                <span class="round">Bảng D</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nigeria</span>
+                                                <i class="flag flag-ng"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ar"></i>
+                                                <span>Argentina</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13139" style="position: relative">
+                                        <a href="/soccer/m/event/match/13139/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 40</span>
+                                                <span class="round">Bảng D</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Iceland</span>
+                                                <i class="flag flag-is"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-hr"></i>
+                                                <span>Croatia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13150" style="position: relative">
+                                        <a href="/soccer/m/event/match/13150/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 41</span>
+                                                <span class="round">Bảng F</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Hàn Quốc</span>
+                                                <i class="flag flag-kr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-de"></i>
+                                                <span>Đức</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13151" style="position: relative">
+                                        <a href="/soccer/m/event/match/13151/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 42</span>
+                                                <span class="round">Bảng F</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Mexico</span>
+                                                <i class="flag flag-mx"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">3</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-se"></i>
+                                                <span>Thụy Điển</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 5 NGÀY 28-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13145" style="position: relative">
+                                        <a href="/soccer/m/event/match/13145/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 43</span>
+                                                <span class="round">Bảng E</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Thụy Sĩ</span>
+                                                <i class="flag flag-ch"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-cr"></i>
+                                                <span>Costa Rica</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13144" style="position: relative">
+                                        <a href="/soccer/m/event/match/13144/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 44</span>
+                                                <span class="round">Bảng E</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Serbia</span>
+                                                <i class="flag flag-rs"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-br"></i>
+                                                <span>Brazil</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13163" style="position: relative">
+                                        <a href="/soccer/m/event/match/13163/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 45</span>
+                                                <span class="round">Bảng H</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Senegal</span>
+                                                <i class="flag flag-sn"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-co"></i>
+                                                <span>Colombia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13162" style="position: relative">
+                                        <a href="/soccer/m/event/match/13162/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 46</span>
+                                                <span class="round">Bảng H</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nhật Bản</span>
+                                                <i class="flag flag-jp"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pl"></i>
+                                                <span>Ba Lan</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 6 NGÀY 29-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="13157" style="position: relative">
+                                        <a href="/soccer/m/event/match/13157/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 47</span>
+                                                <span class="round">Bảng G</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Panama</span>
+                                                <i class="flag flag-pa"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-tn"></i>
+                                                <span>Tunisia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="13156" style="position: relative">
+                                        <a href="/soccer/m/event/match/13156/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 48</span>
+                                                <span class="round">Bảng G</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Anh</span>
+                                                <i class="flag flag-gb"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-be"></i>
+                                                <span>Bỉ</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cate-title">
+                                <span>VÒNG LOẠI 16 ĐỘI</span>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 7 NGÀY 30-06-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15297" style="position: relative">
+                                        <a href="/soccer/m/event/match/15297/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 49</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Pháp</span>
+                                                <i class="flag flag-fr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">4</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">3</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ar"></i>
+                                                <span>Argentina</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Chủ nhật NGÀY 01-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15270" style="position: relative">
+                                        <a href="/soccer/m/event/match/15270/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 50</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Uruguay</span>
+                                                <i class="flag flag-uy"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-pt"></i>
+                                                <span>Bồ Đào Nha</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  has-pen" data-id="15271" style="position: relative">
+                                        <a href="/soccer/m/event/match/15271/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 51</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Tây Ban Nha</span>
+                                                <i class="flag flag-es"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ru"></i>
+                                                <span>Nga</span>
+                                            </div>
+                                            <span class="pen">(PEN 3 - 4)</span>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 2 NGÀY 02-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  has-pen" data-id="15298" style="position: relative">
+                                        <a href="/soccer/m/event/match/15298/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 52</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Croatia</span>
+                                                <i class="flag flag-hr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-dk"></i>
+                                                <span>Đan Mạch</span>
+                                            </div>
+                                            <span class="pen">(PEN 3 - 2)</span>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="15316" style="position: relative">
+                                        <a href="/soccer/m/event/match/15316/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 53</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Brazil</span>
+                                                <i class="flag flag-br"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-mx"></i>
+                                                <span>Mexico</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 3 NGÀY 03-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15339" style="position: relative">
+                                        <a href="/soccer/m/event/match/15339/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 54</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Bỉ</span>
+                                                <i class="flag flag-be"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">3</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-jp"></i>
+                                                <span>Nhật Bản</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="15317" style="position: relative">
+                                        <a href="/soccer/m/event/match/15317/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 55</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Thụy Điển</span>
+                                                <i class="flag flag-se"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-ch"></i>
+                                                <span>Thụy Sĩ</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 4 NGÀY 04-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  has-pen" data-id="15340" style="position: relative">
+                                        <a href="/soccer/m/event/match/15340/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 56</span>
+                                                <span class="round">Vòng 1/8</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Colombia</span>
+                                                <i class="flag flag-co"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-gb"></i>
+                                                <span>Anh</span>
+                                            </div>
+                                            <span class="pen">(PEN 3 - 4)</span>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cate-title">
+                                <span>VÒNG TỨ KẾT</span>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 6 NGÀY 06-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15351" style="position: relative">
+                                        <a href="/soccer/m/event/match/15351/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 57</span>
+                                                <span class="round">Tứ kết 1</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Uruguay</span>
+                                                <i class="flag flag-uy"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-fr"></i>
+                                                <span>Pháp</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 7 NGÀY 07-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15368" style="position: relative">
+                                        <a href="/soccer/m/event/match/15368/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 58</span>
+                                                <span class="round">Tứ kết 2</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Brazil</span>
+                                                <i class="flag flag-br"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-be"></i>
+                                                <span>Bỉ</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                    <div class="match item match-FT  " data-id="15388" style="position: relative">
+                                        <a href="/soccer/m/event/match/15388/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 59</span>
+                                                <span class="round">Tứ kết 3</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Thụy Điển</span>
+                                                <i class="flag flag-se"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">0</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-gb"></i>
+                                                <span>Anh</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Chủ nhật NGÀY 08-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  has-pen" data-id="15356" style="position: relative">
+                                        <a href="/soccer/m/event/match/15356/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 60</span>
+                                                <span class="round">Tứ kết 4</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Nga</span>
+                                                <i class="flag flag-ru"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-hr"></i>
+                                                <span>Croatia</span>
+                                            </div>
+                                            <span class="pen">(PEN 3 - 4)</span>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cate-title">
+                                <span>VÒNG BÁN KẾT</span>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 4 NGÀY 11-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15443" style="position: relative">
+                                        <a href="/soccer/m/event/match/15443/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 61</span>
+                                                <span class="round">Bán kết 1</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Pháp</span>
+                                                <i class="flag flag-fr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">1</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-be"></i>
+                                                <span>Bỉ</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 5 NGÀY 12-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15464" style="position: relative">
+                                        <a href="/soccer/m/event/match/15464/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 62</span>
+                                                <span class="round">Bán kết 2</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Croatia</span>
+                                                <i class="flag flag-hr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">1</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-gb"></i>
+                                                <span>Anh</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick is-active">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cate-title">
+                                <span>TRANH 3-4</span>
+                            </div>
+                            <div class="">
+                                <div class="time-title"><span>Thứ 7 NGÀY 14-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15761" style="position: relative">
+                                        <a href="/soccer/m/event/match/15761/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 63</span>
+                                                <span class="round">Tranh 3-4</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Bỉ</span>
+                                                <i class="flag flag-be"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">2</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">0</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-gb"></i>
+                                                <span>Anh</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cate-title">
+                                <span>CHUNG KẾT</span>
+                            </div>
+                            <div class="is-today">
+                                <i id="is-today"></i>
+                                <div class="time-title"><span>Chủ nhật NGÀY 15-07-2018</span></div>
+                                <div class="content">
+                                    <div class="match item match-FT  " data-id="15760" style="position: relative">
+                                        <a href="/soccer/m/event/match/15760/season/69">
+                                            <div class="info">
+                                                <span class="number">Trận 64</span>
+                                                <span class="round">Chung kết</span>
+                                            </div>
+                                            <div class="team home">
+                                                <span>Pháp</span>
+                                                <i class="flag flag-fr"></i>
+                                            </div>
+                                            <div class="sco">
+                                                <span class="home">4</span>
+                                                <span class="split"> - </span>
+                                                <span class="away">2</span>
+                                            </div>
+                                            <div class="team away">
+                                                <i class="flag flag-hr"></i>
+                                                <span>Croatia</span>
+                                            </div>
+                                        </a>
+                                        <button class="bookmark bookmarkClick">
+                                            <i class="event event--bookmark"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="s-grid__250">
+                    <div class="small-list baomoi-news" data-track="|newest_box">
+                        <div class="baomoi-news__title">
+                            <span>THÔNG TIN BÊN LỀ</span>
+                        </div>
+                        <div class="story story--photo" data-aid="">
+                            <div class="story__thumb"><a href="http://baomoi.com/phi-son-niu-mot-diem-cho-tp-hcm-trong-ngay-kesley-tai-xuat/c/26391865.epi" target="_blank"><img src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/18/06/12/50/26391865/8_132251.jpg" alt="Cựu vua phá lưới V-League 2005 Huynh Kesley trở lại V- League trong màu áo TP.HCM hợp cùng cựu sao của Hà Nội T&amp;T Gonzalo thi đấu rất ấn tượng."></a></div>
+                            <h4 class="story__heading"><a href="http://baomoi.com/phi-son-niu-mot-diem-cho-tp-hcm-trong-ngay-kesley-tai-xuat/c/26391865.epi" title="Phi Sơn 'níu' một điểm cho TP.HCM trong ngày Kesley tái xuất" target="_blank">Phi Sơn 'níu' một điểm cho TP.HCM trong ngày Kesley tái xuất</a></h4>
+                            <div class="story__meta">
+                                <a class="source">PLO</a>
+                                <time class="time friendly">11 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo" data-aid="">
+                            <div class="story__thumb"><a href="http://baomoi.com/anh-che-bong-da-12-6-ronaldo-bi-bo-roi-messi-dau-kho-trong-tim/c/26391848.epi" target="_blank"><img src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/18/06/12/105/26391848/6_160983.jpg" alt="Tương lai của Ronaldo trở nên mù mịt khi bị Real 'bỏ rơi', Messi cười nhưng đau khổ trong tim, Lukaku khởi động hoàn hảo trước World Cup 2018… là những bức ảnh thú vị trong chùm ảnh chế bóng đá hôm nay."></a></div>
+                            <h4 class="story__heading"><a href="http://baomoi.com/anh-che-bong-da-12-6-ronaldo-bi-bo-roi-messi-dau-kho-trong-tim/c/26391848.epi" title="ẢNH CHẾ BÓNG ĐÁ (12.6): Ronaldo bị 'bỏ rơi', Messi đau khổ trong tim" target="_blank">ẢNH CHẾ BÓNG ĐÁ (12.6): Ronaldo bị 'bỏ rơi', Messi đau khổ trong tim</a></h4>
+                            <div class="story__meta">
+                                <a class="source">Dân Việt</a>
+                                <time class="time friendly">12 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo" data-aid="">
+                            <div class="story__thumb"><a href="http://baomoi.com/tay-ban-nha-nin-tho-truoc-chan-thuong-cua-gerard-pique/c/26391786.epi" target="_blank"><img src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/18/06/12/22/26391786/3_84400.jpg" alt="Đặt chân đến nước Nga với đội hình hùng mạnh nhưng tin dữ bất ngờ xuống đội tuyển Tây Ban Nha."></a></div>
+                            <h4 class="story__heading"><a href="http://baomoi.com/tay-ban-nha-nin-tho-truoc-chan-thuong-cua-gerard-pique/c/26391786.epi" title="Tây Ban Nha nín thở trước chấn thương của Gerard Pique" target="_blank">Tây Ban Nha nín thở trước chấn thương của Gerard Pique</a></h4>
+                            <div class="story__meta">
+                                <a class="source">CAND</a>
+                                <time class="time friendly">26 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo" data-aid="">
+                            <div class="story__thumb"><a href="http://baomoi.com/vo-tuyen-thu-anh-tham-gia-luc-luong-tro-ly-var-o-world-cup/c/26391835.epi" target="_blank"><img src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/18/06/12/19/26391835/6_47192.jpg" alt="Việc không trọng tài người Anh nào được mời làm nhiệm vụ tại World Cup 2018 có lẽ là nỗi hổ thẹn lớn nhất của xứ sở sương mù vốn luôn tự hào là nơi sản sinh ra bóng đá hiện đại."></a></div>
+                            <h4 class="story__heading"><a href="http://baomoi.com/vo-tuyen-thu-anh-tham-gia-luc-luong-tro-ly-var-o-world-cup/c/26391835.epi" title="Vợ tuyển thủ Anh tham gia lực lượng trợ lý VAR ở World Cup" target="_blank">Vợ tuyển thủ Anh tham gia lực lượng trợ lý VAR ở World Cup</a></h4>
+                            <div class="story__meta">
+                                <a class="source">NLĐ</a>
+                                <time class="time friendly">28 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo" data-aid="">
+                            <div class="story__thumb"><a href="http://baomoi.com/griezmann-khien-toan-bo-phong-vien-dung-hinh-voi-thong-bao-chuyen-nhuong/c/26391732.epi" target="_blank"><img src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/18/06/12/111/26391732/1_35175.jpg" alt="Trước những câu hỏi về tương lai trong cuộc họp báo mới đây, Antoine Griezmann cũng đã đưa ra một thông điệp rất đanh thép."></a></div>
+                            <h4 class="story__heading"><a href="http://baomoi.com/griezmann-khien-toan-bo-phong-vien-dung-hinh-voi-thong-bao-chuyen-nhuong/c/26391732.epi" title="Griezmann khiến toàn bộ phóng viên 'đứng hình' với thông báo chuyển nhượng" target="_blank">Griezmann khiến toàn bộ phóng viên 'đứng hình' với thông báo chuyển nhượng</a></h4>
+                            <div class="story__meta">
+                                <a class="source">Bóng Đá</a>
+                                <time class="time friendly">32 phút</time>
+                            </div>
+                        </div>
+                        <div class="story story--photo" data-aid="">
+                            <div class="story__thumb"><a href="http://baomoi.com/xep-hang-32-dtqg-du-world-cup-2018-theo-bxh-fifa-thang-6-2018/c/26391728.epi" target="_blank"><img src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/18/06/12/94/26391728/34_142668.jpg" alt="Xếp hạng 32 ĐTQG dự World Cup 2018 dựa trên bảng xếp hạng FIFA tháng 6/2018 mà Liên đoàn bóng đá thế giới vừa công bố."></a></div>
+                            <h4 class="story__heading"><a href="http://baomoi.com/xep-hang-32-dtqg-du-world-cup-2018-theo-bxh-fifa-thang-6-2018/c/26391728.epi" title="Xếp hạng 32 ĐTQG dự World Cup 2018 theo BXH FIFA tháng 6/2018" target="_blank">Xếp hạng 32 ĐTQG dự World Cup 2018 theo BXH FIFA tháng 6/2018</a></h4>
+                            <div class="story__meta">
+                                <a class="source">VOV</a>
+                                <time class="time friendly">32 phút</time>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rightBox-1 baomoi-news" data-track="|newest_box">
+                        <div class="baomoi-news__title">
+                            <span>VIDEO</span>
+                        </div>
+                        <div class="rightBox-1__content">
+                            <div class="wrap">
+                                <div class="story story--video" data-aid="26523472" data-track="|index0">
+                                    <div class="story__thumb">
+                                        <a href="/thanh-nien-tao-ton-pha-khoa-cua-dot-nhap-phong-tro-lay-trom-tivi/r/26523472.epi" target="_blank">
+                                    
+                                    <img src="https://baomoi-photo-2-td.zadn.vn/w400_r16x9/18/06/14/255/26523472/1_174517.jpg" alt="Thanh niên táo tợn phá khóa cửa, đột nhập phòng trọ lấy trộm tivi">
+                                    
+                                </a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="/thanh-nien-tao-ton-pha-khoa-cua-dot-nhap-phong-tro-lay-trom-tivi/r/26523472.epi" title="Thanh niên táo tợn phá khóa cửa, đột nhập phòng trọ lấy trộm tivi" target="_blank">Thanh niên táo tợn phá khóa cửa, đột nhập phòng trọ lấy trộm tivi</a></h4>
+                                    <div class="story__meta">
+                                        <a class="source" href="/bao-mot-the-gioi-mot-the-gioi/p/287.epi">
+                                    
+                                    Một Thế Giới
+                                </a>
+                                        <time class="time friendly" datetime="2018-06-14T16:31:00.000+07:00">5 phút</time>
+                                        <a class="relate" href="/tin-lien-quan/t/6444010.epi">3 liên quan</a>
+                                        <a href="/thanh-nien-tao-ton-pha-khoa-cua-dot-nhap-phong-tro-lay-trom-tivi/c/26523472.epi" title="Thanh niên táo tợn phá khóa cửa, đột nhập phòng trọ lấy trộm tivi" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                    <img class="lazy" data-src="//log.baomoi.com/imps?data=eyJrZXkiOiJ3ZWJ0cmFjay9pbXBzL2FydGljbGUiLCJ2YWx1ZSI6IjI2NTIzNDcyIiwicmFuZCI6MC4wMjY1Mjk4Mzc3NTE3OTU3MzcsInVpZCI6IjkyMTcxMzM1NjE4NTk3Njg5MDciLCJ2aXNpdG9ySWQiOiIyMDAwLmQ5ODY1ZWFlYzljMzIyOWQ3YmQyLjE1MTY4NzY4MzI2MjkuNWY4Y2Q4MmEifQ==" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><img class="lazy" data-src="//log.baomoi.com/imps?data=eyJrZXkiOiJ3ZWJ0cmFjay9pbXBzL2hvbWVwYWdlL3ZpZGVvX2JveC9pbmRleDAiLCJyYW5kIjowLjkxODQ2NjE0NTk2MzgyMTMsInVpZCI6IjkyMTcxMzM1NjE4NTk3Njg5MDciLCJ2aXNpdG9ySWQiOiIyMDAwLmQ5ODY1ZWFlYzljMzIyOWQ3YmQyLjE1MTY4NzY4MzI2MjkuNWY4Y2Q4MmEifQ==" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></div>
+                                <div class="story story--video" data-aid="26523414" data-track="|index1">
+                                    <div class="story__thumb">
+                                        <a href="/mc-quoc-dan-trieu-tien-thong-bao-ket-qua-thuong-dinh-my-trieu/r/26523414.epi" target="_blank">
+                                    
+                                    <img src="https://baomoi-photo-1-td.zadn.vn/w400_r16x9/18/06/14/139/26523414/1_98582.jpg" alt="MC quốc dân Triều Tiên thông báo kết quả thượng đỉnh Mỹ - Triều">
+                                    
+                                </a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="/mc-quoc-dan-trieu-tien-thong-bao-ket-qua-thuong-dinh-my-trieu/r/26523414.epi" title="MC quốc dân Triều Tiên thông báo kết quả thượng đỉnh Mỹ - Triều" target="_blank">MC quốc dân Triều Tiên thông báo kết quả thượng đỉnh Mỹ - Triều</a></h4>
+                                    <div class="story__meta">
+                                        <a class="source" href="/bao-kien-thuc-kien-thuc/p/180.epi">
+                                    
+                                    Kiến Thức
+                                </a>
+                                        <time class="time friendly" datetime="2018-06-14T16:30:00.000+07:00">6 phút</time>
+                                        <a class="relate" href="/tin-lien-quan/t/6401131.epi">31 liên quan</a>
+                                        <a href="/mc-quoc-dan-trieu-tien-thong-bao-ket-qua-thuong-dinh-my-trieu/c/26523414.epi" title="MC quốc dân Triều Tiên thông báo kết quả thượng đỉnh Mỹ - Triều" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                    <img class="lazy" data-src="//log.baomoi.com/imps?data=eyJrZXkiOiJ3ZWJ0cmFjay9pbXBzL2FydGljbGUiLCJ2YWx1ZSI6IjI2NTIzNDE0IiwicmFuZCI6MC4zMDE4MzM5NjQwOTI4NTM1NywidWlkIjoiOTIxNzEzMzU2MTg1OTc2ODkwNyIsInZpc2l0b3JJZCI6IjIwMDAuZDk4NjVlYWVjOWMzMjI5ZDdiZDIuMTUxNjg3NjgzMjYyOS41ZjhjZDgyYSJ9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><img class="lazy" data-src="//log.baomoi.com/imps?data=eyJrZXkiOiJ3ZWJ0cmFjay9pbXBzL2hvbWVwYWdlL3ZpZGVvX2JveC9pbmRleDEiLCJyYW5kIjowLjUyMDcxNjQ3Mzg1OTUxNzYsInVpZCI6IjkyMTcxMzM1NjE4NTk3Njg5MDciLCJ2aXNpdG9ySWQiOiIyMDAwLmQ5ODY1ZWFlYzljMzIyOWQ3YmQyLjE1MTY4NzY4MzI2MjkuNWY4Y2Q4MmEifQ==" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></div>
+                                <div class="story story--video story--photo" data-aid="26523471" data-track="|index2">
+                                    <div class="story__thumb">
+                                        <a href="/khong-chi-gioi-nau-an-truong-giang-con-co-tai-bien-huong-giang-thanh-ngoai-gia-trong-vong-7-not-nhac/r/26523471.epi" target="_blank">
+                                    
+                                    <img src="https://baomoi-photo-1-td.zadn.vn/w400_r16x9/18/06/14/293/26523471/7_317016.jpg" alt="Không chỉ giỏi nấu ăn, Trường Giang còn có tài biến Hương Giang thành ngoại già trong vòng '7 nốt nhạc'">
+                                    
+                                </a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="/khong-chi-gioi-nau-an-truong-giang-con-co-tai-bien-huong-giang-thanh-ngoai-gia-trong-vong-7-not-nhac/r/26523471.epi" title="Không chỉ giỏi nấu ăn, Trường Giang còn có tài biến Hương Giang thành ngoại già trong vòng '7 nốt nhạc'" target="_blank">Không chỉ giỏi nấu ăn, Trường Giang còn có tài biến Hương Giang thành ngoại già trong vòng '7 nốt nhạc'</a></h4>
+                                    <div class="story__meta">
+                                        <a class="source" href="/saostar-saostar/p/329.epi">
+                                    
+                                    SaoStar
+                                </a>
+                                        <time class="time friendly" datetime="2018-06-14T16:30:00.000+07:00">6 phút</time>
+                                        <a class="relate" href="/tin-lien-quan/t/6405392.epi">11 liên quan</a>
+                                        <a href="/khong-chi-gioi-nau-an-truong-giang-con-co-tai-bien-huong-giang-thanh-ngoai-gia-trong-vong-7-not-nhac/c/26523471.epi" title="Không chỉ giỏi nấu ăn, Trường Giang còn có tài biến Hương Giang thành ngoại già trong vòng '7 nốt nhạc'" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                    <img class="lazy" data-src="//log.baomoi.com/imps?data=eyJrZXkiOiJ3ZWJ0cmFjay9pbXBzL2FydGljbGUiLCJ2YWx1ZSI6IjI2NTIzNDcxIiwicmFuZCI6MC41MzQxMjc5MTU5Mzg5MjQzLCJ1aWQiOiI5MjE3MTMzNTYxODU5NzY4OTA3IiwidmlzaXRvcklkIjoiMjAwMC5kOTg2NWVhZWM5YzMyMjlkN2JkMi4xNTE2ODc2ODMyNjI5LjVmOGNkODJhIn0=" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="><img class="lazy" data-src="//log.baomoi.com/imps?data=eyJrZXkiOiJ3ZWJ0cmFjay9pbXBzL2hvbWVwYWdlL3ZpZGVvX2JveC9pbmRleDIiLCJyYW5kIjowLjc4NzEyMTkyNTM5OTcyMDEsInVpZCI6IjkyMTcxMzM1NjE4NTk3Njg5MDciLCJ2aXNpdG9ySWQiOiIyMDAwLmQ5ODY1ZWFlYzljMzIyOWQ3YmQyLjE1MTY4NzY4MzI2MjkuNWY4Y2Q4MmEifQ==" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fyi--970" style="display:none">
+            <img src="fig-images/ads/ads-728x90.jpg" alt="ads">
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/datepicker/jquery-ui.min.js" defer></script>
+    <script src="../Jscripts/datepicker/datepicker-vi.js" defer></script>
+    <script src="../Jscripts/soccer-ui-local.js" defer></script>
+</body>
+
+</html>

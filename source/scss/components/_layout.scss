@@ -1,0 +1,49 @@
+// ====================================
+// Layout's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* container
+* .col-610
+* .col-330
+*/
+
+
+/* > container */
+.wrapper {
+    @include clearfix;
+    position: relative;
+}
+
+.main-content {
+    padding-bottom: 20px;
+    >.l-grid {
+        padding-top: 15px;
+    }
+}
+
+.l-grid {
+    margin: 0 auto;
+    @include clearfix;
+    width: 970px;
+    position: relative;
+}
+// > col-610
+.l-grid__main {
+    width: 610px;
+    float: left;
+}
+// > col-330
+.l-grid__sub {
+    width: 330px;
+    float: right;
+}
+
+// >> sidebar 
+.sidebar {
+    >* {
+        margin-bottom: 50px;
+    }
+}

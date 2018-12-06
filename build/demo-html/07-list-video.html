@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>7-list-video.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop-styles.css">
+    <!--[if lt IE 9]>
+        <script src="../Jscripts/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper video_page">
+        <div class="header">
+            <div class="l-grid">
+                <a href="01-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__user">
+                    <div class="login hidden">
+                        <button href="#" class="uName">
+                            <i class="spr spr--user"></i>
+                        </button>
+                        <div class="login-board">
+                            <span class="desc">Đăng nhập để trải nghiệm thêm những tính năng hữu ích</span>
+                            <button class="login-zalo"><span>Zalo</span><i class="spr spr--zalo"></i></button>
+                            <button class="login-fb"><span>Facebook</span><i class="spr spr--fb"></i></button>
+                            <button class="login-gplus"><span>Google</span><i class="spr spr--gplus"></i></button>
+                        </div>
+                    </div>
+                    <div class="logged ">
+                        <a href="#" class="uName">
+                            <div class="uName__thumb">
+                                <img src="fig-images/site/1x1.png" alt="avatar" width="24" height="24">
+                            </div>
+                            <span class="text">Trần Anh Tuấn</span>
+                        </a>
+                        <div class="user-board">
+                            <ul>
+                                <li class="is-first"><a href="#"><i class="spr spr--recommend"></i><span>Tin đề xuất</span></a></li>
+                                <li><a href="#"><i class="spr spr--history"></i><span>Tin mới đọc</span></a></li>
+                                <li><a href="#"><i class="spr spr--bookmark"></i><span>Tin đã lưu</span></a></li>
+                                <li class="notice"><a href="#"><i class="spr spr--notice"></i><span>Thông báo</span></a><button class="switch"></button></li>
+                                <li class="log-out"><button><i class="spr spr--logout"></i><span>Đăng xuất</span></button></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <a href="#" class="switch-mobile">
+                    <i class="spr spr--mobile-ver"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>KH - CN </span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Khoa học - Tự nhiên</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Games</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="fyi fyi--970">
+                <div class="fyi__box"><img src="fig-images/ads/ads-728x90.jpg" alt="ads"></div>
+            </div>
+            <div class="l-grid">
+                <div class="wrap-filter">
+                    <div class="main-filter">
+                        <a href="#">
+                            <i class="spr spr--pin-hot"></i>
+                            <span>Nóng</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-latest"></i>
+                            <span>Mới</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-video"></i>
+                            <span>Video</span>
+                        </a>
+                        <a href="#" class="is-last">
+                            <i class="spr spr--pin-event"></i>
+                            <span>Sự kiện</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="l-grid__main">
+                    <h1 class="block__header black"><span>Tin video</span></h1>
+                    <div class="media-list">
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Năm nay không có tết</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--106"></i>KienThuc</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story no-fig">
+                            <div class="story__thumb">
+                                <a href="03-article.html"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Sẽ có gì đột biến trong cuộc bỏ phiếu của đại cử tri Mỹ?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--134"></i>Đời sống Plus</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--119"></i>Ictnews</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Năm nay không có tết</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--106"></i>KienThuc</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Đại cử tri Mỹ sẽ làm gì để đưa ông Trump chiến thắng trở lại?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--123"></i>Lao Động</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <i class="spr spr--video"></i>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Bài thuốc nam kỳ diệu chữa bệnh gout cho hàng nghìn người</a></h4>
+                            <div class="story__meta">
+                                <a href="#" class="fyi-text">Vietnam Airlines<span>Tài trợ</span></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--110"></i>motthegioi</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Thị trường nội địa vẫn bị doanh nghiệp Việt xem nhẹ</a></h4>
+                            <div class="story__meta">
+                                <a href="#" class="fyi-text">lyviy<span>Tài trợ</span></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">'Kiến nghị bỏ xe biển xanh để bình đẳng trước pháp luật'</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--109"></i>DauThau</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Năm nay không có tết</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--106"></i>KienThuc</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Đại cử tri Mỹ sẽ làm gì để đưa ông Trump chiến thắng trở lại?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--123"></i>Lao Động</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <i class="spr spr--video"></i>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Bài thuốc nam kỳ diệu chữa bệnh gout cho hàng nghìn người</a></h4>
+                            <div class="story__meta">
+                                <a href="#" class="fyi-text">Vietnam Airlines<span>Tài trợ</span></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--110"></i>motthegioi</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Sẽ có gì đột biến trong cuộc bỏ phiếu của đại cử tri Mỹ?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--134"></i>Đời sống Plus</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--119"></i>Ictnews</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Năm nay không có tết</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--106"></i>KienThuc</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Đại cử tri Mỹ sẽ làm gì để đưa ông Trump chiến thắng trở lại?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--123"></i>Lao Động</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <i class="spr spr--video"></i>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Bài thuốc nam kỳ diệu chữa bệnh gout cho hàng nghìn người</a></h4>
+                            <div class="story__meta">
+                                <a href="#" class="fyi-text">Vietnam Airlines<span>Tài trợ</span></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--110"></i>motthegioi</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Thị trường nội địa vẫn bị doanh nghiệp Việt xem nhẹ</a></h4>
+                            <div class="story__meta">
+                                <a href="#" class="fyi-text">lyviy<span>Tài trợ</span></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">'Kiến nghị bỏ xe biển xanh để bình đẳng trước pháp luật'</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--109"></i>DauThau</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Sẽ có gì đột biến trong cuộc bỏ phiếu của đại cử tri Mỹ?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--134"></i>Đời sống Plus</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--119"></i>Ictnews</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story child-3n">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Năm nay không có tết</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--106"></i>KienThuc</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Đại cử tri Mỹ sẽ làm gì để đưa ông Trump chiến thắng trở lại?</a></h4>
+                            <div class="story__meta">
+                                <a href="03-article.html" class="source"><i class="plsh plsh--123"></i>Lao Động</a>
+                                <span class="time">3 giờ trước</span>
+                                <a href="03-article.html" class="relate">3 liên quan</a>
+                                <i class="spr spr--video"></i>
+                                <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story">
+                            <div class="story__thumb">
+                                <a href="03-article.html"><img src="fig-images/site/200x125.png" width="200" height="125" alt="description"></a>
+                            </div>
+                            <h4 class="story__heading"><a href="03-article.html">Bài thuốc nam kỳ diệu chữa bệnh gout cho hàng nghìn người</a></h4>
+                            <div class="story__meta">
+                                <a href="#" class="fyi-text">Vietnam Airlines<span>Tài trợ</span></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pagination">
+                        <span>
+                            <a href="/xa-hoi/trang3.epi">«</a>
+                            <a href="/xa-hoi/trang1.epi">1</a>
+                            <a href="/xa-hoi/trang2.epi">2</a>
+                            <a href="/xa-hoi/trang3.epi">3</a>
+                            <a class="active">4</a>
+                            <a href="/xa-hoi/trang5.epi">5</a>
+                            <a href="/xa-hoi/trang6.epi">6</a>
+                            <a href="/xa-hoi/trang7.epi">...</a>
+                            <a href="/xa-hoi/trang100.epi">100</a>
+                            <a href="/xa-hoi/trang5.epi">»</a>
+                        </span>
+                    </div>
+                </div>
+                <div class="l-grid__sub">
+                    <div class="sidebar">
+                        <div class="fyi fyi--300">
+                            <div class="fyi__box"><img src="fig-images/ads/ads-300x250-1.jpg" alt="ads"></div>
+                        </div>
+                        <div class="photo-box">
+                            <h2 class="block__header"><span>photo</span></h2>
+                            <div class="photo__content">
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html">
+                                            <span class="is-first"><img src="fig-images/site/300x200.png" width="300" height="200" alt="description"></span>
+                                            <span class="is-second"><img src="fig-images/site/200x134.png" width="200" height="134" alt="description"></span>
+                                            <span class="is-last"><img src="fig-images/site/200x134.png" width="200" height="134" alt="description"></span>
+                                        </a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">'Kiến nghị bỏ xe biển xanh để bình đẳng trước pháp luật'</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">dauthau</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html">
+                                            <span class="is-first"><img src="fig-images/site/300x200.png" width="300" height="200" alt="description"></span>
+                                            <span class="is-second"><img src="fig-images/site/200x134.png" width="200" height="134" alt="description"></span>
+                                            <span class="is-last"><img src="fig-images/site/200x134.png" width="200" height="134" alt="description"></span>
+                                        </a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">'Kiến nghị bỏ xe biển xanh để bình đẳng trước pháp luật'</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">dauthau</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html">
+                                            <span class="is-first"><img src="fig-images/site/300x200.png" width="300" height="200" alt="description"></span>
+                                            <span class="is-second"><img src="fig-images/site/200x134.png" width="200" height="134" alt="description"></span>
+                                            <span class="is-last"><img src="fig-images/site/200x134.png" width="200" height="134" alt="description"></span>
+                                        </a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">'Kiến nghị bỏ xe biển xanh để bình đẳng trước pháp luật'</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">dauthau</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="soccer-box">
+                            <h2 class="block__header">
+                                                <span>Bóng đá</span>
+                                            </h2>
+                            <select class="soccer__league">
+                                <option>Premier League</option>
+                                <option>Bundesliga</option>
+                                <option>Serie A</option>
+                                <option>Ligue 1</option>
+                                <option>V-League</option>
+                                <option>V-League 2</option>
+                                <option>Champion League</option>
+                                <option>Europa League</option>
+                            </select>
+                            <div class="soccer__content">
+                                <table>
+                                    <tr>
+                                        <td class="time">FT</td>
+                                        <td class="team-1"><a>Tottenham</a></td>
+                                        <td class="team-1__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/252-Chelsea-OXVM.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="score">2 - 1</td>
+                                        <td class="team-2__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/275-Swansea-City-OKPG.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="team-2"><a class="">Burnley</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time">FT</td>
+                                        <td class="team-1"><a class="">B. München</a></td>
+                                        <td class="team-1__logo">
+                                            <a class=""> <img src="http://soccer.service.baomoi.com/img/Teams/310-Valencia-LUDV.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="score">3 - 4</td>
+                                        <td class="team-2__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/234-Real-Madrid-ZRNS.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="team-2"><a class="">W.Bremen</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time live">55’</td>
+                                        <td class="team-1"><a class="">Hoffenheim</a></td>
+                                        <td class="team-1__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/256-Porto-INBM.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="score">1 - 5</td>
+                                        <td class="team-2__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/230-Juventus-SNRT.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="team-2"><a class="">Lazio</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time">9:28</td>
+                                        <td class="team-1"><a class="">Hertha BSC</a></td>
+                                        <td class="team-1__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/342-Saint-Etienne-OLKW.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="score">? - ?</td>
+                                        <td class="team-2__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/274-Manchester-United-MBHN.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="team-2"><a class="">Freiburg</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time">12:44</td>
+                                        <td class="team-1"><a class="">Pescara</a></td>
+                                        <td class="team-1__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/505-Las-Palmas-HVAM.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="score">? - ?</td>
+                                        <td class="team-2__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/316-Real-Sociedad-TERB.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="team-2"><a class="">Chievo</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td class="time">13:54</td>
+                                        <td class="team-1"><a class="">Roma</a></td>
+                                        <td class="team-1__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/367-Nice-KAUA.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="score">? - ?</td>
+                                        <td class="team-2__logo">
+                                            <a class=""><img src="http://soccer.service.baomoi.com/img/Teams/374-Montpellier-AYRQ.png" height="20" width="20" alt=""></a>
+                                        </td>
+                                        <td class="team-2"><a class="">RB Leipzig</a></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <button class="more">Xem thêm <i class="spr spr--more"></i></button>
+                        </div>
+                        <div class="follow">
+                            <h2 class="block__header">
+                                                <span>Theo dõi</span>
+                                            </h2>
+                            <div class="follow__content">
+                                <a href="https://www.facebook.com/baomoi/" target="_blank" class="follow__link--fb">
+                                    <i class="spr spr--s-facebook"></i>
+                                    <span>Báo Mới<br>Fanpage</span>
+                                </a>
+                                <a href="https://www.facebook.com/baomoigiaitri/" class="follow__link--fb child-2n">
+                                    <i class="spr spr--s-facebook"></i>
+                                    <span>Báo Mới<br>Giải Trí</span>
+                                </a>
+                                <a href="https://noti.baomoi.com/" target="_blank" class="follow__link--noti">
+                                    <i class="spr spr--s-notification"></i>
+                                    <span>Gửi tin nóng<br>cho bạn</span>
+                                </a>
+                                <a href="https://plus.google.com/+baomoi/posts" target="_blank" class="follow__link--zalo child-2n">
+                                    <i class="spr spr--s-zalo"></i>
+                                    <span>Zalo<br>Group</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 class="block__header"><span>Nóng 24h</span></h2>
+                            <div class="small-list">
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html"><img src="fig-images/site/100x100.png" width="100" height="100" alt="description"></a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">thanhnien</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="relate">3 liên quan</a>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html"><img src="fig-images/site/100x100.png" width="100" height="100" alt="description"></a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">Năm nay không có tết</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">Kienthuc</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="relate">3 liên quan</a>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                                <div class="story no-fig">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html"></a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">Đại cử tri Mỹ sẽ làm gì để đưa ông Trump chiến thắng trở lại?</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">dantri</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="relate">3 liên quan</a>
+                                        <i class="spr spr--video"></i>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html"><img src="fig-images/site/100x100.png" width="100" height="100" alt="description"></a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">Lừa 100 lao động xuất khẩu, chiếm đoạt tiền tỷ</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">phapluat</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                                <div class="story">
+                                    <div class="story__thumb">
+                                        <a href="03-article.html"><img src="fig-images/site/100x100.png" width="100" height="100" alt="description"></a>
+                                    </div>
+                                    <h4 class="story__heading"><a href="03-article.html">'Kiến nghị bỏ xe biển xanh để bình đẳng trước pháp luật'</a></h4>
+                                    <div class="story__meta">
+                                        <a href="03-article.html" class="source">dauthau</a>
+                                        <span class="time">3 giờ trước</span>
+                                        <a href="03-article.html" class="cache"><i class="spr spr--baomoi"></i></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="trending">
+                            <h2 class="block__header">
+                                                <span>Xu hướng</span>
+                                            </h2>
+                            <div class="trending__content">
+                                <span class=" w18"><a href="/tag/vms-2016.epi">VMS 2016</a></span>
+                                <span class="down w9"><a href="/tag/hà-văn-hiếu.epi">Hà Văn Hiếu</a></span>
+                                <span class="down w4"><a href="/tag/nobel-hòa-bình-2016.epi">Nobel Hòa bình 2016</a></span>
+                                <span class="down w1"><a href="/tag/world-cup-2018.epi">World Cup 2018</a></span>
+                                <span class="up w15"><a href="/tag/bulgaria.epi">bulgaria</a></span>
+                                <span class=" w17"><a href="/tag/gareth-southgate.epi">Gareth Southgate</a></span>
+                                <span class="up w16"><a href="/tag/joao-cancelo.epi">Joao Cancelo</a></span>
+                                <span class=" w14"><a href="/tag/công-ty-than-núi-béo.epi">Công ty than Núi Béo</a></span>
+                                <span class="down w6"><a href="/tag/colombia.epi">colombia</a></span>
+                                <span class=" w20"><a href="/tag/hóa-sơn.epi">Hóa Sơn</a></span>
+                                <span class="down w3"><a href="/tag/juan-manuel-santos.epi">Juan Manuel Santos</a></span>
+                                <span class="up w5"><a href="/tag/haiti.epi">haiti</a></span>
+                                <span class="up w10"><a href="/tag/aff-cup-2016.epi">AFF Cup 2016</a></span>
+                                <span class=" w19"><a href="/tag/bão-matthew.epi">Bão Matthew</a></span>
+                                <span class="down w11"><a href="/tag/ủy-ban-nobel-na-uy.epi">Ủy ban Nobel Na Uy</a></span>
+                                <span class="up w13"><a href="/tag/hillary-clinton.epi">Hillary Clinton</a></span>
+                                <span class="up w7"><a href="/tag/andre-silva.epi">Andre Silva</a></span>
+                                <span class="up w12"><a href="/tag/poker.epi">poker</a></span>
+                                <span class="down w8"><a href="/tag/đường-võ-chí-công.epi">Đường Võ Chí Công</a></span>
+                                <span class="up w2"><a href="/tag/andorra.epi">Andorra</a></span>
+                            </div>
+                        </div>
+                        <div class="utilities">
+                            <h2 class="block__header">
+                                                <span>Tiện ích</span>
+                                            </h2>
+                            <div class="weather">
+                                <div class="weather__today">
+                                    <div class="weather__info">
+                                        <i class="spr spr--w-storm"></i>
+                                        <span class="dc">24° - 34°</span>
+                                        <span class="info">Trời đẹp</span>
+                                    </div>
+                                    <select class="weather__location" id="weather__location">
+                                        <option selected="selected" value="Hà Nội">Hà Nội</option>
+                                        <option value="TP Hồ Chí Minh">TP Hồ Chí Minh</option>
+                                        <option value="Đà Nẵng ">Đà Nẵng</option>
+                                        <option value="An Giang ">An Giang</option>
+                                        <option value="Bắc Giang ">Bắc Giang</option>
+                                        <option value="Bắc Kạn ">Bắc Kạn</option>
+                                        <option value="Bạc Liêu ">Bạc Liêu</option>
+                                        <option value="Bắc Ninh ">Bắc Ninh</option>
+                                        <option value="Bến Tre ">Bến Tre</option>
+                                        <option value="Bình Định ">Bình Định</option>
+                                        <option value="Bình Dương ">Bình Dương</option>
+                                        <option value="Bình Phước ">Bình Phước</option>
+                                        <option value="Bình Thuận ">Bình Thuận</option>
+                                        <option value="Cà Mau ">Cà Mau</option>
+                                        <option value="Cần Thơ ">Cần Thơ</option>
+                                        <option value="Cao Bằng ">Cao Bằng</option>
+                                        <option value="Đắk Lắk ">Đắk Lắk</option>
+                                        <option value="Đắk Nông ">Đắk Nông</option>
+                                        <option value="Điện Biên ">Điện Biên</option>
+                                        <option value="Đồng Nai ">Đồng Nai</option>
+                                        <option value="Đồng Tháp ">Đồng Tháp</option>
+                                        <option value="Gia Lai ">Gia Lai</option>
+                                        <option value="Hà Giang ">Hà Giang</option>
+                                        <option value="Hà Nam ">Hà Nam</option>
+                                        <option value="Hà Tĩnh ">Hà Tĩnh</option>
+                                        <option value="Hải Dương ">Hải Dương</option>
+                                        <option value="Hải Phòng ">Hải Phòng</option>
+                                        <option value="Hậu Giang ">Hậu Giang</option>
+                                        <option value="Hòa Bình ">Hòa Bình</option>
+                                        <option value="Hưng Yên ">Hưng Yên</option>
+                                        <option value="Khánh Hòa ">Khánh Hòa</option>
+                                        <option value="Kiên Giang ">Kiên Giang</option>
+                                        <option value="Kon Tum ">Kon Tum</option>
+                                        <option value="Lai Châu ">Lai Châu</option>
+                                        <option value="Lâm Đồng ">Lâm Đồng</option>
+                                        <option value="Lạng Sơn ">Lạng Sơn</option>
+                                        <option value="Lào Cai ">Lào Cai</option>
+                                        <option value="Long An ">Long An</option>
+                                        <option value="Nam Định ">Nam Định</option>
+                                        <option value="Nghệ An ">Nghệ An</option>
+                                        <option value="Ninh Bình ">Ninh Bình</option>
+                                        <option value="Ninh Thuận ">Ninh Thuận</option>
+                                        <option value="Phú Thọ ">Phú Thọ</option>
+                                        <option value="Phú Yên ">Phú Yên</option>
+                                        <option value="Quảng Bình ">Quảng Bình</option>
+                                        <option value="Quảng Nam ">Quảng Nam</option>
+                                        <option value="Quảng Ngãi ">Quảng Ngãi</option>
+                                        <option value="Quảng Ninh ">Quảng Ninh</option>
+                                        <option value="Quảng Trị ">Quảng Trị</option>
+                                        <option value="Sóc Trăng ">Sóc Trăng</option>
+                                        <option value="Sơn La ">Sơn La</option>
+                                        <option value="Tây Ninh ">Tây Ninh</option>
+                                        <option value="Thái Bình ">Thái Bình</option>
+                                        <option value="Thái Nguyên ">Thái Nguyên</option>
+                                        <option value="Thanh Hóa ">Thanh Hóa</option>
+                                        <option value="Thừa Thiên Huế ">Thừa Thiên Huế</option>
+                                        <option value="Tiền Giang ">Tiền Giang</option>
+                                        <option value="Trà Vinh ">Trà Vinh</option>
+                                        <option value="Tuyên Quang ">Tuyên Quang</option>
+                                        <option value="Vĩnh Long ">Vĩnh Long</option>
+                                        <option value="Vĩnh Phúc ">Vĩnh Phúc</option>
+                                        <option value="Vũng Tàu ">Vũng Tàu</option>
+                                        <option value="Yên Bái ">Yên Bái</option>
+                                    </select>
+                                </div>
+                                <ul class="weather__listing">
+                                    <li class="is-first">
+                                        <p class="day">23/12</p>
+                                        <p class="icon"><i class="spr spr--w-snow-mini"></i></p>
+                                        <p class="temp">25° - 33°</p>
+                                    </li>
+                                    <li>
+                                        <p class="day">23/12</p>
+                                        <p class="icon"><i class="spr spr--w-rain-mini"></i></p>
+                                        <p class="temp">22° - 30°</p>
+                                    </li>
+                                    <li>
+                                        <p class="day">23/12</p>
+                                        <p class="icon"><i class="spr spr--w-sleet-mini"></i></p>
+                                        <p class="temp">21° - 27°</p>
+                                    </li>
+                                    <li>
+                                        <p class="day">23/12</p>
+                                        <p class="icon"><i class="spr spr--w-storm-mini"></i></p>
+                                        <p class="temp">20° - 26°</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="utilities__info">
+                                <ul>
+                                    <li>
+                                        <a rel="nofollow" id="exchange" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="exchange-modal" title="">Tỷ giá ngoại tệ</a>
+                                    </li>
+                                    <li class="child-2n">
+                                        <a rel="nofollow" id="gold" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="gold-modal" title="">Giá vàng</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" id="lottery" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="lottery-modal" title="">Kết quả xổ số</a>
+                                    </li>
+                                    <li class="child-2n">
+                                        <a rel="nofollow" id="stock" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="stock-modal" title="">Chứng khoán</a>
+                                    </li>
+                                    <li>
+                                        <a rel="nofollow" id="channel" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="channel-modal" title="">Lịch truyền hình</a>
+                                    </li>
+                                    <li class="child-2n">
+                                        <a rel="nofollow" id="cinema" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="cinema-modal" title="">Lịch chiếu phim</a>
+                                    </li>
+                                    <li class="last-line">
+                                        <a rel="nofollow" id="horoscope" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="horoscope-modal" title="">Cung hoàng đạo</a>
+                                    </li>
+                                    <li class="last-line child-2n">
+                                        <a rel="nofollow" id="energy" href="javascript:void(0)" data-animation="none" data-animationspeed="0" data-reveal-id="energy-modal" title="">Giá xăng, dầu</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/vendor/jquery-migrate-3.0.0.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.bxslider.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.fixer.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe.min.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe-ui-default.min.js" defer></script>
+    <script src="../Jscripts/desktop-ui-local.js" defer></script>
+</body>
+
+</html>

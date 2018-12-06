@@ -1,0 +1,116 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* Body reset
+* Reset fonts for relevant elements
+* Lists
+* Links
+* Figures
+* Images
+* paragraph
+* quotes
+* h1,h2,h3,h4,h5 space
+*/
+
+
+/* > Body reset */
+
+// Reset the box-sizing
+* {
+    @include box-sizing(border-box);
+}
+
+*:before,
+*:after {
+    @include box-sizing(border-box);
+}
+
+// Note : all page style reset
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: $font-family-sans-serif;
+    font-size: $font-size-base;
+    line-height: $line-height-base;
+    color: $text-color;
+    background-color: $body-bg;
+}
+
+// >  Reset fonts for relevant elements
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+button{
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+}
+button:focus {
+    outline:none;
+}
+// >  Lists
+ul,
+ol {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+// >  Links
+a {
+    color: $link-color;
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        color: $first-color;
+        text-decoration: $link-hover-decoration;
+    }
+}
+
+a:active, a:focus, a:hover, input, select {
+    outline: 0;
+}
+
+// > Figures
+figure {
+    margin: 0;
+}
+
+// > Images
+img {
+    vertical-align: middle;
+}
+
+// >  paragraph
+p {
+    margin: 0;
+}
+
+// >  quotes
+blockquote {
+    margin: 0;
+    padding: 0
+}
+
+// > h1,h2,h3,h4,h5 space
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    margin: 0;
+}

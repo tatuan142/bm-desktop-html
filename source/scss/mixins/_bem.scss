@@ -1,0 +1,113 @@
+// ====================================
+// Header's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* define variable
+* EXAMPLE
+* EXAMPLE OUPUT CSS
+*/
+
+
+/* > define variable  */
+
+$elementSeparator: '__';
+$modifierSeparator: '--';
+// 
+@function containsModifier($selector) {
+    $selector: selectorToString($selector);
+    @if str-index($selector, $modifierSeparator) {
+        @return true;
+    }
+    @else {
+        @return false;
+    }
+}
+
+@function selectorToString($selector) {
+    $selector: inspect($selector); //cast to string
+    $selector: str-slice($selector, 2, -2); //remove brackets
+    @return $selector;
+}
+
+@function getBlock($selector) {
+    $selector: selectorToString($selector);
+    $modifierStart: str-index($selector, $modifierSeparator) - 1;
+    @return str-slice($selector, 0, $modifierStart);
+}
+
+@mixin Block($block) {
+    .#{$block} {
+        @content;
+    }
+}
+
+@mixin Element($element) {
+    $selector: &;
+    @if containsModifier($selector) {
+        $block: getBlock($selector);
+        @at-root {
+            #{$selector} {
+                #{$block+$elementSeparator+$element} {
+                    @content;
+                }
+            }
+        }
+    }
+    @else {
+        @at-root {
+            #{$selector+$elementSeparator+$element} {
+                @content;
+            }
+        }
+    }
+}
+
+@mixin Modifier($modifier) {
+    @at-root {
+        #{&}#{$modifierSeparator+$modifier} {
+            @content;
+        }
+    }
+}
+
+// > EXAMPLE  
+// 
+// @include b(test) {
+//     background: red;
+//     @include e(element) {
+//         font-size: 14px;
+//         @include m(big) {
+//             font-size: 18px;
+//         }
+//     }
+//     ;
+//     @include m(modifier) {
+//         color: blue;
+//         @include e(subelement) {
+//             background: gray;
+//         }
+//     }
+// }
+// 
+// 
+// 
+// > EXAMPLE OUPUT CSS  
+// 
+// .test {
+//   background: red;
+// }
+// .test__element {
+//   font-size: 14px;
+// }
+// .test__element--big {
+//   font-size: 18px;
+// }
+// .test--modifier {
+//   color: blue;
+// }
+// .test--modifier .test__subelement {
+//   background: gray;
+// }

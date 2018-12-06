@@ -1,0 +1,844 @@
+@charset "UTF-8";
+/*! version widget.2.0.1.css:*/
+/* - đồng bộ cờ default */
+/*
+* TABLE OF CONTENTS
+*
+* Font-weight
+* Font family
+* Media queries breakpoints
+* Colors
+* Scaffolding
+* Typography
+*/
+/* > Media queries breakpoints */
+/* > Colors */
+/* > Scaffolding */
+/* color */
+/*sprite image*/
+/*soccer sprite image*/
+/* > Typography */
+.clearfix::after {
+  display: block;
+  content: "";
+  clear: both; }
+
+/*
+* TABLE OF CONTENTS
+*
+* Font
+*/
+/* > Font */
+/*
+* TABLE OF CONTENTS
+*
+* Last-child
+*/
+/* > Last-child */
+/*
+* TABLE OF CONTENTS
+*
+* Media queries
+*/
+/* > Media queries */
+/*
+* TABLE OF CONTENTS
+*
+* Image runaround
+*/
+/* > Image runaround */
+.category_page #soccer-widget-holder {
+  width: 970px;
+  height: 100px; }
+
+.soccer-miniBox {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 10px; }
+  .soccer-miniBox::after {
+    display: block;
+    content: "";
+    clear: both; }
+  .soccer-miniBox .to-soccerPage {
+    display: inline-block;
+    position: absolute;
+    top: -22px;
+    right: 0;
+    font-size: 12px;
+    color: #DB562B; }
+    .soccer-miniBox .to-soccerPage:hover {
+      color: #333; }
+    .soccer-miniBox .to-soccerPage i {
+      vertical-align: top; }
+    .soccer-miniBox .to-soccerPage span {
+      display: inline-block;
+      line-height: 16px; }
+  .soccer-miniBox__tab::after {
+    display: block;
+    content: "";
+    clear: both; }
+  .soccer-miniBox__tab a {
+    margin-right: 1px;
+    text-transform: uppercase;
+    /*!*/
+    font-size: 14px;
+    font-size: 1.4rem;
+    line-height: 32px;
+    line-height: 3.2rem;
+    font-weight: 700;
+    font-style: normal;
+    font-family: inherit;
+    background-color: #ddd;
+    padding: 0 10px;
+    display: block;
+    float: left; }
+  .soccer-miniBox__tab a:hover,
+  .soccer-miniBox__tab .is-active {
+    color: #fff;
+    background-color: #0B252A; }
+  .soccer-miniBox__content {
+    height: 100px; }
+    .soccer-miniBox__content .tab-panel {
+      width: 905px;
+      height: 100px;
+      overflow: hidden; }
+    .soccer-miniBox__content .is-active {
+      display: block; }
+    .soccer-miniBox__content .day-time {
+      padding-top: 5px;
+      width: 65px;
+      height: 100px;
+      line-height: 30px;
+      float: left;
+      background-color: #FFC810;
+      text-align: center; }
+      .soccer-miniBox__content .day-time span {
+        display: block; }
+    .soccer-miniBox__content .weekDay {
+      font-size: 12px; }
+    .soccer-miniBox__content .day {
+      font-size: 46px; }
+    .soccer-miniBox__content .month {
+      font-size: 12px; }
+    .soccer-miniBox__content .item {
+      background: transparent url("../img/soccer/soccer-versusMini.png") left 20px no-repeat;
+      background-size: 200px 80px;
+      position: relative;
+      width: 200px;
+      height: 100px;
+      float: left;
+      margin-left: 1px; }
+      .soccer-miniBox__content .item > a {
+        display: block;
+        width: 200px;
+        height: 100%; }
+        .soccer-miniBox__content .item > a:hover {
+          color: #333;
+          background-color: rgba(0, 0, 0, 0.1); }
+    .soccer-miniBox__content .title {
+      background-color: #18555F;
+      height: 20px;
+      display: block;
+      font-size: 12px;
+      color: #fff;
+      line-height: 20px;
+      padding-left: 5px;
+      padding-right: 5px; }
+      .soccer-miniBox__content .title time,
+      .soccer-miniBox__content .title span {
+        display: inline-block;
+        /*!*/
+        font-size: 12px;
+        font-size: 1.2rem;
+        line-height: 20px;
+        line-height: 2rem;
+        font-weight: 700;
+        font-style: normal;
+        font-family: inherit; }
+      .soccer-miniBox__content .title time {
+        float: left; }
+      .soccer-miniBox__content .title span {
+        float: right;
+        overflow: hidden;
+        width: 110px;
+        text-align: right;
+        height: 20px; }
+    .soccer-miniBox__content .team {
+      position: absolute;
+      top: 33px;
+      width: 70px;
+      text-align: center;
+      font-size: 12px; }
+      .soccer-miniBox__content .team img {
+        width: 30px;
+        height: 30px;
+        margin: 0 auto 3px; }
+      .soccer-miniBox__content .team span {
+        display: block;
+        line-height: 14px;
+        font-weight: bold; }
+      .soccer-miniBox__content .team .flag {
+        transform: scale(1.25);
+        margin: 5px 0 4px; }
+    .soccer-miniBox__content .team-A {
+      left: 0; }
+    .soccer-miniBox__content .team-B {
+      right: 0; }
+    .soccer-miniBox__content .score {
+      font-size: 20px;
+      width: 50px;
+      margin: 30px auto 0;
+      text-align: center;
+      font-weight: bold; }
+    .soccer-miniBox__content .match-noMatch {
+      background: #eee; }
+      .soccer-miniBox__content .match-noMatch:before {
+        content: '-:-';
+        background-color: #999;
+        height: 20px;
+        display: block;
+        font-size: 12px;
+        color: #fff;
+        line-height: 20px;
+        padding-left: 10px; }
+      .soccer-miniBox__content .match-noMatch:after {
+        content: 'Chưa có trận đấu';
+        font-size: 14px;
+        position: absolute;
+        width: 200px;
+        height: 80px;
+        line-height: 80px;
+        text-align: center;
+        top: 20px; }
+    .soccer-miniBox__content .match-live .title {
+      color: white;
+      -webkit-animation: animation-blink-time 1s infinite;
+      -moz-animation: animation-blink-time 1s infinite;
+      -o-animation: animation-blink-time 1s infinite;
+      animation: animation-blink-time 1s infinite; }
+    .soccer-miniBox__content .match-live .score {
+      color: red;
+      -webkit-animation: animation-blink-score 1s infinite;
+      -moz-animation: animation-blink-score 1s infinite;
+      -o-animation: animation-blink-score 1s infinite;
+      animation: animation-blink-score 1s infinite; }
+
+@-webkit-keyframes animation-blink-score {
+  0%,
+  49% {
+    color: rgba(255, 0, 0, 0.7); }
+  100%,
+  50% {
+    color: rgba(255, 0, 0, 0.4); } }
+
+@-webkit-keyframes animation-blink-time {
+  0%,
+  49% {
+    color: rgba(255, 255, 255, 0.9); }
+  100%,
+  50% {
+    color: rgba(255, 255, 255, 0.7); } }
+  .soccer-miniBox .bx-wrapper {
+    position: relative;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    float: left; }
+  .soccer-miniBox .bx-wrapper img {
+    max-width: 100%;
+    display: block; }
+  .soccer-miniBox .bxslider {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  .soccer-miniBox .bx-viewport {
+    /*fix other elements on the page moving (on Chrome)*/
+    -webkit-transform: translatez(0); }
+  .soccer-miniBox .bx-controls a {
+    width: 20px;
+    height: 50px;
+    background-image: url("../img/desktop-sprite-3.0.20.png");
+    background-size: 100px 4000px;
+    display: block;
+    text-indent: -999em;
+    position: absolute;
+    top: 35px;
+    opacity: .5; }
+    .soccer-miniBox .bx-controls a:hover {
+      opacity: 1; }
+  .soccer-miniBox .bx-controls .disabled {
+    display: none; }
+  .soccer-miniBox .bx-prev {
+    background-position: -0px -3500px;
+    left: 1px; }
+  .soccer-miniBox .bx-next {
+    background-position: -50px -3500px;
+    right: 0; }
+
+.flag {
+  background-image: url("../img/soccer/flags-2.0.8.png");
+  display: inline-block;
+  vertical-align: middle;
+  background-size: 384px 450px;
+  width: 24px;
+  height: 24px;
+  background-position: -336px -336px; }
+  .nation-94, .flag.flag-ae {
+    background-position: -24px 0; }
+  .nation-203, .flag.flag-ru {
+    background-position: -144px -264px; }
+  .nation-109, .flag.flag-cz {
+    background-position: -72px -72px; }
+  .nation-34, .flag.flag-ma {
+    background-position: -48px -192px; }
+  .flag.flag-vg {
+    background-position: -72px -336px; }
+  .flag.flag-fo {
+    background-position: -144px -96px; }
+  .nation-185, .flag.flag-cl {
+    background-position: -240px -48px; }
+  .flag.flag-gg {
+    background-position: -288px -96px; }
+  .flag.flag-gl {
+    background-position: -360px -96px; }
+  .nation-42, .flag.flag-sc {
+    background-position: -240px -264px; }
+  .nation-156, .flag.flag-gt {
+    background-position: -120px -120px; }
+  .flag.flag-mf {
+    background-position: -144px -192px; }
+  .flag.flag-yt {
+    background-position: -240px -336px; }
+  .nation-146, .flag.flag-bs {
+    background-position: -336px -24px; }
+  .nation-81, .flag.flag-om {
+    background-position: -120px -240px; }
+  .flag.flag-an {
+    background-position: -168px 0; }
+  .nation-39, .flag.flag-rw {
+    background-position: -168px -264px; }
+  .nation-47, .flag.flag-sz {
+    background-position: -240px -288px; }
+  .nation-102, .flag.flag-az {
+    background-position: -360px 0; }
+  .nation-48, .flag.flag-tz {
+    background-position: -240px -312px; }
+  .nation-124, .flag.flag-lu {
+    background-position: -360px -168px; }
+  .nation-33, .flag.flag-mu {
+    background-position: -72px -216px; }
+  .flag.flag-ax {
+    background-position: -336px 0; }
+  .nation-155, .flag.flag-gd {
+    background-position: -240px -96px; }
+  .nation-49, .flag.flag-tg {
+    background-position: -336px -288px; }
+  .flag.flag-hk {
+    background-position: -216px -120px; }
+  .nation-96, .flag.flag-vn {
+    background-position: -120px -336px; }
+  .nation-103, .flag.flag-by {
+    background-position: -24px -48px; }
+  .flag.flag-vi {
+    background-position: -96px -336px; }
+  .nation-86, .flag.flag-sa {
+    background-position: -192px -264px; }
+  .nation-2, .flag.flag-ao {
+    background-position: -192px 0; }
+  .nation-104, .flag.flag-be {
+    background-position: -72px -24px; }
+  .nation-151, .flag.flag-cu {
+    background-position: -360px -48px; }
+  .nation-66, .flag.flag-iq {
+    background-position: -96px -144px; }
+  .nation-133, .flag.flag-pt {
+    background-position: 0 -264px; }
+  .nation-178, .flag.flag-sb {
+    background-position: -216px -264px; }
+  .nation-93, .flag.flag-tm {
+    background-position: -72px -312px; }
+  .nation-29, .flag.flag-mg {
+    background-position: -168px -192px; }
+  .nation-128, .flag.flag-mc {
+    background-position: -72px -192px; }
+  .nation-23, .flag.flag-gw {
+    background-position: -168px -120px; }
+  .flag.flag-bm {
+    background-position: -240px -24px; }
+  .nation-112, .flag.flag-fi {
+    background-position: -48px -96px; }
+  .nation-73, .flag.flag-kw {
+    background-position: -96px -168px; }
+  .nation-60, .flag.flag-kh {
+    background-position: -336px -144px; }
+  .flag.flag-tk {
+    background-position: -24px -312px; }
+  .nation-143, .flag.flag-gb {
+    background-position: -216px -96px; }
+  .nation-91, .flag.flag-th {
+    background-position: -360px -288px; }
+  .nation-12, .flag.flag-cg {
+    background-position: -144px -48px; }
+  .nation-77, .flag.flag-my {
+    background-position: -168px -216px; }
+  .nation-41, .flag.flag-sn {
+    background-position: -72px -288px; }
+  .nation-192, .flag.flag-uy {
+    background-position: -336px -312px; }
+  .flag.flag-aw {
+    background-position: -312px 0; }
+  .nation-130, .flag.flag-nl {
+    background-position: -360px -216px; }
+  .nation-158, .flag.flag-hn {
+    background-position: -240px -120px; }
+  .flag.flag-mp {
+    background-position: -336px -192px; }
+  .nation-7, .flag.flag-cm {
+    background-position: -264px -48px; }
+  .nation-36, .flag.flag-na {
+    background-position: -216px -216px; }
+  .nation-113, .flag.flag-fr {
+    background-position: -168px -96px; }
+  .nation-32, .flag.flag-mr {
+    background-position: 0 -216px; }
+  .nation-98, .flag.flag-al {
+    background-position: -120px 0; }
+  .flag.flag-fk {
+    background-position: -96px -96px; }
+  .flag.flag-je {
+    background-position: -192px -144px; }
+  .nation-28, .flag.flag-ly {
+    background-position: -24px -192px; }
+  .nation-180, .flag.flag-tv {
+    background-position: -192px -312px; }
+  .nation-37, .flag.flag-ne {
+    background-position: -264px -216px; }
+  .nation-80, .flag.flag-np {
+    background-position: -24px -240px; }
+  .flag.flag-mo {
+    background-position: -312px -192px; }
+  .nation-135, .flag.flag-sm {
+    background-position: -48px -288px; }
+  .nation-149, .flag.flag-ca {
+    background-position: -72px -48px; }
+  .nation-72, .flag.flag-kr {
+    background-position: -72px -168px; }
+  .nation-10, .flag.flag-td {
+    background-position: -288px -288px; }
+  .nation-173, .flag.flag-nr {
+    background-position: -48px -240px; }
+  .nation-141, .flag.flag-ch {
+    background-position: -168px -48px; }
+  .nation-5, .flag.flag-bf {
+    background-position: -96px -24px; }
+  .nation-67, .flag.flag-il {
+    background-position: -24px -144px; }
+  .nation-137, .flag.flag-sk {
+    background-position: 0 -288px; }
+  .nation-176, .flag.flag-pg {
+    background-position: -216px -240px; }
+  .nation-19, .flag.flag-ga {
+    background-position: -192px -96px; }
+  .nation-152, .flag.flag-dm {
+    background-position: -168px -72px; }
+  .nation-70, .flag.flag-kz {
+    background-position: -144px -168px; }
+  .nation-188, .flag.flag-gy {
+    background-position: -192px -120px; }
+  .nation-50, .flag.flag-tn {
+    background-position: -96px -312px; }
+  .nation-153, .flag.flag-do {
+    background-position: -192px -72px; }
+  .nation-63, .flag.flag-in {
+    background-position: -72px -144px; }
+  .nation-83, .flag.flag-ph {
+    background-position: -240px -240px; }
+  .nation-142, .flag.flag-ua {
+    background-position: -264px -312px; }
+  .nation-43, .flag.flag-sl {
+    background-position: -24px -288px; }
+  .nation-120, .flag.flag-it {
+    background-position: -168px -144px; }
+  .nation-95, .flag.flag-uz {
+    background-position: -360px -312px; }
+  .nation-101, .flag.flag-at {
+    background-position: -264px 0; }
+  .flag.flag-as {
+    background-position: -240px 0; }
+  .flag.flag-nf {
+    background-position: -288px -216px; }
+  .flag.flag-ss {
+    background-position: -144px -288px; }
+  .nation-107, .flag.flag-hr {
+    background-position: -264px -120px; }
+  .nation-144, .flag.flag-va {
+    background-position: 0 -336px; }
+  .nation-167, .flag.flag-us {
+    background-position: -312px -312px; }
+  .nation-148, .flag.flag-bz {
+    background-position: -48px -48px; }
+  .nation-15, .flag.flag-eg {
+    background-position: -288px -72px; }
+  .nation-110, .flag.flag-dk {
+    background-position: -144px -72px; }
+  .nation-97, .flag.flag-ye {
+    background-position: -216px -336px; }
+  .flag.flag-ky {
+    background-position: -120px -168px; }
+  .nation-163, .flag.flag-kn {
+    background-position: -24px -168px; }
+  .nation-183, .flag.flag-bo {
+    background-position: -288px -24px; }
+  .nation-181, .flag.flag-vu {
+    background-position: -144px -336px; }
+  .flag.flag-cw {
+    background-position: -24px -72px; }
+  .nation-174, .flag.flag-nz {
+    background-position: -96px -240px; }
+  .nation-24, .flag.flag-ci {
+    background-position: -192px -48px; }
+  .nation-22, .flag.flag-gn {
+    background-position: -24px -120px; }
+  .nation-30, .flag.flag-mw {
+    background-position: -120px -216px; }
+  .nation-6, .flag.flag-bi {
+    background-position: -168px -24px; }
+  .nation-195, .flag.flag-ps {
+    background-position: -360px -240px; }
+  .nation-164, .flag.flag-lc {
+    background-position: -216px -168px; }
+  .nation-65, .flag.flag-ir {
+    background-position: -120px -144px; }
+  .nation-75, .flag.flag-la {
+    background-position: -168px -168px; }
+  .flag.flag-ck {
+    background-position: -216px -48px; }
+  .nation-55, .flag.flag-bh {
+    background-position: -144px -24px; }
+  .nation-179, .flag.flag-to {
+    background-position: -120px -312px; }
+  .flag.flag-pn {
+    background-position: -312px -240px; }
+  .flag.flag-nu {
+    background-position: -72px -240px; }
+  .nation-126, .flag.flag-mt {
+    background-position: -48px -216px; }
+  .nation-162, .flag.flag-pa {
+    background-position: -144px -240px; }
+  .nation-11, .flag.flag-km {
+    background-position: 0 -168px; }
+  .nation-172, .flag.flag-fm {
+    background-position: -120px -96px; }
+  .nation-74, .flag.flag-kg {
+    background-position: -312px -144px; }
+  .flag.flag-gs {
+    background-position: -96px -120px; }
+  .nation-145, .flag.flag-ag {
+    background-position: -72px 0; }
+  .nation-44, .flag.flag-so {
+    background-position: -96px -288px; }
+  .nation-116, .flag.flag-gr {
+    background-position: -72px -120px; }
+  .flag.flag-nc {
+    background-position: -240px -216px; }
+  .nation-57, .flag.flag-bt {
+    background-position: -360px -24px; }
+  .nation-157, .flag.flag-ht {
+    background-position: -288px -120px; }
+  .nation-31, .flag.flag-ml {
+    background-position: -240px -192px; }
+  .nation-9, .flag.flag-cf {
+    background-position: -120px -48px; }
+  .flag.flag-bl {
+    background-position: -216px -24px; }
+  .nation-182, .flag.flag-ar {
+    background-position: -216px 0; }
+  .nation-99, .flag.flag-ad {
+    background-position: 0 0; }
+  .nation-168, .flag.flag-au {
+    background-position: -288px 0; }
+  .nation-40, .flag.flag-st {
+    background-position: -168px -288px; }
+  .nation-54, .flag.flag-af {
+    background-position: -48px 0; }
+  .nation-154, .flag.flag-sv {
+    background-position: -192px -288px; }
+  .nation-69, .flag.flag-jo {
+    background-position: -240px -144px; }
+  .nation-4, .flag.flag-bw {
+    background-position: 0 -48px; }
+  .flag.flag-rs {
+    background-position: -120px -264px; }
+  .nation-18, .flag.flag-et {
+    background-position: 0 -96px; }
+  .nation-1, .flag.flag-dz {
+    background-position: -216px -72px; }
+  .nation-64, .flag.flag-id {
+    background-position: -360px -120px; }
+  .nation-58, .flag.flag-bn {
+    background-position: -264px -24px; }
+  .nation-189, .flag.flag-py {
+    background-position: -48px -264px; }
+  .nation-27, .flag.flag-lr {
+    background-position: -288px -168px; }
+  .flag.flag-ic {
+    background-position: -336px -120px; }
+  .nation-118, .flag.flag-is {
+    background-position: -144px -144px; }
+  .nation-17, .flag.flag-er {
+    background-position: -336px -72px; }
+  .nation-90, .flag.flag-tj {
+    background-position: 0 -312px; }
+  .nation-100, .flag.flag-am {
+    background-position: -144px 0; }
+  .flag.flag-gi {
+    background-position: -336px -96px; }
+  .flag.flag-si {
+    background-position: -360px -264px; }
+  .nation-51, .flag.flag-ug {
+    background-position: -288px -312px; }
+  .nation-108, .flag.flag-cy {
+    background-position: -48px -72px; }
+  .flag.flag-pr {
+    background-position: -336px -240px; }
+  .nation-123, .flag.flag-lt {
+    background-position: -336px -168px; }
+  .nation-194, .flag.flag-tw {
+    background-position: -216px -312px; }
+  .nation-62, .flag.flag-tl {
+    background-position: -48px -312px; }
+  .flag.flag-tc {
+    background-position: -264px -288px; }
+  .nation-122, .flag.flag-li {
+    background-position: -240px -168px; }
+  .nation-170, .flag.flag-ki {
+    background-position: -360px -144px; }
+  .nation-61, .flag.flag-cn {
+    background-position: -288px -48px; }
+  .nation-59, .flag.flag-mm {
+    background-position: -264px -192px; }
+  .nation-38, .flag.flag-ng {
+    background-position: -312px -216px; }
+  .nation-3, .flag.flag-bj {
+    background-position: -192px -24px; }
+  .flag.flag-eu {
+    background-position: -24px -96px; }
+  .nation-161, .flag.flag-ni {
+    background-position: -336px -216px; }
+  .nation-76, .flag.flag-lb {
+    background-position: -192px -168px; }
+  .nation-127, .flag.flag-md {
+    background-position: -96px -192px; }
+  .nation-56, .flag.flag-bd {
+    background-position: -48px -24px; }
+  .nation-82, .flag.flag-pk {
+    background-position: -264px -240px; }
+  .flag.flag-pf {
+    background-position: -192px -240px; }
+  .nation-105, .flag.flag-ba {
+    background-position: 0 -24px; }
+  .nation-160, .flag.flag-mx {
+    background-position: -144px -216px; }
+  .nation-87, .flag.flag-sg {
+    background-position: -312px -264px; }
+  .nation-78, .flag.flag-mv {
+    background-position: -96px -216px; }
+  .nation-84, .flag.flag-qa {
+    background-position: -72px -264px; }
+  .nation-175, .flag.flag-pw {
+    background-position: -24px -264px; }
+  .flag.flag-ms {
+    background-position: -24px -216px; }
+  .nation-191, .flag.flag-sr {
+    background-position: -120px -288px; }
+  .nation-129, .flag.flag-me {
+    background-position: -120px -192px; }
+  .nation-132, .flag.flag-pl {
+    background-position: -288px -240px; }
+  .nation-117, .flag.flag-hu {
+    background-position: -312px -120px; }
+  .nation-35, .flag.flag-mz {
+    background-position: -192px -216px; }
+  .nation-119, .flag.flag-ie {
+    background-position: 0 -144px; }
+  .nation-202, .flag.flag-tr {
+    background-position: -144px -312px; }
+  .nation-88, .flag.flag-lk {
+    background-position: -264px -168px; }
+  .flag.flag-eh {
+    background-position: -312px -72px; }
+  .nation-150, .flag.flag-cr {
+    background-position: -336px -48px; }
+  .nation-52, .flag.flag-zm {
+    background-position: -288px -336px; }
+  .nation-140, .flag.flag-se {
+    background-position: -288px -264px; }
+  .nation-46, .flag.flag-sd {
+    background-position: -264px -264px; }
+  .nation-125, .flag.flag-mk {
+    background-position: -216px -192px; }
+  .nation-106, .flag.flag-bg {
+    background-position: -120px -24px; }
+  .flag.flag-im {
+    background-position: -48px -144px; }
+  .nation-139, .flag.flag-es {
+    background-position: -360px -72px; }
+  .nation-114, .flag.flag-ge {
+    background-position: -264px -96px; }
+  .nation-184, .flag.flag-br {
+    background-position: -312px -24px; }
+  .flag.flag-tf {
+    background-position: -312px -288px; }
+  .nation-45, .flag.flag-za {
+    background-position: -264px -336px; }
+  .nation-13, .flag.flag-cd {
+    background-position: -96px -48px; }
+  .nation-53, .flag.flag-zw {
+    background-position: -312px -336px; }
+  .nation-68, .flag.flag-jp {
+    background-position: -264px -144px; }
+  .nation-21, .flag.flag-gh {
+    background-position: -312px -96px; }
+  .nation-187, .flag.flag-ec {
+    background-position: -240px -72px; }
+  .nation-14, .flag.flag-dj {
+    background-position: -120px -72px; }
+  .nation-134, .flag.flag-ro {
+    background-position: -96px -264px; }
+  .flag.flag-wf {
+    background-position: -168px -336px; }
+  .flag.flag-ai {
+    background-position: -96px 0; }
+  .nation-166, .flag.flag-tt {
+    background-position: -168px -312px; }
+  .nation-177, .flag.flag-ws {
+    background-position: -192px -336px; }
+  .flag.flag-sh {
+    background-position: -336px -264px; }
+  .flag.flag-mq {
+    background-position: -360px -192px; }
+  .nation-131, .flag.flag-no {
+    background-position: 0 -240px; }
+  .flag.flag-co {
+    background-position: -312px -48px; }
+  .nation-71, .flag.flag-kp {
+    background-position: -48px -168px; }
+  .flag.flag-gu {
+    background-position: -144px -120px; }
+  .nation-169, .flag.flag-fj {
+    background-position: -72px -96px; }
+  .nation-20, .flag.flag-gm {
+    background-position: 0 -120px; }
+  .nation-171, .flag.flag-mh {
+    background-position: -192px -192px; }
+  .nation-79, .flag.flag-mn {
+    background-position: -288px -192px; }
+  .nation-115, .flag.flag-de {
+    background-position: -96px -72px; }
+  .nation-26, .flag.flag-ls {
+    background-position: -312px -168px; }
+  .nation-165, .flag.flag-vc {
+    background-position: -24px -336px; }
+  .nation-16, .flag.flag-gq {
+    background-position: -48px -120px; }
+  .nation-111, .flag.flag-ee {
+    background-position: -264px -72px; }
+  .nation-25, .flag.flag-ke {
+    background-position: -288px -144px; }
+  .nation-121, .flag.flag-lv {
+    background-position: 0 -192px; }
+  .nation-89, .flag.flag-sy {
+    background-position: -216px -288px; }
+  .nation-190, .flag.flag-pe {
+    background-position: -168px -240px; }
+  .nation-8, .flag.flag-cv {
+    background-position: 0 -72px; }
+  .nation-159, .flag.flag-jm {
+    background-position: -216px -144px; }
+  .nation-147, .flag.flag-bb {
+    background-position: -24px -24px; }
+  .nation-193, .flag.flag-ve {
+    background-position: -48px -336px; }
+  .nation-196, .flag.flag-scotland {
+    background-position: -360px -336px; }
+  .nation-204, .flag.flag-wales {
+    background-position: -0px -360px; }
+  .nation-136, .flag.flag-rs {
+    background-position: -24px -360px; }
+  .nation-136, .flag.flag-xk {
+    background-position: -96px -360px; }
+  .nation-136, .flag.flag-gb-nir {
+    background-position: -120px -360px; }
+  .nation-205 {
+    background-position: -144px -360px; }
+  .nation-206, .flag.flag-northern-ireland {
+    background-position: -24px -384px; }
+
+.league-1,
+.socc--worldCup {
+  background-position: -192px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-8,
+.socc--championLeague {
+  background-position: -216px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-10,
+.socc--europaLeague {
+  background-position: -240px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-3,
+.socc--premier {
+  background-position: -264px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-5,
+.socc--laliga {
+  background-position: -288px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-4,
+.socc--serrieA {
+  background-position: -312px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-7,
+.socc--bundesliga {
+  background-position: -336px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-2,
+.socc--ligue1 {
+  background-position: -360px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-13,
+.socc--vLeague {
+  background-position: -168px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-133,
+.league-199 {
+  background-position: -72px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-58 {
+  background-position: -48px -360px;
+  width: 24px;
+  height: 24px; }
+
+.league-28 {
+  background-position: -0px -384px;
+  width: 24px;
+  height: 24px; }

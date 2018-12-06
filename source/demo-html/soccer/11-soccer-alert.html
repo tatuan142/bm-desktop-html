@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>11-soccer-live.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Page -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/d-soccer-styles.css">
+</head>
+
+<body>
+    <div class="wrapper soccer_page">
+        <div class="header">
+            <div class="l-grid">
+                <a href="01-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__action">
+                    <p>
+                        <a class="login" href="javascript:;" data-animation="none" data-animationspeed="0" data-reveal-id="login-modal">
+                            <i class="spr spr--login"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                    </p>
+                    <!--                     
+                    <p class="has-logged">
+                        <span class="profile">Tuan TA</span>
+                        <button class="logout">Đăng xuất</button>
+                    </p>
+                    -->
+                    <a href="#" class="mobile">
+                        <i class="spr spr--mobile"></i>
+                        <span>Bản mobile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/moi-truong-khi-hau.epi" data-id="3">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/nghe-thuat.epi" data-id="15">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/am-thuc.epi" data-id="84">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/du-lich.epi" data-id="137">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/kinh-doanh.epi" data-id="7">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/lao-dong-viec-lam.epi" data-id="47">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tai-chinh.epi" data-id="126">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chung-khoan.epi" data-id="127">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hoc-bong-du-hoc.epi" data-id="107">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dao-tao-thi-cu.epi" data-id="108">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/bong-da.epi" data-id="87">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/quan-vot.epi" data-id="88">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/am-nhac.epi" data-id="71">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thoi-trang.epi" data-id="72">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dien-anh-truyen-hinh.epi" data-id="132">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hinh-su-dan-su.epi" data-id="104">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/an-ninh-trat-tu.epi" data-id="141">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Khoa học</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Công nghệ</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/cntt-vien-thong.epi" data-id="76">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thiet-bi-phan-cung.epi" data-id="136">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/dinh-duong-lam-dep.epi" data-id="138">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tinh-yeu-hon-nhan.epi" data-id="139">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/suc-khoe-y-te.epi" data-id="82">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="/nha-dat.epi" data-id="147"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/quan-ly-quy-hoach.epi" data-id="148">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/khong-gian-kien-truc.epi" data-id="150">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="fyi fyi--970 fyi__box nocontent robots-nocontent">
+                <img src="fig-images/ads/ads-728x90.jpg" alt="ads">
+            </div>
+            <div class="l-grid">
+                <div class="s-breadcrumb">
+                    <div class="title">
+                        <!-- <span class="">LỊCH THI ĐẤU</span> -->
+                        <a class="" href="11-soccer-homepage.html"><i class="socc socc--back-page"></i><span>QUAY VỀ</span></a>
+                    </div>
+                    <div class="filter">
+                        <a href="11-soccer-homepage.html" class=""><i class="socc socc--wcup"></i><span>World Cup</span></a>
+                        <a href="11-soccer-homepage.html" class="is-active"><i class="socc socc--match"></i><span>Lịch đấu</span></a>
+                        <a href="11-soccer-mini.html" class=""><i class="socc socc--live"></i><span>Trực tiếp</span></a>
+                    </div>
+                </div>
+                <div class="s-grid__200">
+                    <div class="soccer-league-list">
+                        <ul>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--premier"></i>Premier League</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--laliga"></i>La Liga</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--bundesliga"></i>Bundesliga</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--serrieA"></i>Serie A</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--ligue1"></i>Ligue 1</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--vLeague"></i>V-League</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--championLeague"></i>Champion League</a></li>
+                            <li><a href="11-soccer-live.html"><i class="socc socc--europaLeague"></i>Europa League</a></li>
+                            <li><a href="11-soccer-live.html"><i class="flag flag-es"></i>Anh</a></li>
+                            <li><a href="11-soccer-live.html"><i class="flag flag-es"></i>Đức</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s-grid__500">
+                    <div class="alert alert-warning">hiện chưa có trận đấu nào </div>
+                </div>
+                <div class="s-grid__250">
+                    <div class="soccer-filter">
+                        <div class="date">
+                            <div class="btn-date btn">
+                                <a href="#" class="">XEM THEO NGÀY THÁNG</a>
+                            </div>
+                            <div class="calendar hidden-tab is-active" id="datepicker"></div>
+                        </div>
+                    </div>
+                    <div class="soccer-table">
+                        <div class="s-heading">
+                            <span>BXH</span>
+                            <select>
+                                <option>Chọn giải đấu</option>
+                                <option>Vleague</option>
+                                <option>Champions League</option>
+                            </select>
+                        </div>
+                        <div class="league-table">
+                            <div class="title row">
+                                <div class="tt color">#</div>
+                                <div class="team">Đội bóng</div>
+                                <div class="pts">P</div>
+                                <div class="pts hidden-xxs">W</div>
+                                <div class="pts hidden-xxs">D</div>
+                                <div class="pts hidden-xxs">L</div>
+                                <div class="pts hidden-xxs">F</div>
+                                <div title="Goals Against" class="pts hidden-xxs">A</div>
+                                <div title="Goals Difference" class="pts hidden-xxs">GD</div>
+                                <div title="Points" class="pts2 tot">Pts</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item dark-blue"> <span>1</span></div>
+                                <div class="team">Barcelona</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">22</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">0</div>
+                                <div class="pts hidden-xxs">72</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">59</div>
+                                <div class="pts2 tot">72</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item dark-blue"> <span>2</span></div>
+                                <div class="team">Atletico Madrid</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">19</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts hidden-xxs">2</div>
+                                <div class="pts hidden-xxs">48</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">36</div>
+                                <div class="pts2 tot">64</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item dark-blue"> <span>3</span></div>
+                                <div class="team">Real Madrid</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">67</div>
+                                <div class="pts hidden-xxs">30</div>
+                                <div class="pts hidden-xxs">37</div>
+                                <div class="pts2 tot">57</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item dark-blue"> <span>4</span></div>
+                                <div class="team">Valencia</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">54</div>
+                                <div class="pts hidden-xxs">30</div>
+                                <div class="pts hidden-xxs">24</div>
+                                <div class="pts2 tot">56</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item light-yellow"><span>5</span></div>
+                                <div class="team">Sevilla</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">14</div>
+                                <div class="pts hidden-xxs">3</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">36</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">-6</div>
+                                <div class="pts2 tot">45</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item dark-yellow"> <span>6</span></div>
+                                <div class="team">Villarreal</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">10</div>
+                                <div class="pts hidden-xxs">38</div>
+                                <div class="pts hidden-xxs">32</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts2 tot">44</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>7</span> </div>
+                                <div class="team">Girona</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">40</div>
+                                <div class="pts hidden-xxs">36</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts2 tot">43</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>8</span> </div>
+                                <div class="team">Real Betis</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">46</div>
+                                <div class="pts hidden-xxs">53</div>
+                                <div class="pts hidden-xxs">-7</div>
+                                <div class="pts2 tot">40</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>9</span> </div>
+                                <div class="team">Eibar</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">35</div>
+                                <div class="pts hidden-xxs">41</div>
+                                <div class="pts hidden-xxs">-6</div>
+                                <div class="pts2 tot">39</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>10</span> </div>
+                                <div class="team">Celta Vigo</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">45</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">3</div>
+                                <div class="pts2 tot">38</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>11</span> </div>
+                                <div class="team">Getafe</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">10</div>
+                                <div class="pts hidden-xxs">33</div>
+                                <div class="pts hidden-xxs">26</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts2 tot">36</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>12</span> </div>
+                                <div class="team">Athletic Bilbao</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">8</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">29</div>
+                                <div class="pts hidden-xxs">31</div>
+                                <div class="pts hidden-xxs">-2</div>
+                                <div class="pts2 tot">35</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>13</span> </div>
+                                <div class="team">Espanyol</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">8</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">26</div>
+                                <div class="pts hidden-xxs">34</div>
+                                <div class="pts hidden-xxs">-8</div>
+                                <div class="pts2 tot">35</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>14</span> </div>
+                                <div class="team">Real Sociedad</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">50</div>
+                                <div class="pts hidden-xxs">50</div>
+                                <div class="pts hidden-xxs">0</div>
+                                <div class="pts2 tot">33</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>15</span> </div>
+                                <div class="team">Leganes</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">23</div>
+                                <div class="pts hidden-xxs">34</div>
+                                <div class="pts hidden-xxs">-11</div>
+                                <div class="pts2 tot">33</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>16</span> </div>
+                                <div class="team">Alaves</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">10</div>
+                                <div class="pts hidden-xxs">1</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">25</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">-17</div>
+                                <div class="pts2 tot">31</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>17</span> </div>
+                                <div class="team">Levante</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">23</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">-19</div>
+                                <div class="pts2 tot">24</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item pink"><span>18</span></div>
+                                <div class="team">Las Palmas</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">18</div>
+                                <div class="pts hidden-xxs">20</div>
+                                <div class="pts hidden-xxs">57</div>
+                                <div class="pts hidden-xxs">-37</div>
+                                <div class="pts2 tot">20</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item pink"><span>19</span></div>
+                                <div class="team">Deportivo La Coruna</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">25</div>
+                                <div class="pts hidden-xxs">59</div>
+                                <div class="pts hidden-xxs">-34</div>
+                                <div class="pts2 tot">19</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item pink"><span>20</span></div>
+                                <div class="team">Malaga</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">3</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">21</div>
+                                <div class="pts hidden-xxs">16</div>
+                                <div class="pts hidden-xxs">45</div>
+                                <div class="pts hidden-xxs">-29</div>
+                                <div class="pts2 tot">13</div>
+                            </div>
+                            <div class="description">
+                                <div class="row">
+                                    <div class="tt color item"><i class="shape dark-blue"></i></div>
+                                    <div class="team">Champions League</div>
+                                </div>
+                                <div class="row">
+                                    <div class="tt color item"><i class="shape light-yellow"></i></div>
+                                    <div class="team">Europa League</div>
+                                </div>
+                                <div class="row">
+                                    <div class="tt color item"><i class="shape dark-yellow"></i></div>
+                                    <div class="team">Vòng loại Europa League</div>
+                                </div>
+                                <div class="row">
+                                    <div class="tt color item"><i class="shape pink"></i></div>
+                                    <div class="team">Xuống hạng</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fyi--970" style="display:none">
+            <img src="fig-images/ads/ads-728x90.jpg" alt="ads">
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-box alert-modal hidden">
+        <div class="content-modal">
+            <div class="alert alert-warning">Trận đấu chưa diễn ra</div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/datepicker/jquery-ui.min.js" defer></script>
+    <script src="../Jscripts/datepicker/datepicker-vi.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.bxslider.min.js" defer></script>
+    <script src="../Jscripts/soccer-ui-local.js" defer></script>
+</body>
+
+</html>

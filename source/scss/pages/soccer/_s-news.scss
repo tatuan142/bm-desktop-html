@@ -1,0 +1,68 @@
+// ====================================
+// soccer's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* layout
+*/
+// > news baomoi 
+.baomoi-news {
+    background-color: #fff;
+    padding: 10px;
+    padding-top: 0;
+    margin-bottom: 10px;
+    &__title {
+        position: relative;
+        &:before {
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            content: '';
+            background-color: $second-color;
+            top: 20px;
+            left: 0;
+        }
+        >span {
+            @include font(17,
+            36);
+            text-transform: uppercase;
+            height: 36px;
+            background-color: #fff;
+            padding-right: 20px;
+            display: inline-block;
+            position: relative;
+            color: $second-color;
+        }
+    }
+}
+
+.small-list {
+    .story {
+        margin-bottom: 12px;
+        &__thumb {
+            @include runaround(left,
+            3,
+            10,
+            0,
+            0);
+            width: 60px;
+            height: 60px;
+        }
+        &__heading {
+            @include font(15,
+            18);
+        }
+        &__heading,
+        &__meta {
+            margin-left: 70px;
+            .cache {
+                display: none !important;
+            }
+            .source {
+                color: #333 !important;
+            }
+        }
+    }
+}

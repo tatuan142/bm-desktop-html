@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>08-statistic.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Page -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop-styles.css">
+    <!--[if lt IE 9]>
+        <script src="../Jscripts/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper statistic_page">
+        <div class="header">
+            <div class="l-grid">
+                <a href="01-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__user">
+                    <div class="login hidden">
+                        <button href="#" class="uName">
+                            <i class="spr spr--user"></i>
+                        </button>
+                        <div class="login-board">
+                            <span class="desc">Đăng nhập để trải nghiệm thêm những tính năng hữu ích</span>
+                            <button class="login-zalo"><span>Zalo</span><i class="spr spr--zalo"></i></button>
+                            <button class="login-fb"><span>Facebook</span><i class="spr spr--fb"></i></button>
+                            <button class="login-gplus"><span>Google</span><i class="spr spr--gplus"></i></button>
+                        </div>
+                    </div>
+                    <div class="logged ">
+                        <a href="#" class="uName">
+                            <div class="uName__thumb">
+                                <img src="fig-images/site/1x1.png" alt="avatar" width="24" height="24">
+                            </div>
+                            <span class="text">Trần Anh Tuấn</span>
+                        </a>
+                        <div class="user-board">
+                            <ul>
+                                <li class="is-first"><a href="#"><i class="spr spr--recommend"></i><span>Tin đề xuất</span></a></li>
+                                <li><a href="#"><i class="spr spr--history"></i><span>Tin mới đọc</span></a></li>
+                                <li><a href="#"><i class="spr spr--bookmark"></i><span>Tin đã lưu</span></a></li>
+                                <li class="notice"><a href="#"><i class="spr spr--notice"></i><span>Thông báo</span></a><button class="switch"></button></li>
+                                <li class="log-out"><button><i class="spr spr--logout"></i><span>Đăng xuất</span></button></li>
+                            </ul>
+                        </div> 
+                    </div>
+                </div>
+                <a href="#" class="switch-mobile">
+                    <i class="spr spr--mobile-ver"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>KH - CN </span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Khoa học - Tự nhiên</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Games</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="fyi fyi--970">
+                <div class="fyi__box"><img src="fig-images/ads/ads-728x90.jpg" alt="ads"></div>
+            </div>
+            <div class="l-grid">
+                <div class="wrap-filter">
+                    <div class="main-filter">
+                        <a href="#">
+                            <i class="spr spr--pin-hot"></i>
+                            <span>Nóng</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-latest"></i>
+                            <span>Mới</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-video"></i>
+                            <span>Video</span>
+                        </a>
+                        <a href="#" class="is-last">
+                            <i class="spr spr--pin-event"></i>
+                            <span>Sự kiện</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="breadcrumbs">
+                    <a itemprop="title" href="01-homepage.html">Trang chủ</a>
+                    <span class="split">/</span>
+                    <a itemprop="title" href="02-category.html">Thống kê</a>
+                </div>
+                <div class="statistic">
+                    <h2 class="block__header black"><span>Thống kê theo nguồn tin</span></h2>
+                    <div class="statistic__content">
+                        <div class="statistic__filter">
+                            <p class="wrapper">
+                                <select name="selectTop" onchange="javascript:getImageReport();" id="selectTop" class="selectTop">
+                                    <option value="5">Xem top 5</option>
+                                    <option selected="selected" value="10">Xem top 10</option>
+                                    <option value="15">Xem top 15</option>
+                                    <option value="20">Xem top 20</option>
+                                </select>
+                            </p>
+                            <p class="wrapper">
+                                <select name="selectField" onchange="javascript:getImageReport();" id="selectField" class="selectField">
+                                    <option selected="selected" value="0">Nguồn có số lượt đọc nhiều nhất</option>
+                                    <option value="1">Nguồn có số tin nhiều nhất</option>
+                                    <option value="2">Nguồn có số tin gốc nhiều nhất</option>
+                                    <option value="3">Nguồn có số tin đăng lại nhiều nhất</option>
+                                    <option value="4">Nguồn có số tin bị đăng lại nhiều nhất</option>
+                                </select>
+                            </p>
+                            <p class="wrapper">
+                                <select name="selectLeftDay" onchange="javascript:getImageReport();" id="selectLeftDay" class="selectLeftDay">
+                                    <option selected="selected" value="7">Trong 7 ngày</option>
+                                    <option value="30">Trong 1 tháng</option>
+                                    <option value="90">Trong 3 tháng</option>
+                                </select>
+                            </p>
+                        </div>
+                        <div class="statistic__chart">
+                            <img id="chartImageReport" usemap="chartImageMap" src="fig-image/site/img__chart.jpeg">
+                            <map name="chartImageMap" id="chartImageMap">
+                                <area shape="rect" coords="0, 12, 502, 29" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 41, 502, 58" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 70, 502, 87" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 99, 502, 116" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 128, 502, 145" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 157, 502, 174" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 186, 502, 203" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 215, 502, 232" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 244, 502, 261" title="Xem chi tiết" alt="Xem chi tiết">
+                                <area shape="rect" coords="0, 273, 502, 290" title="Xem chi tiết" alt="Xem chi tiết">
+                            </map>
+                        </div>
+                        <p class="statistic__note">Click vào nguồn để xem chi tiết theo ngày</p>
+                    </div>
+                    <h2 class="block__header black"><span>Thống kê tổng hợp</span></h2>
+                    <div class="statistic__content">
+                        <table class="statistic__tbl">
+                            <tbody>
+                                <tr>
+                                    <th>Tổng số tin</th>
+                                    <td><span id="main_lbTotalCount">675332</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Tổng số tin đăng lại
+                                    </th>
+                                    <td><span id="main_lbCopiedCount">212280</span></td>
+                                </tr>
+                                <tr>
+                                    <th>Tổng số tin gốc bị đăng lại
+                                    </th>
+                                    <td><span id="main_lbBeCopiedCount">207343</span></td>
+                                </tr>
+                                <tr class="is-last">
+                                    <th>Tổng số tin gốc không bị đăng lại
+                                    </th>
+                                    <td><span id="main_lbOriginalCount">463052</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <hr>
+                        <p class="statistic__note">Dữ liệu thống kê trong vòng 3 tháng trở lại đây</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="blocker" id="statistic__info">
+            <div class="modal xxl"><a class="close-reveal-modal">×</a>
+                <h3 class="modal-title">Tiêu đề dialog</h3>
+                <div class="modal-content">
+                    Nội dung dialog
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/vendor/jquery-migrate-3.0.0.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.bxslider.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.fixer.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe.min.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe-ui-default.min.js" defer></script>
+    <script src="../Jscripts/desktop-ui-local.js" defer></script>
+</body>
+
+</html>

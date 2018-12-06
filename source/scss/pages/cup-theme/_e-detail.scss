@@ -1,0 +1,102 @@
+// ====================================
+// soccer's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* detail match
+*/
+
+// > detail match
+.worldcup {
+    .s-detail__team-info,
+    .s-detail__team-statistic,
+    .s-detail__team-player,
+    {
+        margin-bottom: 40px;
+    }
+    .s-detail__header {
+        .link {}
+        .team {
+            .home,
+            .away {
+                @include breakpoint($iphone-5) {
+                    width: 90px;
+                }
+                @include breakpoint($iphone-6) {
+                    width: 110px;
+                }
+                @include breakpoint($iphone-6-plus) {
+                    width: 140px;
+                }
+            }
+
+            >div {}
+            img {}
+            i.flag {
+                transform: scale(2);
+                margin: 12px;
+            }
+            .name {}
+        }
+    }
+    .s-detail__match-statistic,
+    .s-detail__formation,
+    {
+        margin-bottom: 40px;
+    }
+    .s-detail__team-player {
+        .cate-title{
+            margin-bottom: 10px;
+        }
+        .statistic {
+            padding: 0;
+        }
+    }
+    .s-detail__team-info {
+        .cate-title {
+            margin-bottom: 10px;
+        }
+        .team-logo{
+            background-color: #eee;
+            i{
+                transform: scale(5);
+                margin-top: 48px;
+            }
+        }
+        .content {
+            padding: 0;
+        }
+    }
+    .s-detail__team-statistic {
+        .cate-title {
+            margin-bottom: 10px;
+        }
+    }
+    .s-detail__btn-back {
+        margin: 0;
+    }
+    .s-detail__formation {
+        .cate-title {
+            margin-bottom: 10px;
+        }
+    }
+    .league-time {
+        padding-left: 0;
+    }
+    .s-detail__key-event .st-timeline-progress,
+    .s-detail__key-event .item .time,
+    .s-detail__key-event .item.penalty .title,
+    .s-detail__key-event .item.penalty .current-score,
+    .s-detail__match-statistic .part-home,
+    .s-detail__match-statistic .more-info .bar span,
+    .s-detail__btn-back,
+    {
+        background-color: $wc-color;
+    }
+    .s-detail__match-statistic .part-away,
+    .s-detail__match-statistic .more-info .bar {
+        background-color: #00BCD4;
+    }
+}

@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>05-history.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" type="text/css" href="../styles/css/desktop-styles.css">
+    <!--[if lt IE 9]>
+        <script src="../Jscripts/modernizr.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <div class="wrapper profile_page">
+        <div class="header">
+            <div class="l-grid">
+                <a href="01-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__user">
+                    <div class="login hidden">
+                        <button href="#" class="uName">
+                            <i class="spr spr--user"></i>
+                        </button>
+                        <div class="login-board">
+                            <span class="desc">Đăng nhập để trải nghiệm thêm những tính năng hữu ích</span>
+                            <button class="login-zalo"><span>Zalo</span><i class="spr spr--zalo"></i></button>
+                            <button class="login-fb"><span>Facebook</span><i class="spr spr--fb"></i></button>
+                            <button class="login-gplus"><span>Google</span><i class="spr spr--gplus"></i></button>
+                        </div>
+                    </div>
+                    <div class="logged ">
+                        <a href="#" class="uName">
+                            <div class="uName__thumb">
+                                <img src="fig-images/site/1x1.png" alt="avatar" width="24" height="24">
+                            </div>
+                            <span class="text">Trần Anh Tuấn</span>
+                        </a>
+                        <div class="user-board">
+                            <ul>
+                                <li class="is-first"><a href="#"><i class="spr spr--recommend"></i><span>Tin đề xuất</span></a></li>
+                                <li><a href="#"><i class="spr spr--channel"></i><span>Kênh của tôi</span></a></li>
+                                <li class="hidden"><a href="#"><i class="spr spr--bookmark"></i><span>Tin đã lưu</span></a></li>
+                                <li><a href="#"><i class="spr spr--config"></i><span>Cá nhân</span></a></li>
+                                <li class="notice"><a href="#"><i class="spr spr--notice"></i><span>Thông báo</span></a>
+                                    <button class="switch"></button>
+                                </li>
+                                <li class="log-out hidden">
+                                    <button><i class="spr spr--logout"></i><span>Đăng xuất</span></button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="switch-mobile">
+                    <i class="spr spr--mobile-ver"></i>
+                </a>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>KH - CN </span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Khoa học - Tự nhiên</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Games</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="fyi fyi--970">
+                <div class="fyi__box"><img src="fig-images/ads/ads-728x90.jpg" alt="ads"></div>
+            </div>
+            <div class="l-grid">
+                <div class="wrap-filter">
+                    <div class="main-filter">
+                        <a href="#">
+                            <i class="spr spr--pin-hot"></i>
+                            <span>Nóng</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-latest"></i>
+                            <span>Mới</span>
+                        </a>
+                        <a href="#">
+                            <i class="spr spr--pin-video"></i>
+                            <span>Video</span>
+                        </a>
+                        <a href="#" class="is-last">
+                            <i class="spr spr--pin-event"></i>
+                            <span>Sự kiện</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="user-container">
+                    <div class="user-info">
+                        <p class="user-info__thumb"><img alt="avatar" src="fig-images/site/beer-bg.jpg"></p>
+                        <div class="user-info__content">
+                            <p class="name">
+                                <span>Nhung Răng - </span>
+                                <a href="#">Đăng xuất</a>
+                            </p>
+                            <div class="statistic">
+                                <span class="block">Tin đọc gần đây: <b>6</b></span>
+                                <span class="block">Tin đã lưu: <b>6</b></span>
+                            </div>
+                        </div>
+                        <a href="#" class="user-info__create-button"><span>Tạo kênh</span></a>
+                    </div>
+                    <div class="user-content">
+                        <div class="user-content__tabs">
+                            <a href="05-user.html" class="btn is-active">Kênh của tôi</a>
+                            <a href="05-follow.html" class="btn">Nội dung đã theo dõi</a>
+                            <a href="05-history.html" class="btn">Tin đọc gần đây</a>
+                            <a href="05-bookmark.html" class="btn">Tin đã lưu</a>
+                        </div>
+                        <div class="user-content__panels">
+                            <div class="my-history panel is-active">
+                                <div class="small-list">
+                                    <div class="panel__item">
+                                        <div class="tools-box">
+                                            <a href="#" class="tools-box__delete-all"><i class="spr spr--recycle"></i><span>Xóa tất cả</span></a>
+                                        </div>
+                                        <h3 class="box-title">
+                                            <span class="title">Đọc gần đây</span>
+                                        </h3>
+                                        <div class="box-content">
+                                            <div data-aid="27572384" class="story is-first">
+                                                <div class="story__thumb"><a target="_blank" href="/ong-tap-tran-an-chau-phi-ve-mon-qua-kho-cuong-cua-trung-quoc/r/27572384.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/09/04/15/27572384/64175.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/09/04/15/27572384/64175.jpg" width="200" height="105"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/ong-tap-tran-an-chau-phi-ve-mon-qua-kho-cuong-cua-trung-quoc/r/27572384.epi">Ông Tập trấn an châu Phi về 'món quà khó cưỡng' của Trung Quốc</a></h4>
+                                                <p class="story__meta">
+                                                    <a class="source" href="/s/p/15.epi">NLĐ<i class="plsh plsh--15"></i></a>
+                                                    <time class="friendly" datetime="1536025740">2 giờ</time>
+                                                    <a class="cache" target="_blank" href="/ong-tap-tran-an-chau-phi-ve-mon-qua-kho-cuong-cua-trung-quoc/c/27572384.epi"><i class="spr spr--baomoi"></i></a>
+                                                    <a href="#" class="delete"><i class="spr spr--story-del"></i></a>
+                                                </p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27572683" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/anh-dep-hiem-hoi-cua-gia-dinh-nha-becks-lan-dau-tren-vogue/r/27572683.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/20/27572683/180934.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/20/27572683/180934.jpg" width="200" height="144"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/anh-dep-hiem-hoi-cua-gia-dinh-nha-becks-lan-dau-tren-vogue/r/27572683.epi">Ảnh đẹp hiếm hoi của gia đình nhà Becks lần đầu trên Vogue</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/20.epi">Tiền Phong<i class="plsh plsh--20"></i></a>
+                                                    <time class="friendly" datetime="1536026640">2 giờ</time><a class="cache" target="_blank" href="/anh-dep-hiem-hoi-cua-gia-dinh-nha-becks-lan-dau-tren-vogue/c/27572683.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27572383" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/ong-tap-can-binh-se-khong-den-trieu-tien/r/27572383.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/15/27572383/47601.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/15/27572383/47601.jpg" width="200" height="105"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/ong-tap-can-binh-se-khong-den-trieu-tien/r/27572383.epi">Ông Tập Cận Bình sẽ không đến Triều Tiên?</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/15.epi">NLĐ<i class="plsh plsh--15"></i></a>
+                                                    <time class="friendly" datetime="1536026040">2 giờ</time><a class="cache" target="_blank" href="/ong-tap-can-binh-se-khong-den-trieu-tien/c/27572383.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27570811" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/hlv-park-hang-seo-nhe-nhang-voi-tham-vong-vo-dich-aff-cup-2018/r/27570811.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/23/27570811/50966.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/23/27570811/50966.jpg" width="200" height="133"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/hlv-park-hang-seo-nhe-nhang-voi-tham-vong-vo-dich-aff-cup-2018/r/27570811.epi">HLV Park Hang Seo 'nhẹ nhàng' với tham vọng vô địch AFF Cup 2018</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1536019320">4 giờ</time><a class="cache" target="_blank" href="/hlv-park-hang-seo-nhe-nhang-voi-tham-vong-vo-dich-aff-cup-2018/c/27570811.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27570672" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/ngoi-nha-chet-choc-bi-an-o-thai-binh-dai-tang-trong-le-cung-tram-ngay/r/27570672.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/04/83/27570672/95128.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/04/83/27570672/95128.jpg" width="200" height="128"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/ngoi-nha-chet-choc-bi-an-o-thai-binh-dai-tang-trong-le-cung-tram-ngay/r/27570672.epi">Ngôi nhà chết chóc bí ẩn ở Thái Bình: Đại tang trong lễ cúng trăm ngày</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/83.epi">VTC<i class="plsh plsh--83"></i></a>
+                                                    <time class="friendly" datetime="1536018300">4 giờ</time><a class="cache" target="_blank" href="/ngoi-nha-chet-choc-bi-an-o-thai-binh-dai-tang-trong-le-cung-tram-ngay/c/27570672.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27569853" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/u23-viet-nam-quen-asiad-di-aff-cup-moi-cang/r/27569853.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/04/23/27569853/94661.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/04/23/27569853/94661.jpg" width="200" height="126"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/u23-viet-nam-quen-asiad-di-aff-cup-moi-cang/r/27569853.epi">U23 Việt Nam: Quên Asiad đi, AFF Cup mới... căng</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1536012240">6 giờ</time><a class="cache" target="_blank" href="/u23-viet-nam-quen-asiad-di-aff-cup-moi-cang/c/27569853.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27571273" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/olympic-viet-nam-noi-bat-trong-doi-hinh-tieu-bieu-asiad-2018/r/27571273.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/83/27571273/692131.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/04/83/27571273/692131.jpg" width="200" height="133"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/olympic-viet-nam-noi-bat-trong-doi-hinh-tieu-bieu-asiad-2018/r/27571273.epi">Olympic Việt Nam nổi bật trong đội hình tiêu biểu ASIAD 2018</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/83.epi">VTC<i class="plsh plsh--83"></i></a>
+                                                    <time class="friendly" datetime="1536021660">3 giờ</time><a class="cache" target="_blank" href="/olympic-viet-nam-noi-bat-trong-doi-hinh-tieu-bieu-asiad-2018/c/27571273.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27547522" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/son-heung-min-tro-thanh-cam-hung-che-anh-khi-thoat-nghia-vu-quan-su/r/27547522.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/01/119/27547522/49325.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/09/01/119/27547522/49325.jpg" width="200" height="130"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/son-heung-min-tro-thanh-cam-hung-che-anh-khi-thoat-nghia-vu-quan-su/r/27547522.epi">Son Heung-min trở thành cảm hứng chế ảnh khi thoát nghĩa vụ quân sự</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/119.epi">Zing<i class="plsh plsh--119"></i></a>
+                                                    <time class="friendly" datetime="1535818200"> 01/09/18</time><a class="cache" target="_blank" href="/son-heung-min-tro-thanh-cam-hung-che-anh-khi-thoat-nghia-vu-quan-su/c/27547522.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27547521" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/nu-phong-vien-han-quoc-ngat-xiu-vi-chen-lan-chup-anh-son-heung-min/r/27547521.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/01/119/27547521/743210.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/09/01/119/27547521/743210.jpg" width="200" height="128"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/nu-phong-vien-han-quoc-ngat-xiu-vi-chen-lan-chup-anh-son-heung-min/r/27547521.epi">Nữ phóng viên Hàn Quốc ngất xỉu vì chen lấn chụp ảnh Son Heung-min</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/119.epi">Zing<i class="plsh plsh--119"></i></a>
+                                                    <time class="friendly" datetime="1535818440"> 01/09/18</time><a class="cache" target="_blank" href="/nu-phong-vien-han-quoc-ngat-xiu-vi-chen-lan-chup-anh-son-heung-min/c/27547521.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27532820" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/nu-chinh-dien-hi-cong-luoc-3-lan-xin-loi-vi-scandal-chanh-choe/r/27532820.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/23/27532820/129048.gif" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/23/27532820/129048.gif" width="200" height="113"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/nu-chinh-dien-hi-cong-luoc-3-lan-xin-loi-vi-scandal-chanh-choe/r/27532820.epi">Nữ chính 'Diên Hi công lược' 3 lần xin lỗi vì scandal chảnh chọe</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1535713200"> 31/08/18</time><a class="cache" target="_blank" href="/nu-chinh-dien-hi-cong-luoc-3-lan-xin-loi-vi-scandal-chanh-choe/c/27532820.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27523638" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/tap-2-sieu-mau-viet-nam-mac-vay-sieu-ngan-ky-duyen-van-lan-xa-chinh-dang-cho-thi-sinh/r/27523638.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/329/27523638/279933.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/329/27523638/279933.jpg" width="200" height="125"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/tap-2-sieu-mau-viet-nam-mac-vay-sieu-ngan-ky-duyen-van-lan-xa-chinh-dang-cho-thi-sinh/r/27523638.epi">Tập 2 Siêu mẫu Việt Nam: Mặc váy siêu ngắn, Kỳ Duyên vẫn lăn xả chỉnh dáng cho thí sinh</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/329.epi">SaoStar<i class="plsh plsh--329"></i></a>
+                                                    <time class="friendly" datetime="1535678400"> 31/08/18</time><a class="cache" target="_blank" href="/tap-2-sieu-mau-viet-nam-mac-vay-sieu-ngan-ky-duyen-van-lan-xa-chinh-dang-cho-thi-sinh/c/27523638.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27517809" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/mc-duong-len-dinh-olympia-nguoi-thanh-cong-ke-lui-ve-o-an/r/27517809.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/30/119/27517809/69209.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/30/119/27517809/69209.jpg" width="200" height="140"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/mc-duong-len-dinh-olympia-nguoi-thanh-cong-ke-lui-ve-o-an/r/27517809.epi">MC 'Đường lên đỉnh Olympia': Người thành công, kẻ lui về ở ẩn</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/119.epi">Zing<i class="plsh plsh--119"></i></a>
+                                                    <time class="friendly" datetime="1535628180"> 30/08/18</time><a class="cache" target="_blank" href="/mc-duong-len-dinh-olympia-nguoi-thanh-cong-ke-lui-ve-o-an/c/27517809.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27519866" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/ky-duyen-bat-khoc-vi-lan-dau-tien-nem-mui-that-bai-minh-thua-ma-phai-phuc-nguoi-ta/r/27519866.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/30/329/27519866/666739.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/30/329/27519866/666739.jpg" width="200" height="125"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/ky-duyen-bat-khoc-vi-lan-dau-tien-nem-mui-that-bai-minh-thua-ma-phai-phuc-nguoi-ta/r/27519866.epi">Kỳ Duyên bật khóc vì lần đầu tiên nếm mùi thất bại: 'Mình thua mà phải phục người ta'</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/329.epi">SaoStar<i class="plsh plsh--329"></i></a>
+                                                    <time class="friendly" datetime="1535639280"> 30/08/18</time><a class="cache" target="_blank" href="/ky-duyen-bat-khoc-vi-lan-dau-tien-nem-mui-that-bai-minh-thua-ma-phai-phuc-nguoi-ta/c/27519866.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27523202" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/can-trong-choi-show/r/27523202.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/19/27523202/110461.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/19/27523202/110461.jpg" width="200" height="118"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/can-trong-choi-show/r/27523202.epi">Cẩn trọng chơi show</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/19.epi">Thanh Niên<i class="plsh plsh--19"></i></a>
+                                                    <time class="friendly" datetime="1535676887"> 31/08/18</time><a class="cache" target="_blank" href="/can-trong-choi-show/c/27523202.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27518729" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/ban-gai-xinh-dep-song-o-my-cua-minh-vuong-u23-viet-nam/r/27518729.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/30/23/27518729/97606.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/30/23/27518729/97606.jpg" width="200" height="111"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/ban-gai-xinh-dep-song-o-my-cua-minh-vuong-u23-viet-nam/r/27518729.epi">Bạn gái xinh đẹp sống ở Mỹ của Minh Vương U23 Việt Nam</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1535632920"> 30/08/18</time><a class="cache" target="_blank" href="/ban-gai-xinh-dep-song-o-my-cua-minh-vuong-u23-viet-nam/c/27518729.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27522833" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/nu-csgt-xinh-dep-1-chong-2-con-khien-cu-dan-mang-do-ram-ram/r/27522833.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/149/27522833/111520.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/149/27522833/111520.jpg" width="200" height="105"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/nu-csgt-xinh-dep-1-chong-2-con-khien-cu-dan-mang-do-ram-ram/r/27522833.epi">Nữ CSGT xinh đẹp 1 chồng 2 con khiến cư dân mạng 'đổ rầm rầm'</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/149.epi">Dân Việt<i class="plsh plsh--149"></i></a>
+                                                    <time class="friendly" datetime="1535675400"> 31/08/18</time><a class="cache" target="_blank" href="/nu-csgt-xinh-dep-1-chong-2-con-khien-cu-dan-mang-do-ram-ram/c/27522833.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27530778" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/hlv-park-hang-seo-va-khoanh-khac-cuc-yeu-voi-cac-cau-thu-u23-viet-nam/r/27530778.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/180/27530778/31327.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/180/27530778/31327.jpg" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/hlv-park-hang-seo-va-khoanh-khac-cuc-yeu-voi-cac-cau-thu-u23-viet-nam/r/27530778.epi">HLV Park Hang Seo và khoảnh khắc cực yêu với các cầu thủ U23 Việt Nam</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/180.epi">Kiến Thức<i class="plsh plsh--180"></i></a>
+                                                    <time class="friendly" datetime="1535704500"> 31/08/18</time><a class="cache" target="_blank" href="/hlv-park-hang-seo-va-khoanh-khac-cuc-yeu-voi-cac-cau-thu-u23-viet-nam/c/27530778.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27530362" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/lang-lang-du-ban-la-nguoi-ngoai-hanh-tinh-thi-van-phai-luyen-tap/r/27530362.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/293/27530362/33989.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/293/27530362/33989.jpg" width="200" height="150"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/lang-lang-du-ban-la-nguoi-ngoai-hanh-tinh-thi-van-phai-luyen-tap/r/27530362.epi">Lang Lang: 'Dù bạn là người ngoài hành tinh thì vẫn phải luyện tập'</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/293.epi">VietnamPlus<i class="plsh plsh--293"></i></a>
+                                                    <time class="friendly" datetime="1535702580"> 31/08/18</time><a class="cache" target="_blank" href="/lang-lang-du-ban-la-nguoi-ngoai-hanh-tinh-thi-van-phai-luyen-tap/c/27530362.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27526836" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/kinh-vien-vong-gia-1-ty-usd-cho-chat-luong-hinh-anh-cao-hon-10-lan-hubble/r/27526836.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/280/27526836/216999.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/280/27526836/216999.jpg" width="200" height="119"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/kinh-vien-vong-gia-1-ty-usd-cho-chat-luong-hinh-anh-cao-hon-10-lan-hubble/r/27526836.epi">Kính viễn vọng giá 1 tỷ USD cho chất lượng hình ảnh cao hơn 10 lần Hubble</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/280.epi">Nghe Nhìn VN<i class="plsh plsh--280"></i></a>
+                                                    <time class="friendly" datetime="1535688000"> 31/08/18</time><a class="cache" target="_blank" href="/kinh-vien-vong-gia-1-ty-usd-cho-chat-luong-hinh-anh-cao-hon-10-lan-hubble/c/27526836.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27526522" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/vu-mat-tich-vien-kim-cuong-vang-ky-bi-nhat-lich-su/r/27526522.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/180/27526522/36253.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/180/27526522/36253.jpg" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/vu-mat-tich-vien-kim-cuong-vang-ky-bi-nhat-lich-su/r/27526522.epi">Vụ mất tích viên kim cương vàng kỳ bí nhất lịch sử</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/180.epi">Kiến Thức<i class="plsh plsh--180"></i></a>
+                                                    <time class="friendly" datetime="1535686680"> 31/08/18</time><a class="cache" target="_blank" href="/vu-mat-tich-vien-kim-cuong-vang-ky-bi-nhat-lich-su/c/27526522.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27523503" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/tiet-lo-cuc-choang-ve-kinh-vien-vong-khong-lo-gia-ty-do/r/27523503.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/180/27523503/58200.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/180/27523503/58200.jpg" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/tiet-lo-cuc-choang-ve-kinh-vien-vong-khong-lo-gia-ty-do/r/27523503.epi">Tiết lộ cực choáng về kính viễn vọng khổng lồ giá tỷ đô</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/180.epi">Kiến Thức<i class="plsh plsh--180"></i></a>
+                                                    <time class="friendly" datetime="1535677920"> 31/08/18</time><a class="cache" target="_blank" href="/tiet-lo-cuc-choang-ve-kinh-vien-vong-khong-lo-gia-ty-do/c/27523503.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27521795" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/bang-tong-sap-huy-chuong-asiad-2018-ngay-31-8-viet-nam-hon-uae-3-bac/r/27521795.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/65/27521795/116628.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/65/27521795/116628.jpg" width="200" height="113"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/bang-tong-sap-huy-chuong-asiad-2018-ngay-31-8-viet-nam-hon-uae-3-bac/r/27521795.epi">Bảng tổng sắp huy chương ASIAD 2018 ngày 31/8: Việt Nam hơn UAE 3 bậc</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/65.epi">VOV<i class="plsh plsh--65"></i></a>
+                                                    <time class="friendly" datetime="1535669400"> 31/08/18</time><a class="cache" target="_blank" href="/bang-tong-sap-huy-chuong-asiad-2018-ngay-31-8-viet-nam-hon-uae-3-bac/c/27521795.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27524807" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/uoc-muon-truoc-khi-lay-vo/r/27524807.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/181/27524807/37670.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/181/27524807/37670.jpg" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/uoc-muon-truoc-khi-lay-vo/r/27524807.epi">Ước muốn trước khi lấy vợ</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/181.epi">GD&amp;TĐ<i class="plsh plsh--181"></i></a>
+                                                    <time class="friendly" datetime="1535681901"> 31/08/18</time><a class="cache" target="_blank" href="/uoc-muon-truoc-khi-lay-vo/c/27524807.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27522460" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/tre-con-sao-khong-nhin-vao-mat-nhau-lai-cui-gam-mat-xuong/r/27522460.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/23/27522460/146470.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/23/27522460/146470.jpg" width="200" height="113"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/tre-con-sao-khong-nhin-vao-mat-nhau-lai-cui-gam-mat-xuong/r/27522460.epi">'Trẻ con sao không nhìn vào mắt nhau, lại cúi gằm mặt xuống?'</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1535673180"> 31/08/18</time><a class="cache" target="_blank" href="/tre-con-sao-khong-nhin-vao-mat-nhau-lai-cui-gam-mat-xuong/c/27522460.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27525101" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/xay-ra-chuyen-lon-o-syria/r/27525101.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/149/27525101/168258.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/31/149/27525101/168258.jpg" width="200" height="105"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/xay-ra-chuyen-lon-o-syria/r/27525101.epi">Xảy ra chuyện lớn ở Syria?</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/149.epi">Dân Việt<i class="plsh plsh--149"></i></a>
+                                                    <time class="friendly" datetime="1535682720"> 31/08/18</time><a class="cache" target="_blank" href="/xay-ra-chuyen-lon-o-syria/c/27525101.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27521596" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/u23-viet-nam-nhung-su-that-mat-long/r/27521596.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/23/27521596/81634.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/31/23/27521596/81634.jpg" width="200" height="112"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/u23-viet-nam-nhung-su-that-mat-long/r/27521596.epi">U23 Việt Nam: Những sự thật... mất lòng</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1535666640"> 31/08/18</time><a class="cache" target="_blank" href="/u23-viet-nam-nhung-su-that-mat-long/c/27521596.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27522791" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/nu-y-ta-viet-tro-tai-ru-be-ngu-khien-bao-nuoc-ngoai-day-song/r/27522791.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1_sm/2018/08/31/83/27522791/85448.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1_sm/2018/08/31/83/27522791/85448.jpg" width="200" height="176"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/nu-y-ta-viet-tro-tai-ru-be-ngu-khien-bao-nuoc-ngoai-day-song/r/27522791.epi">Nữ y tá Việt trổ tài ru bé ngủ khiến báo nước ngoài dậy sóng</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/83.epi">VTC<i class="plsh plsh--83"></i></a>
+                                                    <time class="friendly" datetime="1535674980"> 31/08/18</time><a class="cache" target="_blank" href="/nu-y-ta-viet-tro-tai-ru-be-ngu-khien-bao-nuoc-ngoai-day-song/c/27522791.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27523317" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/enrique-iglesias-chia-se-clip-lam-tro-cho-cap-song-sinh-gay-thich-thu/r/27523317.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/287/27523317/147159.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/31/287/27523317/147159.jpg" width="200" height="112"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/enrique-iglesias-chia-se-clip-lam-tro-cho-cap-song-sinh-gay-thich-thu/r/27523317.epi">Enrique Iglesias chia sẻ clip làm trò cho cặp song sinh gây thích thú</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/287.epi">Một Thế Giới<i class="plsh plsh--287"></i></a>
+                                                    <time class="friendly" datetime="1535677260"> 31/08/18</time><a class="cache" target="_blank" href="/enrique-iglesias-chia-se-clip-lam-tro-cho-cap-song-sinh-gay-thich-thu/c/27523317.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27476420" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/nghe-si-viet-di-bao-sau-chien-thang-lich-su-cua-olympic-viet-nam/r/27476420.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1_sm/2018/08/28/291/27476420/128045.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1_sm/2018/08/28/291/27476420/128045.jpg" width="200" height="150"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/nghe-si-viet-di-bao-sau-chien-thang-lich-su-cua-olympic-viet-nam/r/27476420.epi">Nghệ sĩ Việt đi 'bão' sau chiến thắng lịch sử của Olympic Việt Nam</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/291.epi">2Sao<i class="plsh plsh--291"></i></a>
+                                                    <time class="friendly" datetime="1535413440"> 28/08/18</time><a class="cache" target="_blank" href="/nghe-si-viet-di-bao-sau-chien-thang-lich-su-cua-olympic-viet-nam/c/27476420.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27424773" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/bi-thu-xa-gay-tai-nan-sau-uong-bia-khong-bo-chay/r/27424773.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/24/132/27424773/167323.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/24/132/27424773/167323.jpg" width="200" height="112"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/bi-thu-xa-gay-tai-nan-sau-uong-bia-khong-bo-chay/r/27424773.epi">Bí thư xã gây tai nạn sau uống bia: Không bỏ chạy...</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/132.epi">Đất Việt<i class="plsh plsh--132"></i></a>
+                                                    <time class="friendly" datetime="1535068020"> 24/08/18</time><a class="cache" target="_blank" href="/bi-thu-xa-gay-tai-nan-sau-uong-bia-khong-bo-chay/c/27424773.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="20090984" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/be-gai-hong-da-day-vi-vua-an-vua-xem-tivi-ipad/r/20090984.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1_sm/16/08/14/103/20090984/2_31744.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1_sm/16/08/14/103/20090984/2_31744.jpg" width="200" height="200"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/be-gai-hong-da-day-vi-vua-an-vua-xem-tivi-ipad/r/20090984.epi">Bé gái hỏng dạ dày vì vừa ăn vừa xem tivi, iPad</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/132.epi">Đất Việt<i class="plsh plsh--132"></i></a>
+                                                    <time class="friendly" datetime="1471163580"> 14/08/16</time><a class="cache" target="_blank" href="/be-gai-hong-da-day-vi-vua-an-vua-xem-tivi-ipad/c/20090984.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27368290" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/chuyen-la-hom-nay-nguoi-dan-ong-dung-dao-rua-mat-va-ket-kho-tin/r/27368290.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/180/27368290/38330.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/180/27368290/38330.jpg" width="200" height="124"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/chuyen-la-hom-nay-nguoi-dan-ong-dung-dao-rua-mat-va-ket-kho-tin/r/27368290.epi">Chuyện lạ hôm nay: Người đàn ông dùng dao rửa mắt và kết khó tin</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/180.epi">Kiến Thức<i class="plsh plsh--180"></i></a>
+                                                    <time class="friendly" datetime="1534746420"> 20/08/18</time><a class="cache" target="_blank" href="/chuyen-la-hom-nay-nguoi-dan-ong-dung-dao-rua-mat-va-ket-kho-tin/c/27368290.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27373129" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/14-than-thoai-sai-bet-trong-lich-su-ma-trieu-nguoi-van-tin-con-ngua-go-thanh-troy-la-hu-cau/r/27373129.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/350/27373129/233131.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/350/27373129/233131.jpg" width="200" height="105"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/14-than-thoai-sai-bet-trong-lich-su-ma-trieu-nguoi-van-tin-con-ngua-go-thanh-troy-la-hu-cau/r/27373129.epi">14 thần thoại sai bét trong lịch sử mà triệu người vẫn tin, con ngựa gỗ thành Troy là hư cấu</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/350.epi">Gia Đình Mới<i class="plsh plsh--350"></i></a>
+                                                    <time class="friendly" datetime="1534763220"> 20/08/18</time><a class="cache" target="_blank" href="/14-than-thoai-sai-bet-trong-lich-su-ma-trieu-nguoi-van-tin-con-ngua-go-thanh-troy-la-hu-cau/c/27373129.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27372441" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/bi-duoi-khoi-phong-tro-nguoi-dan-ong-dot-vo-va-2-con-gai/r/27372441.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1_sm/2018/08/20/119/27372441/84696.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1_sm/2018/08/20/119/27372441/84696.jpg" width="200" height="155"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/bi-duoi-khoi-phong-tro-nguoi-dan-ong-dot-vo-va-2-con-gai/r/27372441.epi">Bị đuổi khỏi phòng trọ, người đàn ông đốt vợ và 2 con gái</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/119.epi">Zing<i class="plsh plsh--119"></i></a>
+                                                    <time class="friendly" datetime="1534760640"> 20/08/18</time><a class="cache" target="_blank" href="/bi-duoi-khoi-phong-tro-nguoi-dan-ong-dot-vo-va-2-con-gai/c/27372441.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27369151" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/gia-lai-tuc-gian-vi-bi-pha-xe-ro-ga-o-to-tong-chet-nguoi-roi-bo-tron/r/27369151.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/240/27369151/74464.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/240/27369151/74464.jpg" width="200" height="113"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/gia-lai-tuc-gian-vi-bi-pha-xe-ro-ga-o-to-tong-chet-nguoi-roi-bo-tron/r/27369151.epi">Gia Lai: Tức giận vì bị phá xe, rồ ga ô tô tông chết người rồi bỏ trốn</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/240.epi">Infonet<i class="plsh plsh--240"></i></a>
+                                                    <time class="friendly" datetime="1534749960"> 20/08/18</time><a class="cache" target="_blank" href="/gia-lai-tuc-gian-vi-bi-pha-xe-ro-ga-o-to-tong-chet-nguoi-roi-bo-tron/c/27369151.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27367909" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/di-vieng-ban-bi-con-trai-ban-cua-co-tu-vong/r/27367909.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/23/27367909/89982.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/23/27367909/89982.jpg" width="200" height="113"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/di-vieng-ban-bi-con-trai-ban-cua-co-tu-vong/r/27367909.epi">Đi viếng bạn bị con trai bạn cứa cổ tử vong</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1534743780"> 20/08/18</time><a class="cache" target="_blank" href="/di-vieng-ban-bi-con-trai-ban-cua-co-tu-vong/c/27367909.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27369108" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/nguoi-dan-ong-mai-phuong-kien-cuong-ngay-nao-bong-dung-nam-im-do-dau-don-the-xac-tung-con/r/27369108.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/20/329/27369108/52564.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/20/329/27369108/52564.jpg" width="200" height="125"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/nguoi-dan-ong-mai-phuong-kien-cuong-ngay-nao-bong-dung-nam-im-do-dau-don-the-xac-tung-con/r/27369108.epi">'Người đàn ông' Mai Phương kiên cường ngày nào 'bỗng dưng nằm im đó, đau đớn thể xác từng cơn'</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/329.epi">SaoStar<i class="plsh plsh--329"></i></a>
+                                                    <time class="friendly" datetime="1534749780"> 20/08/18</time><a class="cache" target="_blank" href="/nguoi-dan-ong-mai-phuong-kien-cuong-ngay-nao-bong-dung-nam-im-do-dau-don-the-xac-tung-con/c/27369108.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27366682" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/hon-1-000-nguoi-xay-dung-de-bai-cho-cuoc-thi-ai-cua-vn/r/27366682.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/119/27366682/242845.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/20/119/27366682/242845.jpg" width="200" height="117"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/hon-1-000-nguoi-xay-dung-de-bai-cho-cuoc-thi-ai-cua-vn/r/27366682.epi">Hơn 1.000 người xây dựng đề bài cho cuộc thi AI của VN</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/119.epi">Zing<i class="plsh plsh--119"></i></a>
+                                                    <time class="friendly" datetime="1534737960"> 20/08/18</time><a class="cache" target="_blank" href="/hon-1-000-nguoi-xay-dung-de-bai-cho-cuoc-thi-ai-cua-vn/c/27366682.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27350081" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/5-girlgroup-kpop-van-giu-tinh-ban-ben-vung-du-tan-dan-xe-nghe/r/27350081.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/19/316/27350081/183242.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/19/316/27350081/183242.jpg" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/5-girlgroup-kpop-van-giu-tinh-ban-ben-vung-du-tan-dan-xe-nghe/r/27350081.epi">5 girlgroup Kpop vẫn giữ tình bạn bền vững dù 'tan đàn xẻ nghé'</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/316.epi">iOne<i class="plsh plsh--316"></i></a>
+                                                    <time class="friendly" datetime="1534616760"> 19/08/18</time><a class="cache" target="_blank" href="/5-girlgroup-kpop-van-giu-tinh-ban-ben-vung-du-tan-dan-xe-nghe/c/27350081.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="23957536" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/8-dac-diem-thu-vi-ve-di-truyen-gen-thong-minh-cua-con-trai-tu-me-con-con-gai-tu-bo/r/23957536.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/17/11/15/317/23957536/10_3864758.png" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/17/11/15/317/23957536/10_3864758.png" width="200" height="126"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/8-dac-diem-thu-vi-ve-di-truyen-gen-thong-minh-cua-con-trai-tu-me-con-con-gai-tu-bo/r/23957536.epi">8 đặc điểm thú vị về di truyền: Gen thông minh của con trai từ mẹ, còn con gái từ bố</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/350.epi">Gia Đình Mới<i class="plsh plsh--350"></i></a>
+                                                    <time class="friendly" datetime="1510737120"> 15/11/17</time><a class="cache" target="_blank" href="/8-dac-diem-thu-vi-ve-di-truyen-gen-thong-minh-cua-con-trai-tu-me-con-con-gai-tu-bo/c/23957536.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27308957" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/da-den-luc-viet-nam-dinh-vi-minh-la-cuong-quoc-hang-trung/r/27308957.epi"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/da-den-luc-viet-nam-dinh-vi-minh-la-cuong-quoc-hang-trung/r/27308957.epi">Đã đến lúc Việt Nam định vị mình là 'cường quốc hạng trung'?</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1534359600"> 16/08/18</time><a class="cache" target="_blank" href="/da-den-luc-viet-nam-dinh-vi-minh-la-cuong-quoc-hang-trung/c/27308957.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27309078" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/bat-ngo-ke-hoach-den-phia-sau-vu-truy-sat-bac-si-chiem-quoc-thai/r/27309078.epi"><img data-src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/16/23/27309078/28395.jpg" src="https://baomoi-photo-1-td.zadn.vn/w100_r1x1/2018/08/16/23/27309078/28395.jpg" width="200" height="122"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/bat-ngo-ke-hoach-den-phia-sau-vu-truy-sat-bac-si-chiem-quoc-thai/r/27309078.epi">Bất ngờ kế hoạch 'đen' phía sau vụ truy sát bác sĩ Chiêm Quốc Thái</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/23.epi">VietnamNet<i class="plsh plsh--23"></i></a>
+                                                    <time class="friendly" datetime="1534364280"> 16/08/18</time><a class="cache" target="_blank" href="/bat-ngo-ke-hoach-den-phia-sau-vu-truy-sat-bac-si-chiem-quoc-thai/c/27309078.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27309536" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/ngan-ngam-ly-do-tai-xe-xe-om-62-tuoi-giet-nguoi/r/27309536.epi"><img data-src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/16/180/27309536/55378.jpg" src="https://baomoi-photo-3-td.zadn.vn/w100_r1x1/2018/08/16/180/27309536/55378.jpg" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/ngan-ngam-ly-do-tai-xe-xe-om-62-tuoi-giet-nguoi/r/27309536.epi">Ngán ngẩm lý do tài xế xe ôm 62 tuổi giết người</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/180.epi">Kiến Thức<i class="plsh plsh--180"></i></a>
+                                                    <time class="friendly" datetime="1534373100"> 16/08/18</time><a class="cache" target="_blank" href="/ngan-ngam-ly-do-tai-xe-xe-om-62-tuoi-giet-nguoi/c/27309536.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27244705" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/o-to-dam-trung-ba-cu-sang-duong-va-hanh-dong-dang-so-cua-moi-nguoi-xung-quanh/r/27244705.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/11/246/27244705/798590.gif" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/11/246/27244705/798590.gif" width="200" height="120"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/o-to-dam-trung-ba-cu-sang-duong-va-hanh-dong-dang-so-cua-moi-nguoi-xung-quanh/r/27244705.epi">Ô tô đâm trúng bà cụ sang đường và hành động đáng sợ của mọi người xung quanh</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/246.epi">Ngôi Sao VN<i class="plsh plsh--246"></i></a>
+                                                    <time class="friendly" datetime="1533956340"> 11/08/18</time><a class="cache" target="_blank" href="/o-to-dam-trung-ba-cu-sang-duong-va-hanh-dong-dang-so-cua-moi-nguoi-xung-quanh/c/27244705.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            <div data-aid="27248944" class="story">
+                                                <div class="story__thumb"><a target="_blank" href="/bong-da-asiad-lai-co-bien-uae-co-the-bi-loai-sau-hon-chien-voi-malaysia/r/27248944.epi"><img data-src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/11/83/27248944/73786.jpg" src="https://baomoi-photo-2-td.zadn.vn/w100_r1x1/2018/08/11/83/27248944/73786.jpg" width="200" height="113"></a></div>
+                                                <h4 class="story__heading"><a target="_blank" href="/bong-da-asiad-lai-co-bien-uae-co-the-bi-loai-sau-hon-chien-voi-malaysia/r/27248944.epi">Bóng đá ASIAD lại có biến, UAE có thể bị loại sau hỗn chiến với Malaysia</a></h4>
+                                                <p class="story__meta"><a class="source" href="/s/p/83.epi">VTC<i class="plsh plsh--83"></i></a>
+                                                    <time class="friendly" datetime="1533980760"> 11/08/18</time><a class="cache" target="_blank" href="/bong-da-asiad-lai-co-bien-uae-co-the-bi-loai-sau-hon-chien-voi-malaysia/c/27248944.epi"><i class="spr spr--baomoi"></i></a></p>
+                                                <button class="story__delete"></button>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="notice"><span>Bạn chưa đọc tin nào trên Báo Mới</span></div>
+                                    <div class="loading-more"><span>Đang tải tin</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>•</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>•</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>•</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>•</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>•</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>•</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>•</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>•</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>•</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>•</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>•</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>•</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>•</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>•</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>•</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>•</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>•</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>•</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>•</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>•</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>•</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>•</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>•</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>•</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>•</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>•</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>•</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>•</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>•</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>•</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>•</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>•</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>•</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>•</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>•</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>•</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>•</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>•</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>•</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>•</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>•</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>•</span>
+                    <a href="04-tags.html">Hot Girl</a><span>•</span>
+                    <a href="04-tags.html">Hot Boy</a><span>•</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <script src="../Jscripts/vendor/jquery-migrate-3.0.0.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.bxslider.js" defer></script>
+    <script src="../Jscripts/vendor/jquery.fixer.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe.min.js" defer></script>
+    <script src="../Jscripts/photoSwipe/dist/photoswipe-ui-default.min.js" defer></script>
+    <script src="../Jscripts/desktop-ui-local.js" defer></script>
+</body>
+
+</html>

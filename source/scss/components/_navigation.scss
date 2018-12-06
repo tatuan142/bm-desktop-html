@@ -1,0 +1,100 @@
+// ====================================
+// Customize scaffolding
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* main navigation
+*/
+
+// > main navigation 
+.nav-wrap{
+    height: 30px;
+    margin-bottom: 15px;
+}
+.nav {
+    background-color: $first-color;
+    height: 30px;
+    left: 0;
+    right: 0;
+    top: 50px;
+    z-index: 1100;
+    &.is-fixed{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        .is-last{
+            display: block;
+        }
+    }
+    &__parent {
+        float: left;
+        height: 30px;
+        position: relative;
+        > a {
+            @include font( 14, 31); //  old trước khi có quân sự
+            // @include font( 13, 30);
+            height: 30px;
+            text-transform: uppercase;
+            display: block;
+            padding: 0px 7px 0px 6px; // old trước khi có quân sự
+            // padding: 0px 6px 0px 6px;
+            color: #fff;
+            cursor: pointer;
+            &:hover {
+                background-color: #0F8E9C;
+            }
+        }
+        &:hover .nav__child {
+            left: 0;
+            display: block;
+            z-index: 2147483647;
+        }
+    }
+    &__child {
+        position: absolute;
+        left: -999em;
+        width: 180px;
+        background: $first-color;
+        box-shadow: 0 3px 10px -1px rgba(0, 0, 0, 0.26);
+        z-index: 2147483647;
+        li:hover,
+        li.is-active {
+            background-color: #0F8E9C;
+        }
+        a {
+            height: 32px;
+            @include font( 13, 32);
+            text-transform: uppercase;
+            display: block;
+            padding: 0px 8px;
+            color: #fff;
+            white-space: nowrap;
+        }
+    }
+    .is-active {
+        background-color: #0e6e79;
+    }
+    .has-icon {
+        a {
+            padding: 0 7px;
+        }
+        i {
+            vertical-align: top;
+            margin-top: 5px;
+        }
+    }
+    .is-last{
+        display: none;
+        float: right;
+        a{
+            padding: 0 5px;
+        }
+    }
+    .spr--search{
+        vertical-align: top;
+        margin-top: 5px;
+    }
+}

@@ -1,0 +1,203 @@
+// ====================================
+// error page's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* error page
+*/
+
+
+/* > error page */
+
+@import "../mixins/clearfix";
+@import "../mixins/fonts";
+@import "../mixins/media-query";
+@import "../mixins/box-sizing";
+@import "../components/variables";
+@import "../components/normalize";
+@import "../components/scaffolding";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #383838;
+    background: #fff;
+    line-height: 1.5em;
+}
+
+.error {
+    &-page {
+        border: 1px solid #ccc;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .26);
+        margin: 15px;
+        @include breakpoint(sm) {
+            margin: 100px auto 10px;
+            width: 750px;
+        }
+        .page-404,
+        .page-500 {
+            background-repeat: no-repeat;
+            padding-top: 65px;
+            background-size: 310px 50px;
+            @include breakpoint(mdm) {
+                padding-top: 50px;
+                background-size: 248px 40px;
+            }
+            @include breakpoint(0, $iphone) {
+                background-size: 155px 25px;
+            }
+            @include breakpoint(sm) {
+                padding-top: 80px;
+            }
+        }
+        .link {
+            font-weight: bold;
+            color: #538455;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+        .page-404 {
+            background-image: url(../img/error/not-found.png);
+        }
+        .page-500 {
+            background-image: url(../img/error/website-maintain.png);
+        }
+    }
+    &__title {
+        height: 40px;
+        border-bottom: 1px solid #ccc;
+        position: relative;
+        @include breakpoint(sm) {
+            height: 60px;
+        }
+    }
+    &__logo {
+        top: 5px;
+        left: 10px;
+        width: 92px;
+        height: 26px;
+        position: absolute;
+        z-index: 1;
+        background-image: url(../img/error/logo.png);
+        background-size: 124px auto;
+        display: inline-block;
+        @include breakpoint(sm) {
+            top: 10px;
+            left: 20px;
+            width: 129px;
+            height: 36px;
+            background-size: 171px auto;
+        }
+    }
+    &__inst {
+        position: absolute;
+        top: 12px;
+        right: 92px;
+        text-align: center;
+        text-transform: uppercase;
+        background-color: #15A1B1;
+        color: #FFFFFF;
+        display: inline-block;
+        height: 36px;
+        padding: 0px 12px;
+        vertical-align: middle;
+        margin: 0 10px;
+        @include font(12, 36, $normal);
+        border-radius: 3px;
+        &:hover {
+            opacity: .9;
+            color: #fff;
+            text-decoration: underline;
+        }
+        @include breakpoint(xs) {
+            display: none;
+        }
+    }
+    &__btn {
+        position: absolute;
+        top: 7px;
+        width: 26px;
+        height: 26px;
+        background-size: 26px 26px;
+        border-radius: 3px;
+        @include breakpoint(sm) {
+            top: 12px;
+            width: 36px;
+            height: 36px;
+            background-size: 36px 36px;
+        }
+        &:hover {
+            opacity: .9;
+        }
+        &--fb {
+            right: 40px;
+            @include breakpoint(sm) {
+                right: 56px;
+            }
+            background-image: url(../img/error/error-fb.png);
+        }
+        &--zalo {
+            right: 7px;
+            @include breakpoint(sm) {
+                right: 10px;
+            }
+            background-image: url(../img/error/error-zalo.png);
+        }
+    }
+    &__inst--bottom {
+        display: block;
+        text-align: center;
+        text-transform: uppercase;
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+        padding: 20px 20px 10px;
+        @include breakpoint(sm) {
+            display: none;
+        }
+        @include breakpoint(0, $iphone) {
+            margin-bottom: 5px !important;
+        }
+    }
+    &__search {
+        padding-top: 30px;
+        input {
+            width: 338px;
+            height: 45px;
+            border: 1px solid #538455;
+            margin-right: 10px;
+            padding: 10px;
+            width: calc(100% - 60px);
+            @include breakpoint(xs) {
+                font-size: 18px;
+            }
+            @include breakpoint(0, $iphone) {
+                font-size: 16px;
+            }
+        }
+        button {
+            width: 45px;
+            height: 45px;
+            border: none;
+            vertical-align: top;
+            background-color: #538455;
+            padding: 0;
+            &:hover {
+                opacity: .9;
+            }
+            i {
+                background-position: -250px -100px;
+            }
+        }
+    }
+    &__content {
+        background: none;
+        padding: 10px;
+        height: auto;
+        @include breakpoint(sm) {
+            background: url(../img/error/opp.png) 70px 40px no-repeat;
+            padding: 50px 100px 20px 250px;
+        }
+    }
+}

@@ -1,0 +1,2199 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>11-soccer-matchDetail.html</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- CSS Page -->
+    <!-- <link rel="stylesheet" type="text/css" href="../styles/css/desktop-styles.css"> -->
+    <link rel="stylesheet" type="text/css" href="../styles/css/d-soccer-styles.css">
+</head>
+
+<body>
+    <div class="wrapper soccer_page">
+        <div class="header">
+            <div class="l-grid">
+                <a href="11-soccer-homepage.html" class="logo-color"></a>
+                <div class="global-search">
+                    <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                    <button><i class="spr spr--search"></i></button>
+                </div>
+                <div class="header__action">
+                    <p>
+                        <a class="login" href="javascript:;" data-animation="none" data-animationspeed="0" data-reveal-id="login-modal">
+                            <i class="spr spr--login"></i>
+                            <span>Đăng nhập</span>
+                        </a>
+                    </p>
+                    <a href="#" class="mobile">
+                        <i class="spr spr--mobile"></i>
+                        <span>Bản mobile</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="nav-wrap">
+            <div class="nav">
+                <div class="l-grid">
+                    <ul>
+                        <li class="nav__parent has-icon">
+                            <a href="01-homepage.html">
+                                <i class="spr spr--home"></i>
+                            </a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="121">
+                                <span>Xã hội</span>
+                            </a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a class="is-active" href="02-category.html" data-id="144">
+                                        <span>Thời sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="02-category.html" data-id="4">
+                                        <span>Giao thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/moi-truong-khi-hau.epi" data-id="3">
+                                        <span>Môi trường - Khí hậu</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="119"><span>Thế giới</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a class="is-active" href="02-category.html" data-id="54"><span>Văn hóa</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/nghe-thuat.epi" data-id="15">
+                                        <span>Nghệ thuật</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/am-thuc.epi" data-id="84">
+                                        <span>Ẩm thực</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/du-lich.epi" data-id="137">
+                                        <span>Du lịch</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="45"><span>Kinh tế</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/kinh-doanh.epi" data-id="7">
+                                        <span>Kinh doanh</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/lao-dong-viec-lam.epi" data-id="47">
+                                        <span>Lao động - Việc làm</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tai-chinh.epi" data-id="126">
+                                        <span>Tài chính</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/chung-khoan.epi" data-id="127">
+                                        <span>Chứng khoán</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="59"><span>Giáo dục</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hoc-bong-du-hoc.epi" data-id="107">
+                                        <span>Học bổng - Du học</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dao-tao-thi-cu.epi" data-id="108">
+                                        <span>Đào tạo - Thi cử</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="55"><span>Thể thao</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/bong-da.epi" data-id="87">
+                                        <span>Bóng đá</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/quan-vot.epi" data-id="88">
+                                        <span>Quần vợt</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="52"><span>Giải trí</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/am-nhac.epi" data-id="71">
+                                        <span>Âm nhạc</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thoi-trang.epi" data-id="72">
+                                        <span>Thời trang</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/dien-anh-truyen-hinh.epi" data-id="132">
+                                        <span>Điện ảnh - Truyền hình</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="58"><span>Pháp luật</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/hinh-su-dan-su.epi" data-id="104">
+                                        <span>Hình sự - Dân sự</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/an-ninh-trat-tu.epi" data-id="141">
+                                        <span>An ninh - Trật tự</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Khoa học</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="53"><span>Công nghệ</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/cntt-vien-thong.epi" data-id="76">
+                                        <span>CNTT - Viễn thông</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/thiet-bi-phan-cung.epi" data-id="136">
+                                        <span>Thiết bị - Phần cứng</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="33"><span>Đời sống</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/dinh-duong-lam-dep.epi" data-id="138">
+                                        <span>Dinh dưỡng - Làm đẹp</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/tinh-yeu-hon-nhan.epi" data-id="139">
+                                        <span>Tình yêu - Hôn nhân</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/suc-khoe-y-te.epi" data-id="82">
+                                        <span>Sức khỏe - Y tế</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="02-category.html" data-id="145"><span>Xe cộ</span></a>
+                        </li>
+                        <li class="nav__parent">
+                            <a href="/nha-dat.epi" data-id="147"><span>Nhà đất</span></a>
+                            <ul class="nav__child">
+                                <li>
+                                    <a href="/quan-ly-quy-hoach.epi" data-id="148">
+                                        <span>Quản lý - Quy hoạch</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="/khong-gian-kien-truc.epi" data-id="150">
+                                        <span>Không gian - Kiến trúc</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__parent is-last">
+                            <a href="javascript:;">
+                                <i class="spr spr--search"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="l-grid">
+                <div class="s-breadcrumb">
+                    <div class="title">
+                        <!-- <span class="">LỊCH THI ĐẤU</span> -->
+                        <a class="" href="11-soccer-homepage.html"><i class="socc socc--back-page"></i><span>QUAY VỀ</span></a>
+                    </div>
+                    <div class="filter">
+                        <a href="11-asiad-homepage.html" class=""><i class="socc socc--wcup"></i><span>World Cup</span></a>
+                        <a href="11-soccer-homepage.html" class="is-active"><i class="socc socc--match"></i><span>Lịch đấu</span></a>
+                        <a href="11-soccer-mini.html" class=""><i class="socc socc--live"></i><span>Trực tiếp</span></a>
+                    </div>
+                </div>
+                <div class="s-grid__200">
+                    <div class="s-league">
+                        <ul>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--premier"></i>Premier League</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--laliga"></i>La Liga</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--bundesliga"></i>Bundesliga</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--serrieA"></i>Serie A</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--ligue1"></i>Ligue 1</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--vLeague"></i>V-League</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc"></i>Giải lạ</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--championLeague"></i>Champion League</a></li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="socc socc--europaLeague"></i>Europa League</a></li>
+                            <li class="parent is-active">
+                                <a href="11-soccer-live.html"><i class="flag flag-es"></i>Anh</a>
+                                <ul>
+                                    <li class="child"><a href="11-soccer-live.html">Premier League</a></li>
+                                    <li class="child is-active"><a href="11-soccer-live.html">Championship League</a></li>
+                                    <li class="child"><a href="11-soccer-live.html">FA Cup</a></li>
+                                    <li class="child"><a href="11-soccer-live.html">League Cup</a></li>
+                                </ul>
+                            </li>
+                            <li class="parent"><a href="11-soccer-live.html"><i class="flag flag-es"></i>Đức</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s-grid__500">
+                    <div class="s-detail">
+                        <div class="s-detail__header">
+                            <div class="link">
+                                <a href="11-soccer-teamDetail.html" class="team-home"></a>
+                                <a href="11-soccer-teamDetail.html" class="team-away"></a>
+                            </div>
+                            <div class="team">
+                                <div class="home no-logo">
+                                    <img src="https://soccer-service.baomoi.com/img/Teams/309-Sevilla-EPVX.png">
+                                    <span class="name">Fiorentina</span>
+                                </div>
+                                <div class="away">
+                                    <img src="https://soccer-service.baomoi.com/img/Teams/309-Sevilla-EPVX.png">
+                                    <span class="name">Sevilla</span>
+                                </div>
+                            </div>
+                            <div class="goal">
+                                <p class="home">
+                                    <span>Pablo Sarabia (85)</span>
+                                    <span>Nolito (89)</span>
+                                </p>
+                                <p class="away">
+                                    <span>Pablo Sarabia (85)</span>
+                                    <span>Nolito (89)</span>
+                                </p>
+                            </div>
+                            <div class="score">
+                                <span class="datetime">13 - 05 - 2018</span>
+                                <span class="stt">FT</span>
+                                <p class="number">
+                                    <span>2</span>
+                                    <span>-</span>
+                                    <span>3</span>
+                                </p>
+                                <span class="pen">(PEN 3 - 2)</span>
+                            </div>
+                        </div>
+                        <div class="s-detail__winlose">
+                            <div class="home">
+                                <span class="win" title="Thắng">t</span>
+                                <span class="draw" title="Hòa">h</span>
+                                <span class="lose" title="Bại">b</span>
+                                <span class="win" title="Thắng">t</span>
+                                <span class="win" title="Thắng">t</span>
+                            </div>
+                            <div class="away">
+                                <span class="lose" title="Bại">b</span>
+                                <span class="win" title="Thắng">t</span>
+                                <span class="win" title="Thắng">t</span>
+                                <span class="win" title="Thắng">t</span>
+                                <span class="draw" title="Hòa">h</span>
+                            </div>
+                        </div>
+                        <div class="s-detail__key-event">
+                            <div class="s-detail__title">
+                                <span><i class="socc socc--clock"></i>DIỄN BIẾN TRẬN ĐẤU</span>
+                            </div>
+                            <div class="content">
+                                <div class="st-timeline-progress"></div>
+                                <div class="item">
+                                    <span class="time">7</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--yellowCard"></i>
+                                                <i class="current-score"></i>
+                                            </span>
+                                            <span class="event-text">
+                                                M. García
+                                            </span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--yellowCard"></i>
+                                                <i class="current-score"></i>
+                                            </span>
+                                            <span class="event-text">
+                                                G. Alanís
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">21</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--penGoal"></i>
+                                                <i class="current-score">0 - 2</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">33</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon"><i class="socc socc--yellowCard"></i></span>
+                                            <span class="event-text">
+                                                Carlos Cuevas
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">38</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--redCard"></i></span>
+                                            <span class="event-text">
+                                                Eric Cantú
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">44</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--ogGoal"></i>
+                                                <i class="current-score">0 - 3</i>
+                                            </span>
+                                            <span class="event-text">
+                                                Carlos Sánchez
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">45</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">57</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--penMissGoal"></i>
+                                                <i class="current-score">0 - 1</i>
+                                            </span>
+                                            <span class="event-text">Luis Morales</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">64</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon"><i class="socc socc--doubleCard"></i></span>
+                                            <span class="event-text">
+                                                Luis Morales
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">66</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon"><i class="socc socc--doubleCard"></i></span>
+                                            <span class="event-text">
+                                                Luis Morales
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--redCard"></i></span>
+                                            <span class="event-text">Néstor Breitenbruch</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">73</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--goal"></i>
+                                                <i class="current-score">1 - 3</i>
+                                            </span>
+                                            <span class="event-text">
+                                            Néstor Breitenbruch
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">75</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">86</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">88</span>
+                                    <div class="wrap-home">
+                                        <div class="home">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <span class="time">90+1</span>
+                                    <div class="wrap-home">
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon"><i class="socc socc--substitute"></i></span>
+                                            <span class="event-text">
+                                                <em class="in">Vào : Nicolás Sánchez</em> <br>
+                                                <em class="out">Ra : Jesus Molina</em>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item penalty">
+                                    <span class="title">Sút luân lưu</span>
+                                    <div class="wrap-home second">
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoalMiss"></i>
+                                                <i class="current-score">0 - 1</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">1 - 2</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">2 - 3</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoalMiss"></i>
+                                                <i class="current-score">2 - 4</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="home">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">3 - 5</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                    </div>
+                                    <div class="wrap-away">
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">0 - 1</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">1 - 2</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">2 - 3</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">2 - 4</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                        <div class="away">
+                                            <span class="icon">
+                                                <i class="socc socc--pGoal"></i>
+                                                <i class="current-score">3 - 5</i>
+                                            </span>
+                                            <span class="event-text">Lucas Albertengo</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-detail__match-statistic">
+                            <div class="possession">
+                                <span class="label">KIỂM SOÁT BÓNG</span>
+                                <span class="value-home">42%</span>
+                                <span class="value-away">58%</span>
+                                <div class="circle">
+                                    <svg viewBox="0 0 40 40">
+                                        <path d="M20 4.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#546E7A" ;="" stroke-width="7" stroke-dasharray="100, 100"></path>
+                                        <path d="M20 4.0845
+                                          a 15.9155 15.9155 0 0 1 0 31.831
+                                          a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#2FA1B3" ;="" stroke-width="7" stroke-dasharray="58, 100"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="shots">
+                                <div class="part-home">
+                                    <span class="value-home">8</span>
+                                </div>
+                                <div class="part-away">
+                                    <span class="value-away">10</span></div>
+                                <span class="label">SÚT NGOÀI CẦU GÔN</span>
+                                <div class="gate">
+                                    <span class="label">Sút chính xác</span>
+                                    <span class="value-home">3</span>
+                                    <span class="value-away">6</span>
+                                </div>
+                            </div>
+                            <div class="more-info">
+                                <div class="label"> TỔNG ĐƯỜNG TRUYỀN BÓNG <span class="value-home">487</span> <span class="value-away">475</span> </div>
+                                <div class="bar"> <span style="width: 35%;"></span> </div>
+                            </div>
+                            <div class="more-info">
+                                <div class="label"> TỔNG ĐƯỜNG TRUYỀN BÓNG <span class="value-home">487</span> <span class="value-away">475</span> </div>
+                                <div class="bar"> <span style="width: 35%;"></span> </div>
+                            </div>
+                            <div class="more-info">
+                                <div class="label"> TỔNG ĐƯỜNG TRUYỀN BÓNG <span class="value-home">487</span> <span class="value-away">475</span> </div>
+                                <div class="bar"> <span style="width: 35%;"></span> </div>
+                            </div>
+                        </div>
+                        <div class="s-detail__formation">
+                            <div class="s-detail__title">
+                                <span><i class="socc socc--team"></i>ĐỘI HÌNH XUẤT PHÁT</span>
+                            </div>
+                            <div class="content">
+                                <div class="home">
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">13</span>
+                                        <span class="name">Diego López</span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--out"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--yellowCard"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--doubleCard"></i><time>72'</time></span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">6</span>
+                                        <span class="name">Ó. Duarte</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">3</span>
+                                        <span class="name">Aaron Martín</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">2</span>
+                                        <span class="name">Marc Navarro</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">8</span>
+                                        <span class="name">C. Sánchez</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">4</span>
+                                        <span class="name">Víctor Sánchez</span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--out"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--yellowCard"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--doubleCard"></i><time>72'</time></span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">19</span>
+                                        <span class="name">P. Piatti</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">15</span>
+                                        <span class="name">David López</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">25</span>
+                                        <span class="name">Sergi Darder</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">9</span>
+                                        <span class="name">Sergio García</span>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">7</span>
+                                        <span class="name">Gerard Moreno</span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--out"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--yellowCard"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--doubleCard"></i><time>72'</time></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="away">
+                                    <a class="player">
+                                        <span class="number">1</span>
+                                        <span class="name">K. Navas</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">4</span>
+                                        <span class="name">Sergio Ramos</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">6</span>
+                                        <span class="name">Nacho</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">5</span>
+                                        <span class="name">R. Varane</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">19</span>
+                                        <span class="name">Achraf</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">22</span>
+                                        <span class="name">Isco</span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--out"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--yellowCard"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--doubleCard"></i><time>72'</time></span>
+                                        </div>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">23</span>
+                                        <span class="name">M. Kovačić</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">17</span>
+                                        <span class="name">Lucas Vázquez</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">18</span>
+                                        <span class="name">Marcos Llorente</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">20</span>
+                                        <span class="name">Marco Asensio</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">11</span>
+                                        <span class="name">G. Bale</span>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                                <div class="home">
+                                    <a href="#" class="player coach">
+                                        <span class="number">HLV</span>
+                                        <span class="name">Sánchez Flores</span>
+                                    </a>
+                                </div>
+                                <div class="home">
+                                    <a class="player coach">
+                                        <span class="number">HLV</span>
+                                        <span class="name">Z. Zidane</span>
+                                    </a>
+                                </div>
+                                <div class="clearfix"></div>
+                                <h3 class="subsTitle">Đội hình dự bị</h3>
+                                <div class="home">
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">13</span>
+                                        <span class="name">Diego López <i class="socc socc--in"></i></span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--goal"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--yellowCard"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--doubleCard"></i><time>72'</time></span>
+                                        </div>
+                                        <span class="clearfix"></span>
+                                        <div class="change-for">
+                                            Thay <span>Marco Asensio</span>
+                                            <time>(12')</time>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">9</span>
+                                        <span class="name">Sergio García<i class="socc socc--in"></i></span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--goal"></i><time>12'</time></span>
+                                        </div>
+                                        <span class="clearfix"></span>
+                                        <div class="change-for">
+                                            Thay <span>Marco Asensio</span>
+                                            <time>(12')</time>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="player">
+                                        <div class="player-tooltip">
+                                            <div class="player">
+                                                <p class="thumb"><img src="https://secure.cache.images.core.optasports.com/soccer/players/50x50/1255.png" alt=""></p>
+                                                <div class="playerName">M. Vorm</div>
+                                            </div>
+                                            <div class="table">
+                                                <p>
+                                                    <span class="text">Ngày sinh : </span>
+                                                    <span class="value">23/7/1909</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Nơi sinh :</span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Quốc tịch : </span>
+                                                    <span class="value">Anh</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Chiều cao : </span>
+                                                    <span class="value">1.77m</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Cân nặng : </span>
+                                                    <span class="value">74kg</span>
+                                                </p>
+                                                <p>
+                                                    <span class="text">Vị trí :</span>
+                                                    <span class="value">Tiền đạo</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <span class="number">7</span>
+                                        <span class="name">Gerard Moreno</span>
+                                        <div class="event-wrap">
+                                            <span class="key-event"><i class="socc socc--out"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--yellowCard"></i><time>12'</time></span>
+                                            <span class="key-event"><i class="socc socc--doubleCard"></i><time>72'</time></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="away">
+                                    <a class="player">
+                                        <span class="number">1</span>
+                                        <span class="name">K. Navas</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">4</span>
+                                        <span class="name">Sergio Ramos</span>
+                                    </a>
+                                    <a class="player">
+                                        <span class="number">6</span>
+                                        <span class="name">Nacho</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="s-detail__team-statistic">
+                            <div class="s-detail__title">
+                                <span><i class="socc socc--presentation"></i>Thống kê</span>
+                            </div>
+                            <div class="title">LỊCH SỬ ĐỐI ĐẦU</div>
+                            <div class="s-list">
+                                <a href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey match-FT">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Celta Vigo</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Eibar</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="11-soccer-matchDetail.html">
+                                    <div class="row row--data match-live">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Deportivo La Coruna</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Espanyol</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey match-waiting">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Real Madrid</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Alaves</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="11-soccer-matchDetail.html">
+                                    <div class="row row--data">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Barcelona</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Atletico Madrid</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title">CÁC TRẬN GẦN NHẤT CỦA <span>OLYMPIQUE MARSEILLE</span></div>
+                            <div class="s-list">
+                                <a class="win" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey match-FT">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Celta Vigo</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Eibar</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="win" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data match-live">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Deportivo La Coruna</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Espanyol</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="lose" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Real Madrid</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Alaves</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="draw" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Barcelona</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Atletico Madrid</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="win" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="title">CÁC TRẬN GẦN NHẤT CỦA <span>MIDDLESBROUGH</span></div>
+                            <div class="s-list">
+                                <a class="win" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey match-FT">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Celta Vigo</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Eibar</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="win" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data match-live">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Deportivo La Coruna</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Espanyol</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="lose" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Real Madrid</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Alaves</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="draw" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Barcelona</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Atletico Madrid</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="win" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                                <a class="" href="11-soccer-matchDetail.html">
+                                    <div class="row row--data row--grey">
+                                        <div class="date">
+                                            <span>29/04/2018</span>
+                                        </div>
+                                        <div class="league">
+                                            <span>PRL</span>
+                                        </div>
+                                        <div class="team home">
+                                            <span>Valencia</span>
+                                        </div>
+                                        <div class="sco">
+                                            <span class="general">2 - 0</span>
+                                        </div>
+                                        <div class="team away">
+                                            <span>Real Betis</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="desc">
+                                <div class="win-lose">
+                                    <p class="win"><i></i><span>Thắng</span></p>
+                                    <p class="draw"><i></i><span>Hòa</span></p>
+                                    <p class="lose"><i></i><span>Thua</span></p>
+                                    <p class="no-match"><i></i><span>Chưa đấu</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                        <a class="s-detail__btn-back" href="#">
+                            <i></i><span>Quay về</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="s-grid__250">
+                    <div class="s-table">
+                        <div class="s-heading">
+                            <span>BXH</span>
+                            <select>
+                                <option>Chọn giải đấu</option>
+                                <option>Vleague</option>
+                                <option>Champions League</option>
+                            </select>
+                        </div>
+                        <div class="row">
+                            <div class="tt color">#</div>
+                            <div class="team">Đội bóng</div>
+                            <div class="pts">P</div>
+                            <div class="pts hidden-xxs">W</div>
+                            <div class="pts hidden-xxs">D</div>
+                            <div class="pts hidden-xxs">L</div>
+                            <div class="pts hidden-xxs">F</div>
+                            <div title="Goals Against" class="pts hidden-xxs">A</div>
+                            <div title="Goals Difference" class="pts hidden-xxs">GD</div>
+                            <div title="Points" class="pts2 tot">Pts</div>
+                        </div>
+                        <div class="table-61">
+                            <div class="row even">
+                                <div class="tt color item dark-blue"> <span>1</span></div>
+                                <div class="team">Barcelona</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">22</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">0</div>
+                                <div class="pts hidden-xxs">72</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">59</div>
+                                <div class="pts2 tot">72</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item dark-blue"> <span>2</span></div>
+                                <div class="team">Atletico Madrid</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">19</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts hidden-xxs">2</div>
+                                <div class="pts hidden-xxs">48</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">36</div>
+                                <div class="pts2 tot">64</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item dark-blue"> <span>3</span></div>
+                                <div class="team">Real Madrid</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">67</div>
+                                <div class="pts hidden-xxs">30</div>
+                                <div class="pts hidden-xxs">37</div>
+                                <div class="pts2 tot">57</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item dark-blue"> <span>4</span></div>
+                                <div class="team">Valencia</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">54</div>
+                                <div class="pts hidden-xxs">30</div>
+                                <div class="pts hidden-xxs">24</div>
+                                <div class="pts2 tot">56</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item light-yellow"><span>5</span></div>
+                                <div class="team">Sevilla</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">14</div>
+                                <div class="pts hidden-xxs">3</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">36</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">-6</div>
+                                <div class="pts2 tot">45</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item dark-yellow"> <span>6</span></div>
+                                <div class="team">Villarreal</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">10</div>
+                                <div class="pts hidden-xxs">38</div>
+                                <div class="pts hidden-xxs">32</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts2 tot">44</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>7</span> </div>
+                                <div class="team">Girona</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">40</div>
+                                <div class="pts hidden-xxs">36</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts2 tot">43</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>8</span> </div>
+                                <div class="team">Real Betis</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">46</div>
+                                <div class="pts hidden-xxs">53</div>
+                                <div class="pts hidden-xxs">-7</div>
+                                <div class="pts2 tot">40</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>9</span> </div>
+                                <div class="team">Eibar</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">35</div>
+                                <div class="pts hidden-xxs">41</div>
+                                <div class="pts hidden-xxs">-6</div>
+                                <div class="pts2 tot">39</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>10</span> </div>
+                                <div class="team">Celta Vigo</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">45</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">3</div>
+                                <div class="pts2 tot">38</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>11</span> </div>
+                                <div class="team">Getafe</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">10</div>
+                                <div class="pts hidden-xxs">33</div>
+                                <div class="pts hidden-xxs">26</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts2 tot">36</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>12</span> </div>
+                                <div class="team">Athletic Bilbao</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">8</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">29</div>
+                                <div class="pts hidden-xxs">31</div>
+                                <div class="pts hidden-xxs">-2</div>
+                                <div class="pts2 tot">35</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>13</span> </div>
+                                <div class="team">Espanyol</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">8</div>
+                                <div class="pts hidden-xxs">11</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">26</div>
+                                <div class="pts hidden-xxs">34</div>
+                                <div class="pts hidden-xxs">-8</div>
+                                <div class="pts2 tot">35</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>14</span> </div>
+                                <div class="team">Real Sociedad</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">50</div>
+                                <div class="pts hidden-xxs">50</div>
+                                <div class="pts hidden-xxs">0</div>
+                                <div class="pts2 tot">33</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>15</span> </div>
+                                <div class="team">Leganes</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">9</div>
+                                <div class="pts hidden-xxs">6</div>
+                                <div class="pts hidden-xxs">13</div>
+                                <div class="pts hidden-xxs">23</div>
+                                <div class="pts hidden-xxs">34</div>
+                                <div class="pts hidden-xxs">-11</div>
+                                <div class="pts2 tot">33</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item"><span>16</span> </div>
+                                <div class="team">Alaves</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">10</div>
+                                <div class="pts hidden-xxs">1</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">25</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">-17</div>
+                                <div class="pts2 tot">31</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item"><span>17</span> </div>
+                                <div class="team">Levante</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">12</div>
+                                <div class="pts hidden-xxs">23</div>
+                                <div class="pts hidden-xxs">42</div>
+                                <div class="pts hidden-xxs">-19</div>
+                                <div class="pts2 tot">24</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item pink"><span>18</span></div>
+                                <div class="team">Las Palmas</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">5</div>
+                                <div class="pts hidden-xxs">18</div>
+                                <div class="pts hidden-xxs">20</div>
+                                <div class="pts hidden-xxs">57</div>
+                                <div class="pts hidden-xxs">-37</div>
+                                <div class="pts2 tot">20</div>
+                            </div>
+                            <div class="row even">
+                                <div class="tt color item pink"><span>19</span></div>
+                                <div class="team">Deportivo La Coruna</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">7</div>
+                                <div class="pts hidden-xxs">17</div>
+                                <div class="pts hidden-xxs">25</div>
+                                <div class="pts hidden-xxs">59</div>
+                                <div class="pts hidden-xxs">-34</div>
+                                <div class="pts2 tot">19</div>
+                            </div>
+                            <div class="row">
+                                <div class="tt color item pink"><span>20</span></div>
+                                <div class="team">Malaga</div>
+                                <div class="pts">28</div>
+                                <div class="pts hidden-xxs">3</div>
+                                <div class="pts hidden-xxs">4</div>
+                                <div class="pts hidden-xxs">21</div>
+                                <div class="pts hidden-xxs">16</div>
+                                <div class="pts hidden-xxs">45</div>
+                                <div class="pts hidden-xxs">-29</div>
+                                <div class="pts2 tot">13</div>
+                            </div>
+                        </div>
+                        <div class="description">
+                            <div class="row champion">
+                                <div class="tt color item"><i class="shape dark-blue"></i></div>
+                                <div class="team">Champions League</div>
+                            </div>
+                            <div class="row champion-qualification">
+                                <div class="tt color item"><i class="shape dark-blue"></i></div>
+                                <div class="team">Vòng loại Champions League</div>
+                            </div>
+                            <div class="row europa">
+                                <div class="tt color item"><i class="shape light-yellow"></i></div>
+                                <div class="team">Europa League</div>
+                            </div>
+                            <div class="row europa-qualification">
+                                <div class="tt color item"><i class="shape dark-yellow"></i></div>
+                                <div class="team">Vòng loại Europa League</div>
+                            </div>
+                            <div class="row relegation-playoff">
+                                <div class="tt color item"><i class="shape pink"></i></div>
+                                <div class="team">Play-off</div>
+                            </div>
+                            <div class="row relegation">
+                                <div class="tt color item"><i class="shape pink"></i></div>
+                                <div class="team">Xuống hạng</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="small-list baomoi-news" data-track="|newest_box">
+                        <div class="baomoi-news__title">
+                            <span>THÔNG TIN BÊN LÊ</span>
+                        </div>
+                        <div class="story story--photo" data-aid="24301433">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/7_216301.jpg" alt="fig-image/site/7_216301.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="Những phát ngôn đáng chú ý của Warren Buffett trong năm 2017" target="_blank">Những phát ngôn đáng chú ý của Warren Buffett trong năm 2017</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">NDH</a>
+                                <time class="time friendly">6 phút</time>
+                                <a href="03-article.html" title="Những phát ngôn đáng chú ý của Warren Buffett trong năm 2017" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div id="pr_baomoiprhomenoibat_0"></div>
+                        <div class="story story--photo" data-aid="24301440">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/5_77033.jpg" alt="fig-image/site/5_77033.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="'Tôi chọn đội hình mạnh nhất để đánh bại U-23 VN'" target="_blank">'Tôi chọn đội hình mạnh nhất để đánh bại U-23 VN'</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">PLO</a>
+                                <time class="time friendly">7 phút</time>
+                                <a href="03-article.html" title="'Tôi chọn đội hình mạnh nhất để đánh bại U-23 VN'" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div id="pr_baomoiprhomenoibat_1"></div>
+                        <div class="story" data-aid="24301404">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/2_61716.jpg" alt="fig-image/site/2_61716.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="Biểu tình biến thành bạo động phản đối cải cách hưu trí tại Argentina" target="_blank">Biểu tình biến thành bạo động phản đối cải cách hưu trí tại Argentina</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">VietnamPlus</a>
+                                <time class="time friendly">8 phút</time>
+                                <a href="03-article.html" title="Biểu tình biến thành bạo động phản đối cải cách hưu trí tại Argentina" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div id="pr_baomoiprhomenoibat_2"></div>
+                        <div class="story story--photo" data-aid="24301446">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/15_117007.jpg" alt="fig-image/site/15_117007.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="Đội hình 'siêu tấn công' của MU khi có Mesut Ozil" target="_blank">Đội hình 'siêu tấn công' của MU khi có Mesut Ozil</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">VOV</a>
+                                <time class="time friendly">8 phút</time>
+                                <a href="03-article.html" title="Đội hình 'siêu tấn công' của MU khi có Mesut Ozil" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div id="pr_baomoiprhomenoibat_3"></div>
+                        <div class="story" data-aid="24301434">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/2_87847.jpg" alt="fig-image/site/2_87847.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="Trị bỏng thông thường, thuốc gì?" target="_blank">Trị bỏng thông thường, thuốc gì?</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">SK&amp;ĐS</a>
+                                <time class="time friendly">8 phút</time>
+                                <a href="03-article.html" title="Trị bỏng thông thường, thuốc gì?" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story is-pr">
+                            <div class="story__thumb"> <a href="https://log.adtimaserver.vn/track/click?params=x20mlbpi3Tiy8FWploo6WgC2rfNtcDMkyPZfa_QsI2T_XxYasdBOb3iKPVYP4oY9KSXto6pN6SWDTHENw_gSaBfGHro0PexjcNZYMOWdLG9Xg8RMXrSP0tE3f-JpsVW0h-9X6GfOtqzxY-f2L_6VKKp4AWhBM8oXAcmhCFCgqW4fT7KB6BnQP_QM3Ng&amp;uid=&amp;redirectUrl=http%3A%2F%2Fsoha.vn%2Fdao-tao-truc-tuyen-thoi-40-thi-truong-ty-do-rong-mo-danh-cho-to-chuc-giao-duc-viet-20171214093546996.htm"><img src="//baomoi-photo-atm.zadn.vn/w100_r1x1/adtima-media-td.zadn.vn/2017/12/dc1b2ee6-2ba3-4efa-bf95-b8f455e2d6dd_300x170.jpg" width="60" height="60" alt="Đào tạo trực tuyến thời 4.0: Thị trường tỷ đô rộng mở"></a> </div>
+                            <h4 class="story__heading"><a href="https://log.adtimaserver.vn/track/click?params=x20mlbpi3Tiy8FWploo6WgC2rfNtcDMkyPZfa_QsI2T_XxYasdBOb3iKPVYP4oY9KSXto6pN6SWDTHENw_gSaBfGHro0PexjcNZYMOWdLG9Xg8RMXrSP0tE3f-JpsVW0h-9X6GfOtqzxY-f2L_6VKKp4AWhBM8oXAcmhCFCgqW4fT7KB6BnQP_QM3Ng&amp;uid=&amp;redirectUrl=http%3A%2F%2Fsoha.vn%2Fdao-tao-truc-tuyen-thoi-40-thi-truong-ty-do-rong-mo-danh-cho-to-chuc-giao-duc-viet-20171214093546996.htm">Đào tạo trực tuyến thời 4.0: Thị trường tỷ đô rộng mở</a></h4>
+                            <div class="story__meta"> <a target="_blank" rel="nofollow" href="https://log.adtimaserver.vn/track/click?params=x20mlbpi3Tiy8FWploo6WgC2rfNtcDMkyPZfa_QsI2T_XxYasdBOb3iKPVYP4oY9KSXto6pN6SWDTHENw_gSaBfGHro0PexjcNZYMOWdLG9Xg8RMXrSP0tE3f-JpsVW0h-9X6GfOtqzxY-f2L_6VKKp4AWhBM8oXAcmhCFCgqW4fT7KB6BnQP_QM3Ng&amp;uid=&amp;redirectUrl=http%3A%2F%2Fsoha.vn%2Fdao-tao-truc-tuyen-thoi-40-thi-truong-ty-do-rong-mo-danh-cho-to-chuc-giao-duc-viet-20171214093546996.htm" class="fyi-text">Hương Việt Group<span>Tài trợ</span></a> </div> <img src="https://log.adtimaserver.vn/track/hit.gif?params=AatgNTpi3Th0ju15Vgo6nF4OfbPtcPVm5H7vK_TqYYinXxYad5Ya3zgKPZBBzsY9KSUklacmhjk5tdeJyKGO263LaDIo-WResqT9bA3acpAgpR1CRcOzhMxe2mW26QefogcveWxXr9eGxcqmbHFjiVQvtoXoKhZjqMmjqpdvVy2o0KCpAInb4sFoGb7N8LycWA&amp;uid=" style="width: 1px; height: 1px; display: none; position: absolute; top: -100px;"></div>
+                        <div class="story story--photo" data-aid="24301427">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/9_63097.jpg" alt="fig-image/site/9_63097.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="Hoa khôi Ngoại thương nói về chân dài - đại gia: Nồi ào úp vung ấy" target="_blank">Hoa khôi Ngoại thương nói về chân dài - đại gia: Nồi ào úp vung ấy</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">24H</a>
+                                <time class="time friendly">8 phút</time>
+                                <a href="03-article.html" title="Hoa khôi Ngoại thương nói về chân dài - đại gia: Nồi ào úp vung ấy" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div class="story is-pr">
+                            <div class="story__thumb"> <a href="https://log.adtimaserver.vn/track/click?params=03kyzfpi3Tim_OXpFoo6TgzGbXNtcCdQWNYfa_Q4N7Q_3xYapeT2L_iKPULzAgY9KSX5rwJtaSWDWEW9Y3gSaAPqfro0Pex3ZO4o8GWdOFvfEwTMXqC7usEX_-J9pWgZs9YUVfIu-7oSKYk3qteo1pqMTRjhs8oXFT052BAgqXoDz7KB6BnEw5ycHFg&amp;uid=&amp;redirectUrl=http%3A%2F%2Fcafebiz.vn%2Fthi-truong-tra-sua-hien-tai-da-bao-hoa-hay-con-nhieu-tiem-nang-20171212143639842.chn"><img src="//baomoi-photo-atm.zadn.vn/w100_r1x1/adtima-media-td.zadn.vn/2017/12/33cba9e2-a905-4e19-9e4b-e2e801fd3120_300x170.jpg" width="60" height="60" alt="Thị trường trà sữa hiện tại: Đã bão hòa hay còn nhiều tiềm năng?"></a> </div>
+                            <h4 class="story__heading"><a href="https://log.adtimaserver.vn/track/click?params=03kyzfpi3Tim_OXpFoo6TgzGbXNtcCdQWNYfa_Q4N7Q_3xYapeT2L_iKPULzAgY9KSX5rwJtaSWDWEW9Y3gSaAPqfro0Pex3ZO4o8GWdOFvfEwTMXqC7usEX_-J9pWgZs9YUVfIu-7oSKYk3qteo1pqMTRjhs8oXFT052BAgqXoDz7KB6BnEw5ycHFg&amp;uid=&amp;redirectUrl=http%3A%2F%2Fcafebiz.vn%2Fthi-truong-tra-sua-hien-tai-da-bao-hoa-hay-con-nhieu-tiem-nang-20171212143639842.chn">Thị trường trà sữa hiện tại: Đã bão hòa hay còn nhiều tiềm năng?</a></h4>
+                            <div class="story__meta"> <a target="_blank" rel="nofollow" href="https://log.adtimaserver.vn/track/click?params=03kyzfpi3Tim_OXpFoo6TgzGbXNtcCdQWNYfa_Q4N7Q_3xYapeT2L_iKPULzAgY9KSX5rwJtaSWDWEW9Y3gSaAPqfro0Pex3ZO4o8GWdOFvfEwTMXqC7usEX_-J9pWgZs9YUVfIu-7oSKYk3qteo1pqMTRjhs8oXFT052BAgqXoDz7KB6BnEw5ycHFg&amp;uid=&amp;redirectUrl=http%3A%2F%2Fcafebiz.vn%2Fthi-truong-tra-sua-hien-tai-da-bao-hoa-hay-con-nhieu-tiem-nang-20171212143639842.chn" class="fyi-text">House of Cha<span>Tài trợ</span></a> </div> <img src="https://log.adtimaserver.vn/track/hit.gif?params=_tSJ814qPTgLGSMNXuo645kgDXNtcIrzAhr_6_SVymC3f5YaCAcsR2hKve-mhjZ9KSVbWjdGBjk5yrq1WIFO29K2vMKo-WQhcXo5PM1aDQtKeb3CRbxKwAR-WmXJ-h8fogcvA9ardpQvqAHwdjKp813F1PQ2mvbj174LyhdvV1L1JnwRYImkq8d0Ae4NDxsutA&amp;uid=" style="width: 1px; height: 1px; display: none; position: absolute; top: -100px;"></div>
+                        <div class="story" data-aid="24301402">
+                            <div class="story__thumb"><a href="03-article.html" target="_blank"><img src="fig-images/site/1_49615.jpg" alt="fig-image/site/1_49615.jpg"></a></div>
+                            <h4 class="story__heading"><a href="03-article.html" title="Chứng khoán sẽ nâng túi tiền ngân hàng Việt trước Basel 2?" target="_blank">Chứng khoán sẽ nâng túi tiền ngân hàng Việt trước Basel 2?</a></h4>
+                            <div class="story__meta">
+                                <a class="source" href="02-category.html">VnEconomy</a>
+                                <time class="time friendly">8 phút</time>
+                                <a href="03-article.html" title="Chứng khoán sẽ nâng túi tiền ngân hàng Việt trước Basel 2?" class="cache" target="_blank"><i class="spr spr--baomoi"></i></a>
+                            </div>
+                        </div>
+                        <div id="pr_baomoiprhomenoibat_7"></div>
+                        <div id="pr_baomoiprhomenoibat_8"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fyi--970" style="display:none">
+            <img src="fig-images/ads/ads-728x90.jpg" alt="ads">
+        </div>
+        <div class="footer">
+            <div class="footer__bar">
+                <div class="l-grid">
+                    <a href="01-homepage.html" class="logo-solid"></a>
+                    <div class="global-search">
+                        <input type="text" placeholder="Nhập nội dung tìm kiếm">
+                        <button><i class="spr spr--search"></i></button>
+                    </div>
+                </div>
+            </div>
+            <div class="l-grid">
+                <div class="footer__tagcloud">
+                    <a href="04-tags.html">Mường Thanh</a><span>&bull;</span>
+                    <a href="04-tags.html">Sai Phạm Khủng</a><span>&bull;</span>
+                    <a href="04-tags.html">Xì Căng Đan</a><span>&bull;</span>
+                    <a href="04-tags.html">Tai Tiếng ở Citibank</a><span>&bull;</span>
+                    <a href="04-tags.html">Vietjet Air Bị Tố Hành Xác Khách Hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Cầu bê tông cốt xốp ở Hà Nội</a><span>&bull;</span>
+                    <a href="04-tags.html">Phòng Khám Đa Khoa Thiên Hòa Nhận Phá Thai Trái Phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Hoàng Xuân Vinh</a><span>&bull;</span>
+                    <a href="04-tags.html">Parkview Residence chia nhỏ căn hộ trái phép</a><span>&bull;</span>
+                    <a href="04-tags.html">Lotteria Thực Phẩm Bẩn</a><span>&bull;</span>
+                    <a href="04-tags.html">Thanh Hằng Beauty Medi sai phạm coi thường khách</a><span>&bull;</span>
+                    <a href="04-tags.html">Sohaco nhập thuốc kém chất lượng nguy hại sức khỏe</a><span>&bull;</span>
+                    <a href="04-tags.html">Vợ chồng Thu Minh bị tố trốn nợ</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Best Slim quảng cáo lừa đảo</a><span>&bull;</span>
+                    <a href="04-tags.html">TPCN Avena Plus chứa chất kích dục</a><span>&bull;</span>
+                    <a href="04-tags.html">Bê bối thực phẩm bẩn ở Lotteria</a><span>&bull;</span>
+                    <a href="04-tags.html">Thuốc kém chất lượng của US Pharma USA</a><span>&bull;</span>
+                    <a href="04-tags.html">Ngân hàng Techcombank phá nhà dân</a><span>&bull;</span>
+                    <a href="04-tags.html">Discovery Complex nhiều điểm hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Hồ sơ Panama</a><span>&bull;</span>
+                    <a href="04-tags.html">Dự án Ecolife Tây Hồ nhiều hạn chế</a><span>&bull;</span>
+                    <a href="04-tags.html">Thu Minh kiện CĐT Léman Luxury Apartment</a><span>&bull;</span>
+                    <a href="04-tags.html">Diễn viên Minh Béo bị bắt ở Mỹ</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư Hồ Gươm Plaza sai phạm nghiêm trọng</a><span>&bull;</span>
+                    <a href="04-tags.html">Chung cư của đại gia Lê Thanh Thản cháy nổ</a><span>&bull;</span>
+                    <a href="04-tags.html">Xe đạp điện HKBike linh kiện Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Vinaphone bị tố móc túi khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Isuzu Long Biên bị tố hành hung khách hàng</a><span>&bull;</span>
+                    <a href="04-tags.html">Sữa đậu nành Tribeco vón cục, váng mốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Trà ô long tea+ plus nguyên liệu Trung Quốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tử vi 2016</a><span>&bull;</span>
+                    <a href="04-tags.html">Lịch đấu bóng đá hôm nay</a><span>&bull;</span>
+                    <a href="04-tags.html">Giảm cân siêu tốc</a><span>&bull;</span>
+                    <a href="04-tags.html">Cháy chung cư của ông Lê Thanh Thản</a><span>&bull;</span>
+                    <a href="04-tags.html">Vũ khí tối tân</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem tướng phụ nữ</a><span>&bull;</span>
+                    <a href="04-tags.html">Góc nhìn về chiến tranh VN</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Phong Thuy</a><span>&bull;</span>
+                    <a href="04-tags.html">Gia Xang Dau</a><span>&bull;</span>
+                    <a href="04-tags.html">Món Ăn Ngon</a><span>&bull;</span>
+                    <a href="04-tags.html">Mẹo Trị Mụn Hay</a><span>&bull;</span>
+                    <a href="04-tags.html">Chăm Sóc Bà Bầu</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Girl</a><span>&bull;</span>
+                    <a href="04-tags.html">Hot Boy</a><span>&bull;</span>
+                    <a href="04-tags.html">Xem Tuoi Lam An</a>
+                </div>
+                <div class="footer__siteIndex">
+                    <div class="column">
+                        <h4>Phiên bản khác</h4>
+                        <ul>
+                            <li><a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" target="_blank">Báo Mới APPS</a></li>
+                            <li><a target="_blank" href="http://en.baomoi.com/">Báo Mới ENGLISH</a></li>
+                            <li><a target="_blank" href="http://blog.baomoi.com/">Báo Mới BLOG</a></li>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <h4>Liên hệ</h4>
+                        <ul>
+                            <li><a href="8-intro.html">Giới thiệu</a></li>
+                            <li><a href="8-termofuse.html">Điều khoản sử dụng</a></li>
+                            <li><a href="http://adtima.vn/" target="_blank">Quảng cáo</a></li>
+                        </ul>
+                    </div>
+                    <div class="column is-last">
+                        <h4>Người dùng</h4>
+                        <ul>
+                            <li><a href="/Widget/CreateWidget.aspx">Nhúng tin vào trang web</a></li>
+                            <li><a href="/Statistics/Report.aspx" target="_blank">Thống kê &amp; So sánh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__copyRight">
+                    <p>
+                        Giấy phép số 46/GP-TTĐT do Sở Thông tin và Truyền thông Hà Nội cấp ngày 13/01/2012
+                        <br> Đơn vị chủ quản: Công ty Cổ phần Công nghệ EPI * Chịu trách nhiệm: Nguyễn Thanh Tùng
+                        <br> Địa chỉ: Tầng 7, Tòa nhà Báo Sinh Viên VN, D29 Phạm Văn Bạch, Yên Hòa, Cầu Giấy, Hà Nội
+                        <br> Tel: (04) 3-212-3232 ext. 2947. Email: contact.baomoi@epi.com.vn
+                    </p>
+                    <p>
+                        BÁO MỚI tổng hợp và sắp xếp các thông tin tự động
+                        <br> bởi chương trình máy tính
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- JS Global Compulsory -->
+    <script src="../Jscripts/vendor/jquery-3.1.1.js" defer></script>
+    <!-- <script src="../Jscripts/desktop-ui-local.js" defer></script> -->
+    <script src="../Jscripts/desktop-soccer-ui-local.js" defer></script>
+</body>
+
+</html>

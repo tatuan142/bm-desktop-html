@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        404 - BAOMOI.COM
+    </title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="../styles/css/error-page.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-309591-61', 'auto');
+    ga('send', 'pageview');
+
+    var baomoi_tracking = [];
+    </script>
+</head>
+
+<body>
+    <div class="error-page">
+        <div class="error__title">
+            <a href="/" class="error__logo"></a>
+            <a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" class="error__inst" rel="nofollow" target="_blank">Tải ứng dụng Báo Mới</a>
+            <a href="https://www.facebook.com/Baomoi" class="error__btn error__btn--fb"></a>
+            <a href="https://plus.google.com/+baomoi/posts" class="error__btn error__btn--zalo"></a>
+        </div>
+        <div class="error__content">
+            <p class="page-404">
+                <!-- <p class="page-500"> -->
+                Không tìm thấy địa chỉ bạn vừa yêu cầu truy cập.
+                <br>
+                <br> Nếu bạn chắc chắn rằng đã đánh đúng địa chỉ, việc hiện ra trang này là lỗi của chúng tôi, hãy bắt đầu từ <a href="/" class="link">Trang chủ</a> hoặc sử dụng chức năng <b>tìm kiếm</b> bên dưới.
+            </p>
+            <form class="error__search" onsubmit="return search();">
+                <input type="text" name="search-keyword" value="" placeholder="Nhập nội dung tìm kiếm ...">
+                <button><img src="http://s.baomoi.xdn.vn/mobile/styles/img/search-404.png" alt=""></button>
+            </form>
+            <a href="http://s.baomoi.xdn.vn/tai-ung-dung-bao-moi.html" class="error__inst--bottom" rel="nofollow" target="_blank">Tải ứng dụng Báo Mới</a>
+        </div>
+    </div>
+    <script>
+    function search() {
+        var form = document.forms[0];
+        var keyword = form.elements["search-keyword"].value;
+        if (keyword !== "") {
+            keyword = keyword.replace(/ /g, "-");
+            var url = "/tim-kiem/" + encodeURIComponent(keyword) + ".epi";
+            window.location = url;
+        } else alert("Bạn phải gõ từ khóa tìm kiếm !");
+        return false;
+    }
+    </script>
+</body>
+
+</html>

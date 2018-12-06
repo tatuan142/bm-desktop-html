@@ -1,0 +1,671 @@
+// ====================================
+// Customize breadcrumbs
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* LOGO + LIVE ICON +
+* --- header
+* --- pin verticle menu
+* --- story timeline
+* --- article action
+* --- user context menu
+* --- user
+* --- btn-toggle
+* --- photoswipte + weather
+* --- login
+* --- soccer
+* --- modal icon
+* --- channel-box
+*/
+
+// > LOGO + LIVE ICON + 
+.logo-color {
+    background-image: url('../img/desktop-logo.png');
+    background-position: 0px -36px;
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 160px 72px;
+    width: 160px;
+    height: 36px;
+}
+
+.logo-solid {
+    background-image: url('../img/desktop-logo.png');
+    display: inline-block;
+    vertical-align: middle;
+    background-size: 160px 72px;
+    width: 160px;
+    height: 36px;
+}
+
+.liveIcon {
+    background-image: url('../img/desktop-sprite-'+$sprite-version+'.png');
+    background-size: ($sprite-w + px) ($sprite-h + px);
+    display: inline-block;
+    vertical-align: middle;
+    background-position: -0px -2500px;
+    font-size: 0;
+    width: 25px;
+    height: 12px;
+    margin-top: 4px;
+}
+
+
+// desktop-sprite
+.spr {
+    background-image: url('../img/desktop-sprite-'+$sprite-version+'.png');
+    background-size: ($sprite-w + px) ($sprite-h + px);
+    display: inline-block;
+    vertical-align: middle;
+    /* > --- header */
+    &--baomoi {
+        background-position: -0px -0px;
+        width: 20px;
+        height: 20px;
+    }
+    a:hover &--baomoi:hover {
+        background-position: -50px -0px;
+    }
+    // icon này cho delete story, hiện tại đang không cần
+    // &--story-del {
+    //     background-position: -0px -20px;
+    //     width: 20px;
+    //     height: 20px;
+    // }
+    // a:hover &--story-del:hover {
+    //     background-position: -50px -20px;
+    // }
+    &--search {
+        background-position: -0px -50px;
+        width: 20px;
+        height: 20px;
+    }
+    button:hover &--search {
+        background-position: -50px -50px;
+    }
+    .nav &--search {
+        background-position: -30px -50px;
+    }
+    &--home {
+        background-position: -0px -100px;
+        width: 20px;
+        height: 20px;
+    }
+    a:hover &--home {
+        background-position: -50px -100px;
+    }
+    &--mobile-ver {
+        background-position: -0px -150px;
+        width: 24px;
+        height: 24px;
+    }
+    .switch-mobile:hover &--mobile-ver {
+        background-position: -0px -150px;
+    }
+    &--user {
+        background-position: -0px -200px;
+        width: 24px;
+        height: 24px;
+    }
+    .uName:hover &--user,
+    .has-touched &--user {
+        background-position: -0px -200px;
+    }
+    /*> --- pin verticle menu */
+    &--pin-hot {
+        background-position: -0px -300px;
+        width: 35px;
+        height: 35px;
+    }
+    a:hover &--pin-hot,
+    .is-active &--pin-hot,
+    {
+        background-position: -50px -300px;
+    }
+    &--pin-latest {
+        background-position: -0px -350px;
+        width: 35px;
+        height: 35px;
+    }
+    a:hover &--pin-latest,
+    .is-active &--pin-latest,
+    {
+        background-position: -50px -350px;
+    }
+    &--pin-video {
+        background-position: -0px -400px;
+        width: 35px;
+        height: 35px;
+    }
+    a:hover &--pin-video,
+    .is-active &--pin-video {
+        background-position: -50px -400px;
+    }
+
+    &--pin-overview {
+        background-position: -0px -450px;
+        width: 35px;
+        height: 35px;
+    }
+    a:hover &--pin-overview,
+    .is-active &--pin-overview,
+    {
+        background-position: -50px -450px;
+    }
+    &--pin-event {
+        background-position: -0px -500px;
+        width: 35px;
+        height: 35px;
+    }
+    a:hover &--pin-event,
+    .is-active &--pin-event,
+    {
+        background-position: -50px -500px;
+    }
+    &--pin-recommend {
+        background-position: -0px -550px;
+        width: 35px;
+        height: 35px;
+    }
+    a:hover &--pin-recommend,
+    .is-active &--pin-recommend,
+    {
+        background-position: -50px -550px;
+    }
+
+    /*> --- story timeline */
+    &--more {
+        background-position: -0px -1000px;
+        width: 24px;
+        height: 24px;
+    }
+    .channel-timeline &--more {
+        background-position: -0px -1025px;
+    }
+    &--ctrl-left-2 {
+        background-position: -0px -1050px;
+        width: 16px;
+        height: 16px;
+    }
+    &--ctrl-right-2 {
+        background-position: -50px -1050px;
+        width: 16px;
+        height: 16px;
+    }
+    &--goTop {
+        background-position: -0px -1100px;
+        width: 16px;
+        height: 16px;
+    }
+    /*> --- article action */
+    &--s-circlezalo {
+        background-position: -0px -1200px;
+        width: 40px;
+        height: 40px;
+    }
+    .login-zalo:hover &--s-circlezalo,
+    &--s-circlezalo:hover {
+        background-position: -50px -1200px;
+    }
+    &--s-circlefacebook {
+        background-position: -0px -1250px;
+        background-color: #4E598F;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    .login-fb:hover &--s-circlefacebook,
+    &--s-circlefacebook:hover {
+        background-position: -50px -1250px;
+        background-color: darken(#4E598F, 10%);
+    }
+    &--s-circlelike {
+        background-position: -0px -1300px;
+        background-color: #eee;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    &--s-circlelike:hover {
+        background-color: #ddd;
+    }
+    .liked &--s-circlelike,
+    {
+        background-position: -50px -1300px;
+        background-color: #eee;
+    }
+    &--s-circlebookmark {
+        background-position: -0px -1350px;
+        background-color: #eee;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    &--s-circlebookmark:hover {
+        background-color: #ddd;
+    }
+    .is-saved &--s-circlebookmark,
+    {
+        background-position: -50px -1350px;
+        background-color: #eee;
+    }
+    &--s-circlereport {
+        background-position: -0px -1400px;
+        background-color: #eee;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+    &--s-circlereport:hover {
+        background-position: -50px -1400px;
+        background-color: #ddd;
+    }
+    &--sourceLink {
+        background-position: -0px -1450px;
+        width: 20px;
+        height: 20px;
+    }
+    .sourceLink:hover &--sourceLink {
+        background-position: -50px -1450px;
+    }
+    &--video {
+        background-position: -0px -1500px;
+        width: 20px;
+        height: 20px;
+    }
+    &--photo {
+        background-position: -50px -1500px;
+        width: 20px;
+        height: 20px;
+    }
+    &--tag-small {
+        background-position: -50px -1550px;
+        width: 20px;
+        height: 20px;
+    }
+    &--key {
+        background-position: -0px -1600px;
+        width: 30px;
+        height: 30px;
+    }
+    /*> --- user context menu */
+    &--recommend {
+        background-position: -0px -1750px;
+        width: 24px;
+        height: 24px;
+    }
+    &--history {
+        background-position: -0px -1800px;
+        width: 24px;
+        height: 24px;
+    }
+    &--bookmark {
+        background-position: -0px -1850px;
+        width: 24px;
+        height: 24px;
+    }
+    &--logout {
+        background-position: -0px -1900px;
+        width: 24px;
+        height: 24px;
+    }
+    &--notification {
+        background-position: -0px -1950px;
+        width: 24px;
+        height: 24px;
+    }
+    &--notice {
+        background-position: -26px -1950px;
+        width: 24px;
+        height: 24px;
+    }
+    &--location {
+        background-position: -0px -2000px;
+        width: 24px;
+        height: 24px;
+    }
+    @at-root .location-box{
+        .spr--location {
+            background-position: -26px -2000px;
+        }
+    }
+
+    &--publisher {
+        background-position: -50px -1750px;
+        width: 24px;
+        height: 24px;
+    }
+    &--cluster {
+        background-position: -50px -1800px;
+        width: 24px;
+        height: 24px;
+    }
+    &--config {
+        background-position: -50px -1850px;
+        width: 24px;
+        height: 24px;
+    }
+    &--channel {
+        background-position: -50px -1900px;
+        width: 24px;
+        height: 24px;
+    }
+
+    /*> --- user */
+    &--follow-expand{
+        background-position: -0px -2200px;
+        width: 20px;
+        height: 20px;
+    }
+    .is-active &--follow-expand{
+        background-position: -20px -2200px;
+    }
+    &--follow-pub {
+        background-position: -0px -2250px;
+        width: 20px;
+        height: 20px;
+    }
+    a:hover &--follow-pub,
+    .is-followed &--follow-pub {
+        background-position: -20px -2250px;
+    }
+    &--delete {
+        background-position: -0px -2300px;
+        width: 24px;
+        height: 24px;
+    }
+    &--follow {
+        background-position: -0px -2250px;
+        width: 20px;
+        height: 20px;
+    }
+    a:hover &--follow,
+    .is-followed &--follow {
+        background-position: -20px -2250px;
+    }
+    &--recycle {
+        background-position: -0px -2500px;
+        width: 24px;
+        height: 24px;
+    }
+    &--edit {
+        background-position: -0px -2400px;
+        width: 24px;
+        height: 24px;
+    }
+    &--channel-create {
+        background-position: -0px -2350px;
+        width: 24px;
+        height: 24px;
+    }
+    &--channel-move {
+        background-position: -0px -2450px;
+        width: 24px;
+        height: 24px;
+    }
+    &--follow-key {
+        background-position: -0px -2300px;
+        width: 24px;
+        height: 24px;
+    }
+    &--follow-cluster {
+        background-position: -50px -1800px;
+        width: 24px;
+        height: 24px;
+    }
+    /*> --- btn-toggle */
+    /*> --- photoswipte + weather */
+    &--w-chanceflurries,
+    &--w-chancesnow,
+    &--w-flurries,
+    &--w-snow,
+    &--w-nt_chanceflurries,
+    &--w-nt_chancesnow,
+    &--w-nt_flurries,
+    &--w-nt_snow,
+    {
+        background-position: -50px -2850px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-chancerain,
+    &--w-rain,
+    &--w-nt_chancerain,
+    &--w-nt_rain,
+    {
+        background-position: -50px -2900px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-chancesleet,
+    &--w-sleet,
+    &--w-nt_chancesleet,
+    &--w-nt_sleet,
+    {
+        background-position: -50px -2950px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-chancetstorms,
+    &--w-tstorms,
+    &--w-nt_chancetstorms,
+    &--w-nt_tstorms,
+    {
+        background-position: -50px -3000px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-clear,
+    &--w-sunny,
+    {
+        background-position: -50px -3050px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-nt_clear,
+    &--w-nt_sunny,
+    {
+        background-position: -50px -3100px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-nt_mostlycloudy,
+    &--w-nt_mostlysunny,
+    &--w-nt_partlycloudy,
+    &--w-nt_partlysunny,
+    {
+        background-position: -50px -3150px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-mostlycloudy,
+    &--w-mostlysunny,
+    &--w-partlycloudy,
+    &--w-partlysunny,
+    &--w-cloudy,
+    &--w-windy {
+        background-position: -50px -3200px;
+        width: 50px;
+        height: 50px;
+    }
+
+    &--w-fog,
+    &--w-hazy,
+    {
+        background-position: -50px -3250px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-nt_fog,
+    &--w-nt_hazy,
+    &--w-nt_cloudy,
+    {
+        background-position: -50px -3250px;
+        width: 50px;
+        height: 50px;
+    }
+    &--w-chanceflurries-mini,
+    &--w-chancesnow-mini,
+    &--w-flurries-mini,
+    &--w-snow-mini,
+    &--w-nt_chanceflurries-mini,
+    &--w-nt_chancesnow-mini,
+    &--w-nt_flurries-mini,
+    &--w-nt_snow-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-2850px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-chancerain-mini,
+    &--w-rain-mini,
+    &--w-nt_chancerain-mini,
+    &--w-nt_rain-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-2900px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-chancesleet-mini,
+    &--w-sleet-mini,
+    &--w-nt_chancesleet-mini,
+    &--w-nt_sleet-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-2950px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-chancetstorms-mini,
+    &--w-tstorms-mini,
+    &--w-nt_chancetstorms-mini,
+    &--w-nt_tstorms-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-3000px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-clear-mini,
+    &--w-sunny-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-3050px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-nt_mostlycloudy-mini,
+    &--w-nt_mostlysunny-mini,
+    &--w-nt_partlycloudy-mini,
+    &--w-nt_partlysunny-mini,
+    &--w-nt_cloudy-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-3100px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-mostlycloudy-mini,
+    &--w-mostlysunny-mini,
+    &--w-partlycloudy-mini,
+    &--w-partlysunny-mini,
+    &--w-windy-mini,
+    &--w-cloudy-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-3150px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-fog-mini,
+    &--w-hazy-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-3200px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    &--w-nt_fog-mini,
+    &--w-nt_hazy-mini,
+    {
+        background-size: ($sprite-w *.7 + px) ($sprite-h *.7 + px);
+        background-position: -35px (-3250px * 0.7);
+        width: 35px;
+        height: 35px;
+    }
+    /*> --- login */
+    &--login-zalo {
+        background-position: -0px -3350px;
+        width: 32px;
+        height: 32px;
+    }
+    &--login-fb {
+        background-position: -0px -3400px;
+        width: 32px;
+        height: 32px;
+    }
+    &--login-gplus {
+        background-position: -0px -3450px;
+        width: 32px;
+        height: 32px;
+    }
+    /*> --- soccer */
+    &--soccer-calendar {
+        background-position: -0px -3550px;
+        width: 16px;
+        height: 16px;
+    }
+    a:hover &--soccer-calendar {
+        background-position: -50px -3550px;
+    }
+    &--pin-worldcup {
+        background-position: -0px -3600px;
+        width: 35px;
+        height: 35px;
+    }
+    /*> --- modal icon */
+    &--report-big {
+        background-position: -0px -3650px;
+        width: 36px;
+        height: 36px;
+    }
+    &--check-big {
+        background-position: -50px -3650px;
+        width: 36px;
+        height: 36px;
+    }
+    &--appDownload-close {
+        background-position: -0px -3700px;
+        width: 22px;
+        height: 22px;
+    }
+    &--login-big{
+        background-position: -0px -3800px;
+        width: 60px;
+        height: 60px;
+    }
+    /*> --- channel-box */
+    &--box-channel {
+        background-position: -0px -3750px;
+        width: 50px;
+        height: 50px;
+    }
+    &--channel-more {
+        background-position: -50px -3750px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+/*------------*/
+.spr{
+    &--delete {
+        background-position: -50px -3950px;
+        width: 28px;
+        height: 28px;
+    }
+}

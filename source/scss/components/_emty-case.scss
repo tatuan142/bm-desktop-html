@@ -1,0 +1,33 @@
+// ====================================
+// Layout's style
+// ====================================
+
+/*
+* TABLE OF CONTENTS
+*
+* loading more timeline
+*/
+
+
+// >loading BUTTON
+// note : when scroll to the end of the homepage
+#loading {
+    z-index: 5000;
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 10%;
+    text-align: center;
+    display: none;
+    &:before {
+        content: '';
+        display: inline-block;
+        width: 185px;
+        height: 60px;
+        border-radius: 5px;
+        background: url(../img/loading.gif);
+        -webkit-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        -moz-box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    }
+}
