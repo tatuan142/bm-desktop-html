@@ -13,7 +13,6 @@
 * copy
 * image
 * delete build folder
-* make aboveTheFold (full version)
 * taskrunner
 */
 
