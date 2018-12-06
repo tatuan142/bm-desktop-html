@@ -55,76 +55,41 @@ var paths = {
 };
 
 // > add error text debug
-    // note : for desktop - style
-    var reportError = function(error) {
+    // note : for soccer - style
+    var reportErrorSoccer = function(error) {
         var text = error.toString();
         text = text.replace(/\n/gm, " \\A ");
         text = text.replace(/('|")/gm, " ");
-        gulp.src(paths.css + '/desktop-styles.css')
+        gulp.src(paths.css + '/d-soccer-styles.css')
             .pipe(inject.append("body:before{content : '" + text + "';white-space: pre;padding: 50px;display: block;}"))
             .pipe(gulp.dest(paths.css))
             .pipe(browserSync.stream({ once: true }));
-    }
-
-
-// > javascripts
-gulp.task('scripts', function() {
-    return gulp.src([
-            // import plugin
-            paths.js_dev + '/vendor/jquery-3.1.1.js',
-            // paths.js_dev + '/vendor/jquery-migrate-3.0.0.js', // make older code can run in newest jquery
-            // paths.js_dev + '/vendor/jquery.bxslider.js', //  slider 
-            // paths.js_dev + '/vendor/jquery.fixer.js', // stick content 
-            paths.js_dev + '/photoSwipe/dist/photoswipe.min.js', //popup image  ++++ warning với jquery3.1.1 
-            paths.js_dev + '/photoSwipe/dist/photoswipe-ui-default.min.js', //popup image 
-            // end import plugin
-        ])
-        .pipe(concat(paths.project_name + '.js'))
-        // .pipe(gulp.dest(paths.js)) // make normal js for debug
-        .pipe(uglify())
-        .pipe(rename({
-            suffix: '.min'
-        }))
-        .pipe(gulp.dest(paths.js))
-        .pipe(browserSync.stream({ once: true }));
-});
+    };
 
 
 // > styles 
 // Mobile, soccer widget , soccer
-    // main desktop style
-    gulp.task('desktop-styles', function() {
-        gulp.src(paths.scss_dev + '/desktop-styles.scss')
+    // widget desktop style
+    gulp.task('widget-styles', function() {
+        gulp.src(paths.scss_dev + '/pages/soccer/d-widget.scss')
+            .pipe(sass())
+            .pipe(gulp.dest(paths.css)) // make normal css for debug
+            .pipe(browserSync.stream({ once: true }));
+    });
+
+    // soccer page
+    gulp.task('soccer-styles', function() {
+        gulp.src(paths.scss_dev + '/d-soccer-styles.scss')
             .pipe(sourcemaps.init())
-            .pipe(sass().on('error', reportError))
+            .pipe(sass().on('error', reportErrorSoccer))
             .pipe(gulp.dest(paths.css)) // make normal css for debug
             .pipe(sourcemaps.write('../maps'))
             .pipe(gulp.dest(paths.css))
             .pipe(browserSync.stream({ once: true }));
     });
-
-    // error task
-    /*gulp.task('error-style', function() {
-        gulp.src(paths.scss_dev + '/pages/error-page.scss')
-            .pipe(sourcemaps.init())
-            .pipe(sass().on('error', sass.logError))
-            .pipe(gulp.dest(paths.css)) // make normal css for debug
-            .pipe(sourcemaps.write('../maps'))
-            .pipe(gulp.dest(paths.css))
-            .pipe(browserSync.stream({ once: true }));
-    });*/
 
 // > copy 
 // copy sftp, ui.js, js, copyJs, copyFigImg, copyFonts
-    gulp.task('copySftp', function() {
-        gulp.src(paths.source_folder + '/sftp-config')
-            .pipe(rename({
-                basename: 'sftp-config',
-                extname: '.json'
-            }))
-            .pipe(gulp.dest('./build'));
-    });
-
     // copy only ui.js file
     gulp.task('copyJs-UI', function() {
         gulp.src(paths.js_dev + '/ui-local.js')
@@ -155,21 +120,26 @@ gulp.task('scripts', function() {
             .pipe(gulp.dest(paths.fonts));
     });
 
-    gulp.task('copy', ['copyJs', 'copyHtml', 'copyFigImg', 'copyFonts']);
+    gulp.task('copy', ['copyHtml', 'copyFigImg', 'copyFonts']);
 
 // > image
 // note : compress image
-    gulp.task('compressImg', () =>
-        imagemin([paths.img_dev + '/*.png'], paths.img, {
-            use: [imageminPngquant({
-                // floyd : '1',
-                // nofs : true,
-                speed: '1',
-                // verbose : true
-            })]
+    gulp.task('soccer-normal', () =>
+        imagemin([paths.img_dev + '/soccer/*.png'], paths.img + '/soccer', {
+            use: [imageminPngquant({speed: '1',})]
         })
         .then(() => {
-            console.log('Desktop Images optimized');
+            console.log('soccer-normal image optimized');
+        })
+    );
+
+// note : compress image
+    gulp.task('soccer-theme', () =>
+        imagemin([paths.img_dev + '/soccer/affCup/*.png'], paths.img + '/soccer/affCup', {
+            use: [imageminPngquant({speed: '1',})]
+        })
+        .then(() => {
+            console.log('soccer-theme image optimized');
         })
     );
 
@@ -178,21 +148,20 @@ gulp.task('delete', function() {
     del.sync(paths.build_folder);
 });
 
-// note : make abf.css (short version)
-gulp.task('abf', function() {
-    gulp.src(paths.css + '/desktop-styles.css')
+gulp.task('widget-abf', function() {
+    gulp.src(paths.css + '/d-widget.css')
         .pipe(rename({
-            basename: 'desktop-abf'
+            basename: 'd-widget-abf'
         }))
         .pipe(cssmin())
-        .pipe(inject.replace('../fonts', 'https://baomoi-static.zadn.vn/web/styles/fonts'))
-        .pipe(inject.replace('../img', 'https://baomoi-static.zadn.vn/web/styles/img'))
+        .pipe(inject.replace('../fonts', 'https://baomoi-static.zadn.vn/soccer/style/fonts'))
+        .pipe(inject.replace('../img', 'https://baomoi-static.zadn.vn/soccer/style/img'))
         .pipe(gulp.dest(paths.css));
 });
 
 // > taskrunner
-// note : for desktop task
-gulp.task('default', ['copy', 'compressImg', 'desktop-styles', 'abf'],
+// note : for soccer task
+gulp.task('soccer', ['copy', 'soccer-normal', 'soccer-theme', 'soccer-styles', 'widget-styles'],
     function() {
         browserSync.init({
             server: {
@@ -203,7 +172,7 @@ gulp.task('default', ['copy', 'compressImg', 'desktop-styles', 'abf'],
                 // scroll: true
             }
         });
-        gulp.watch(paths.scss_dev + '/**/*.scss', ['desktop-styles', 'abf']);
+        gulp.watch(paths.scss_dev + '/**/*.scss', ['soccer-styles', 'widget-abf']);
         gulp.watch(paths.js_dev + '/**/*.js', function(obj) {
             if (obj.type === 'changed') {
                 gulp.src(obj.path, { "base": paths.js_dev})
@@ -218,3 +187,4 @@ gulp.task('default', ['copy', 'compressImg', 'desktop-styles', 'abf'],
         }).on('change', browserSync.reload);
     }
 );
+

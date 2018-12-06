@@ -1,9 +1,46 @@
+/*! desktop abf.3.4.1.css:*/
+/* - fix bug  */
+
+/* desktop abf.3.4.0.css:*/
+/* - add zalo detector  */
+
+/* desktop abf.3.3.0.css:*/
+/* - pre release user */
+
+/* desktop abf.3.2.1.css:*/
+/* - fix affcup box */
+
+/* desktop abf.3.2.0.css:*/
+/* - add notification center */
+
+/* desktop abf.3.1.7.css:*/
+/* - fix-bug */
+
+/* desktop abf.3.1.3.css:*/
+/* - add more on box-aff-cup */
+
+/* desktop abf.3.1.1.css:*/
+/* - fix bug */
+
+/* desktop abf.3.1.0.css:*/
+/* - add box aff-cup */
+
+/* desktop abf.3.0.7.css:*/
+/* - fix bug story--live */
+
+/* desktop abf.3.0.6.css:*/
+/* - fix bug 305 */
+
+/* desktop abf.3.0.5.css:*/
+/* - add box location lên web */
+
+
 /* ====================================
    = VARIABLE , NORMALIZE , GENERAL STYLE                         
    ==================================== */
 
-@import "variables";
-@import "normalize";
+@import "components/variables";
+@import "components/normalize";
 
 // /* ====================================
 //    = MIXIN                            =
@@ -24,20 +61,20 @@
 //    = COMPONENTS                       =
 //    ==================================== */
 
-@import "fonts";
-@import "sprite";
-@import "scaffolding";
-@import "story";
-@import "layout";
-@import "region";
-@import "fyi";
-@import "header";
-@import "navigation";
-@import "breadcrumbs";
-@import "pagination";
-@import "footer";
-@import "modal";
-@import "new-function";
+@import "components/fonts";
+@import "components/sprite";
+@import "components/scaffolding";
+@import "components/story";
+@import "components/layout";
+@import "components/region";
+@import "components/fyi";
+@import "components/header";
+@import "components/navigation";
+@import "components/breadcrumbs";
+@import "components/pagination";
+@import "components/footer";
+@import "components/modal";
+@import "components/new-function";
 
 /* ====================================
    = PAGES                            =
@@ -45,9 +82,159 @@
 
 @import "pages/article/article";
 
-//* ====================================
+/* ====================================
+   PLUGIN
+   ==================================== */
+
+@import "plugins/photoswipe/main.scss";
+@import "plugins/photoswipe/default-skin.scss";
+
+// /* ====================================
 //    = TEST                             =
 //    ==================================== */
 
 // @import "test/test";
 // @import "test/above-the-fold/above-the-fold.css";
+
+
+/* desktop abf.3.0.4.css:*/
+/* - fix bug 301 */
+
+/* desktop abf.3.0.3.css:*/
+/* - fix bug 301 */
+
+/* desktop abf.3.0.2.css:*/
+/* - fix bug 301 */
+
+/* version abf.3.0.1.css:*/
+/* - thêm style tường thuật , caption vào trang chi tiết */
+
+/* version abf.3.0.0.css:*/
+/* - tách các phần đang phát triển ra 1 file riêng */
+/* - Chỉnh sửa và up đồng bộ lên web */
+
+/* version abf.2.2.3.css:*/
+/* - channel */
+
+/* version abf.2.2.1.css:*/
+/* - Thay logo worldcup */
+
+/* version abf.2.2.0.css:*/
+/* - cho story có thumb từ 145x95 lên 151x101 */
+/* - sửa icon hover sourcelink bị lỗi khi chuyển đổi sprite */
+
+/* version abf.2.1.5.css:*/
+/* - sửa follow-cate thành follow */
+
+/* version abf.2.1.4.css:*/
+/* - sửa follow-cate thành follow */
+
+/* version abf.2.1.3.css:*/
+/* - Thay đổi toàn diện file sprite */
+
+/* version abf.2.1.2.css:*/
+/* - fix lỗi icon thời tiết */
+
+/* version abf.2.1.1.css:*/
+/* - rank-1 story fix live story */
+
+/* version abf.2.1.0.css:*/
+/* - Chuẩn bị lên widget soccer */
+/* - sửa tag cho viết hoa đầu chữ */
+
+/* version abf.2.0.2.css:*/
+/* - cho version css lên đầu file */
+/* - thêm phân đăng nhập user */
+
+/* version abf.2.0.1.css:*/
+/* - thêm class .lazy do Hà yêu cầu */
+/* - thêm class fyi--330x280 */
+
+/* version abf.2.0.0.css:*/
+/* - đổi cấu trúc folder */
+/* - cho font đậm hơn ở sub-menu */
+/* - cho z-index cao nhất */
+/* - làm box bóng đá mini trên trang 11-soccer-mini.html */
+
+
+/* version abf.1.3.14.css:*/
+/* - cho font menu to hơn 1 cỡ, cho khoảng cách sít hơn */
+
+/* version abf.1.3.13.css:*/
+/* - bỏ cảnh đào */
+
+/* version abf.1.3.12.css:*/
+/* - sửa bị thiếu live--icon ko rõ nguyên nhân. */
+
+/* version abf.1.3.5.css:*/
+/* - sửa / bổ sung icon like trong bài chi tiết */
+
+/* version abf.1.3.4.css:*/
+/* - thay logo tết 2018 */
+
+/* version abf.1.3.3.css:*/
+/* - sửa breadcrumb, làm cho chính phụ rõ ràng hơn */
+
+/* version abf.1.3.2.css:*/
+/* - sửa breadcrumb, làm cho chính phụ rõ ràng hơn */
+
+/* version abf.1.3.1.css:*/
+/* - Thay font ttf bằng font woff */
+
+/* version abf.1.3.0.css:*/
+/* - Sửa font convert theo fontlab6 */
+
+/* version abf.1.2.8.css:*/
+/* - sửa icon home cho dầy hơn */
+/* - sửa icon live cho nét hơn  */
+
+/* version abf.1.2.7.css:*/
+/* - Xoá thuộc tính lọc ảnh   */
+
+/* version abf.1.2.6.css:*/
+/* - fix thuộc tính lọc ảnh trên firefox   */
+
+/* version abf.1.2.5.css:*/
+/* - margin-bottom 5 > 10 trong box ảnh và box video */
+/* - border-radius 3 > 4 */
+/* - sửa mầu noti5 đồng nhất với mobile */
+/* - Sửa font */
+/* - lineheight : navigation   */
+/* - update sprite   */
+
+/* version abf.1.2.4.css:*/
+/* - Thêm thuộc tính lọc ảnh  */
+/* - thêm noti5 */
+
+/* version abf.1.2.3.css:*/
+/* - fix các lỗi nhỏ  */
+/* - sửa style breadcrumbs */
+
+/* version abf.1.2.2.css:*/
+/* - fix các lỗi nhỏ của bản 1.2.1 */
+
+/* version abf.1.2.1.css:*/
+/* - sửa lỗi ảnh 1x sang 2x */
+/* - sửa class trang order-by-cate : .overview_page */
+/* - thêm floatingbar : vào trang overview */
+
+/* version abf.1.2.0.css:*/
+/* - thêm box : update small title sidebar */
+/* - thêm html/css cho order-by-cate page  */
+/* - Cho font cột sidebar tăng lên 1px  */
+
+/* version abf.1.1.5.css:*/
+/* - thêm box : góc nhìn phân tích */
+
+/* version abf.1.1.4.css:*/
+/* - thêm class : no-visited-mark cho story */
+/* - thay các class video, photo = rightBox-1,2,3, update sau sẽ phải bỏ các class photo, video thừa */
+
+/* version abf.1.1.3.css:*/
+/* - thêm icon Key thay thế icon tag cuối bài */
+
+/*version abf.1.1.2.css :*/
+/* - Sửa icon video, photo, icon Live trên ảnh, icon home trên navigation*/
+/* - Di lên ảnh hiện mới zoom*/
+/* - bỏ nút go-to-top*/
+/* - icon xem slide ảnh trong trang đọc bài luôn luôn hiện, nền đen 0.5, di lên đổi nền xanh như hiện tại*/
